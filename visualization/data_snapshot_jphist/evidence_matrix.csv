@@ -1,0 +1,20 @@
+﻿claim_id,claim,status,evidence_short,freeze_ref
+E01,CN 固定滞后 JP 30-40 年,REJECTED,H4 normalization/metric 不稳、跨 norm 漂移,FREEZE_H4
+E02,CN 固定滞后 JP 22 年（一般命题）,REJECTED AS GENERAL CLAIM,仅部分窗口/method：B 窗 cross-metric L22（4/4）与 D 窗 MANHATTAN L22（10k null p=0.0009）method-specific；无跨 metric/norm 稳健单一 lag,FREEZE_H4 F04
+E03,CN-JP 存在 retrospective structural-state similarity,SUPPORTED,B 窗 L22 cross-metric；D 窗 method-specific SIG；LOMO/覆盖/锚点全过,FREEZE_H4 F01-F03
+E04,J90/J00 structural regimes 可重复识别,SUPPORTED,两独立方法 13/13（H4 module-subset bootstrap vs H5 regime-argmax；rep JP 年亦同）,FREEZE_H5 F01
+E05,CN 2013-25 为 single-cluster 对应 JP 1991-98,REJECTED,单簇表述经 H4 v0.3d 数据修正（6×P0）后不成立,FREEZE_H4 F05
+E06,CN 2013-25 = mixed-state（7/13 J90 + 4/13 J00 + 2/13）,SUPPORTED DESCRIPTIVELY,cluster 800/800 valid；非单调时间推进,FREEZE_H4 F06
+E07,CN→J00 persistent transition（2023-25）,REJECTED,2024 落 OTHER/JGAP；P(J00→J00)=0（0/3）；J90→J00=J90→J90=0.43,FREEZE_H5 F05
+E08,近年 CN 绕 J90/JGAP/J00 摆动,SUPPORTED DESCRIPTIVELY,JGAP(1999-2002) 四态：2015/2024 ∈ JGAP；2023:J00→2024:JGAP→2025:J00,h5final_jgap_sequence.csv
+E09,CPI/INFLATION 是 classification hinge,SUPPORTED,CF-A 5/13·CF-B 4/13·CF-C 5/13 唯一达阈值；held-out 坍缩证实 hinge 性质,FREEZE_H5 F02
+E10,CPI 是跨期共同机制,REJECTED,held-out D_CN(−CPI)=+0.011≈0 vs D_JP=+0.704；boot CI 跨 0；p=1.0；percentile aux 反转,FREEZE_H5 F02
+E11,Investment 通道 held-out 同向复现,SUPPORTED DESCRIPTIVELY,"D_CN(−INV)=+0.753 vs D_JP=+0.989（standardized ≈3/4）；boot90 CI [0.151,1.433] 不含 0；perm p≈0.16",FREEZE_H5 F03
+E12,M2 通道同向复现,SECONDARY SUPPORT（non-gate）,"D_CN(−M2)=+0.369 vs D_JP=+0.234；boot90 CI [0.096,0.636] 不含 0；perm p≈0.20",FREEZE_H5 F03
+E13,广泛共同机制 correspondence,NOT SUPPORTED,Q2-Final：核心三通道（CPI/INV/REER）仅 1 个 held-out 复现 <2 阈值；REER/wage/real_gdp 反向；birth/iip 无独立证据,FREEZE_H5 F04
+E14,低通胀/近零 CPI 本身意味着日本化,NOT SUPPORTED,CN 2023-25 CPI 0.2/0.2/0.0 未转负（JP 1999 转负、2002 −0.91）；CPI held-out 坍缩,FREEZE_H5 F06
+E15,CN=滞后 N 年的日本（整体机制复制）,REJECTED,H4 norm 漂移 + H5 Q2-Final 全链否定,FREEZE_H5 总体
+E16,已纳入人口/工资变量构成相似性主要正向驱动,NOT SUPPORTED,DEMOGRAPHY 最大负贡献（J90 −0.89/J00 −0.80/OTHER −1.47）；LOMO 负 Δ；held-out wage 反向/birth 弱化；不扩展到人口机制完全不相似（覆盖边界）,FREEZE_H5 F04
+E17,价格先行于实体日本化（HYP-H5-M1）,CANDIDATE（偏弱）,CPI held-out 无独立证据 + CN 未转负 + 2023/25 的 J00 归属系 CPI 自指,H5_FINAL_validation_report.md §6.1
+E18,macro-state 相似 ≠ return 相似（层分离）,SUPPORTED（JP2 层）,JP2 三层分离结论；return 层 30-40y 方向模式与 macro 层不同层不可互证,FREEZE_JP2
+E19,CN 2000-2012（A 窗）rep 集中于 JP 1980s,DESCRIPTIVE（附录口径）,OTHER×8（rep 1984-87）+ J90×5（rep 1991-97）；J00 几何不可达（lag≥10）,h5_state_sequence.csv

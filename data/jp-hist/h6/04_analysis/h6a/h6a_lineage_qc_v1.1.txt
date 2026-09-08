@@ -1,0 +1,12 @@
+n_lineage_rows=27
+sha_missing=0
+status_missing=0
+path_missing=0
+parent_missing=0
+run_clock_recorded=3
+run_clock_NA_NOT_RECORDED=24
+historical_hash_only=0
+sha_verified=27
+sha_failed=0
+VERIFIED_IN_A5_PACKAGE=10
+VERIFIED_IN_PARENT_PACKAGE=17

@@ -1,0 +1,5 @@
+﻿column,A1_dominant_unchanged,A1_agreement_ge0.6,A1_lag_frozen_rule,A1_PASS,nonNA_metrics,agreement,dominant
+-E01,True,True,False,False,4,1.0,J90
+-E02,True,True,False,False,4,0.9231,J90
+-E03,True,True,False,False,4,1.0,J90
+-E05,True,True,False,False,4,1.0,J90

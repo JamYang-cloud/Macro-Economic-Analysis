@@ -1,0 +1,8 @@
+n_lineage_rows=27
+artifact_path_resolved=27
+artifact_path_unresolved=0
+artifact_sha_verified=27
+artifact_sha_failed=0
+parent_ref_unresolved=0 (unchanged from A5.2: 52 refs, 43 internal + 9 external)
+parent_package_failed=0
+strict_verification=zip.read(artifact_internal_path) exact match

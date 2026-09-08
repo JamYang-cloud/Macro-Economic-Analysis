@@ -1,0 +1,10 @@
+﻿module,variable,JP_diff_J90mJ00,CN_diff_J90mJ00,direction_agree,JP_J90_mean,JP_J00_mean,CN_J90set_mean,CN_J00set_mean
+DEMOGRAPHY_LABOR,birth_rate,0.337,0.528,True,1.012,0.674,-0.412,-0.94
+DEMOGRAPHY_LABOR,wage_yoy,-0.667,0.39,False,-0.277,0.39,-0.456,-0.846
+EXTERNAL,export_yoy,-0.12,-0.33,True,-0.199,-0.079,-0.289,0.041
+EXTERNAL,reer,0.86,0.166,True,0.947,0.087,0.668,0.502
+GROWTH,iip_yoy,-0.377,-0.114,True,-0.749,-0.372,-0.658,-0.544
+GROWTH,investment_gdp,0.989,0.753,True,0.415,-0.574,0.502,-0.251
+GROWTH,real_gdp_yoy,0.356,-0.268,False,-0.157,-0.513,-0.964,-0.696
+INFLATION,cpi_yoy,0.704,1.096,True,0.111,-0.593,0.27,-0.826
+MONEY_CREDIT,m2_yoy,0.234,0.39,True,-0.351,-0.585,-0.516,-0.906

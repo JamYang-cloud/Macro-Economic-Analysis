@@ -1,0 +1,17 @@
+﻿gate_id,link,direction_rule,bootstrap,ci_rule,gate_criteria,verdict_in,notes
+Gate B1,P→B,sgn(θ^JP)=sgn(θ^CN) 方向一致,MBB L=3 n=2000 non-circular;aux L=2/4,不单独设 CI 门(方向门为主),≥2 独立 Property 指标 + ≥1 BS 指标 两国方向一致,Verdict 输入,Property 恶化(资产价格↓/活动↓)⇒ BS 恶化(杠杆↑/流动↓);符号表 B0 冻结
+Gate B2,B→R,两国方向一致,同 Gate B1,至少一国 bootstrap 90% CI 不跨 0;另一国不得显著反向,B 恶化 ⇒ R 恶化 两国同向 + CI 规则,Verdict 输入,MOF/NBS 双源独立验证杠杆→盈利通道
+Gate B3,R→C,区分 supply/demand,同 Gate B1,CI 规则同 B2 若 demand proxy 可估,Profitability↓ ⇒ CreditDemand↓(宽松环境下仍弱);仅贷款总量下降不足,Verdict 输入,若无 demand proxy 数据→INFEASIBLE_AFTER_PRESPECIFIED_MASK
+Gate B4,C→I,I 不进入 classifier 前提下独立成立,同 Gate B1,CI 规则同 B2,CreditDemand↓/Impulse↓ ⇒ Investment↓,Verdict 输入,天然 held-out(建议书 §十七)
+Verdict-STRONG,全链,,,,≥3/4 链通过且不缺失 P→B 与 C→I,STRONG MECHANISM CORRESPONDENCE,禁 causal equivalence 措辞
+Verdict-PARTIAL,全链,,,,≥2 链通过但完整链不闭合,PARTIAL MECHANISM CORRESPONDENCE,
+Verdict-GEOMETRY,全链,,,,0-1 链通过或关键链方向相反,GEOMETRY WITHOUT MECHANISM,与 H6-A feature-geometry 结论衔接
+Verdict-INFEASIBLE,全链,,,,有效数据不足,INFEASIBLE,预定出口;禁扩窗/降阈/合并
+D-A,D,,,,CPI<0 仅描述,,Headline deflation 描述标签
+D-B,D,,,,六类(CPI/Core/Services/PPI/GDP deflator/Wage)≥3 低位/负,,阈值 B0 冻结(如 <1% 或 <0.5%)
+D-C,D,,,,D-B 连续 ≥4 季度,,persistent regime
+D-D,D,,,,broad/persistent weakness + 主机制链有证据,,CPI<0 永不单独触发 Japanization
+D1,D,sign robustness,,,"headline∈[-0.5,+0.5]% 时 core/services/PPI/deflator 同向?",,口径稳健性检验
+D2,D,rebase/weight,,,重叠期差异记录;正常 rebase 不自动=manipulation,,rebase registry
+D3,D,price diffusion,,,负增长类别占比,,diffusion index
+D4,D,cross-system,,,CPI↔PPI↔GDP deflator 三角;发散→PRICE_SYSTEM_DIVERGENCE,,禁 STATISTICAL_MANIPULATION 标记

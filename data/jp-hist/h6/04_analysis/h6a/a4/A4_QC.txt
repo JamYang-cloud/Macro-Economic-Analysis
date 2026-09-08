@@ -1,0 +1,20 @@
+H6-A A4 QC — pre-registration & machine checks
+jp/investment_gdp/raw: n=54 m_bic=4 breaks=1974|1981|1997|2007
+jp/investment_gdp/ResidA: n=54 m_bic=4 breaks=1975|1982|1987|1997
+jp/cpi_yoy/raw: n=55 m_bic=2 breaks=1976|1981
+jp/cpi_yoy/ResidA: n=55 m_bic=4 breaks=1976|1981|1993|2019
+jp/m2_yoy/raw: n=56 m_bic=3 breaks=1974|1979|1990
+jp/m2_yoy/ResidA: n=56 m_bic=2 breaks=1975|1990
+cn/investment_gdp/raw: n=25 m_bic=2 breaks=2007|2014
+cn/investment_gdp/ResidA: n=25 m_bic=2 breaks=2007|2014
+cn/cpi_yoy/raw: n=26 m_bic=2 breaks=2006|2013
+cn/cpi_yoy/ResidA: n=26 m_bic=2 breaks=2006|2011
+cn/m2_yoy/raw: n=26 m_bic=2 breaks=2010|2016
+cn/m2_yoy/ResidA: n=26 m_bic=2 breaks=2004|2010
+min_segment>=5 enforced in DP (segments shorter than 5 excluded)
+m_max pre-registered: jp=4, cn=2
+flavors: raw (Baseline) & ResidA (Model-A G+COVID linear removal)
+series = robust-z standardized (jp 1970-2025 / cn 2000-2025) of investment/cpi/m2
+break uncertainty: residual bootstrap n_rep=200 seed 20260907, m fixed at BIC
+DIAGNOSTIC ONLY: no E01-E06 redefinition, no gate input, no post-hoc rescue
+break dates are statistical breakpoints, not economic event attribution

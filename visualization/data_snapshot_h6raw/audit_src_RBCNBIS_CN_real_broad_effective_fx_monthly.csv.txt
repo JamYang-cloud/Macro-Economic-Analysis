@@ -1,0 +1,2 @@
+本地项目/宏观股市罗盘_日本/08_jp_hist/01_raw/fred_bis_reer/RBCNBIS_CN_real_broad_effective_fx_monthly.csv
+da0575f008c3099d3fe4c7762e733dd811095c285ca1694fc31a678056bc5fe1

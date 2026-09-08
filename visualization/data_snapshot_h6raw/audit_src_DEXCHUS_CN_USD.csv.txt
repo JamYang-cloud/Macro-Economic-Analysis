@@ -1,0 +1,2 @@
+本地项目/宏观股市罗盘_日本/08_jp_hist/01_raw/fred_api_ext/DEXCHUS_CN_USD.csv
+4cbc650ca0c8923029dff5e1b9e33ef52113ec7cf3daf873d017027ebf96ed08

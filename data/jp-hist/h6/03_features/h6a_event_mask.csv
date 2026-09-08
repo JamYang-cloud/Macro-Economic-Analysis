@@ -1,0 +1,11 @@
+country,year,event_id,event_mask,reason
+JP,1997,E01,jp_candidate,亚洲金融危机+日本金融压力期：禁用 JP 1997-98 成为 CN 候选（LEO-2）；CN 侧主窗无该年
+JP,1998,E01,jp_candidate,亚洲金融危机+日本金融压力期：禁用 JP 1997-98 成为 CN 候选（LEO-2）；CN 侧主窗无该年
+JP,2000,E02,jp_candidate,dot-com 期：禁用 JP 2000-02 候选（LEO-2）；回答 CN 落 JGAP/J00 是否因 JP 该段异常
+JP,2001,E02,jp_candidate,dot-com 期：禁用 JP 2000-02 候选（LEO-2）；回答 CN 落 JGAP/J00 是否因 JP 该段异常
+JP,2002,E02,jp_candidate,dot-com 期：禁用 JP 2000-02 候选（LEO-2）；回答 CN 落 JGAP/J00 是否因 JP 该段异常
+JP,2008,E03,jp_candidate,GFC 期：禁用 JP 2008-09 候选（LEO-2）
+JP,2009,E03,jp_candidate,GFC 期：禁用 JP 2008-09 候选（LEO-2）
+CN,2020,E05,"window_aggregation,cn_summary",COVID：保留单年分类（诊断用）；D 窗聚合（LEO-1）与 2013-25 总结（LEO-3）剔除
+CN,2021,E05,"window_aggregation,cn_summary",COVID：保留单年分类（诊断用）；D 窗聚合（LEO-1）与 2013-25 总结（LEO-3）剔除
+CN,2022,E05,"window_aggregation,cn_summary",COVID：保留单年分类（诊断用）；D 窗聚合（LEO-1）与 2013-25 总结（LEO-3）剔除

@@ -1,0 +1,27 @@
+year,value,variable,country,unit,source_note
+2000,2.0366,trade_balance_gdp,cn,pct_of_gdp,CN trade_balance_gdp: 2000-2012 customs USD bal*FX/GDP (H2 col-shift fixed) + 2013-2025 gongbao RMB bal/GDP; junction 2012=2.815/2013=2.825 seamless
+2001,1.7271,trade_balance_gdp,cn,pct_of_gdp,CN trade_balance_gdp: 2000-2012 customs USD bal*FX/GDP (H2 col-shift fixed) + 2013-2025 gongbao RMB bal/GDP; junction 2012=2.815/2013=2.825 seamless
+2002,2.1149,trade_balance_gdp,cn,pct_of_gdp,CN trade_balance_gdp: 2000-2012 customs USD bal*FX/GDP (H2 col-shift fixed) + 2013-2025 gongbao RMB bal/GDP; junction 2012=2.815/2013=2.825 seamless
+2003,1.5618,trade_balance_gdp,cn,pct_of_gdp,CN trade_balance_gdp: 2000-2012 customs USD bal*FX/GDP (H2 col-shift fixed) + 2013-2025 gongbao RMB bal/GDP; junction 2012=2.815/2013=2.825 seamless
+2004,1.6657,trade_balance_gdp,cn,pct_of_gdp,CN trade_balance_gdp: 2000-2012 customs USD bal*FX/GDP (H2 col-shift fixed) + 2013-2025 gongbao RMB bal/GDP; junction 2012=2.815/2013=2.825 seamless
+2005,4.5516,trade_balance_gdp,cn,pct_of_gdp,CN trade_balance_gdp: 2000-2012 customs USD bal*FX/GDP (H2 col-shift fixed) + 2013-2025 gongbao RMB bal/GDP; junction 2012=2.815/2013=2.825 seamless
+2006,6.555,trade_balance_gdp,cn,pct_of_gdp,CN trade_balance_gdp: 2000-2012 customs USD bal*FX/GDP (H2 col-shift fixed) + 2013-2025 gongbao RMB bal/GDP; junction 2012=2.815/2013=2.825 seamless
+2007,7.5465,trade_balance_gdp,cn,pct_of_gdp,CN trade_balance_gdp: 2000-2012 customs USD bal*FX/GDP (H2 col-shift fixed) + 2013-2025 gongbao RMB bal/GDP; junction 2012=2.815/2013=2.825 seamless
+2008,6.5541,trade_balance_gdp,cn,pct_of_gdp,CN trade_balance_gdp: 2000-2012 customs USD bal*FX/GDP (H2 col-shift fixed) + 2013-2025 gongbao RMB bal/GDP; junction 2012=2.815/2013=2.825 seamless
+2009,3.9277,trade_balance_gdp,cn,pct_of_gdp,CN trade_balance_gdp: 2000-2012 customs USD bal*FX/GDP (H2 col-shift fixed) + 2013-2025 gongbao RMB bal/GDP; junction 2012=2.815/2013=2.825 seamless
+2010,3.0737,trade_balance_gdp,cn,pct_of_gdp,CN trade_balance_gdp: 2000-2012 customs USD bal*FX/GDP (H2 col-shift fixed) + 2013-2025 gongbao RMB bal/GDP; junction 2012=2.815/2013=2.825 seamless
+2011,2.1366,trade_balance_gdp,cn,pct_of_gdp,CN trade_balance_gdp: 2000-2012 customs USD bal*FX/GDP (H2 col-shift fixed) + 2013-2025 gongbao RMB bal/GDP; junction 2012=2.815/2013=2.825 seamless
+2012,2.8145,trade_balance_gdp,cn,pct_of_gdp,CN trade_balance_gdp: 2000-2012 customs USD bal*FX/GDP (H2 col-shift fixed) + 2013-2025 gongbao RMB bal/GDP; junction 2012=2.815/2013=2.825 seamless
+2013,2.825374223206673,trade_balance_gdp,cn,pct_of_gdp,CN trade_balance_gdp: 2000-2012 customs USD bal*FX/GDP (H2 col-shift fixed) + 2013-2025 gongbao RMB bal/GDP; junction 2012=2.815/2013=2.825 seamless
+2014,3.6905523180451967,trade_balance_gdp,cn,pct_of_gdp,CN trade_balance_gdp: 2000-2012 customs USD bal*FX/GDP (H2 col-shift fixed) + 2013-2025 gongbao RMB bal/GDP; junction 2012=2.815/2013=2.825 seamless
+2015,5.433658239595217,trade_balance_gdp,cn,pct_of_gdp,CN trade_balance_gdp: 2000-2012 customs USD bal*FX/GDP (H2 col-shift fixed) + 2013-2025 gongbao RMB bal/GDP; junction 2012=2.815/2013=2.825 seamless
+2016,4.505010569432368,trade_balance_gdp,cn,pct_of_gdp,CN trade_balance_gdp: 2000-2012 customs USD bal*FX/GDP (H2 col-shift fixed) + 2013-2025 gongbao RMB bal/GDP; junction 2012=2.815/2013=2.825 seamless
+2017,3.472039191316396,trade_balance_gdp,cn,pct_of_gdp,CN trade_balance_gdp: 2000-2012 customs USD bal*FX/GDP (H2 col-shift fixed) + 2013-2025 gongbao RMB bal/GDP; junction 2012=2.815/2013=2.825 seamless
+2018,2.5883335610329343,trade_balance_gdp,cn,pct_of_gdp,CN trade_balance_gdp: 2000-2012 customs USD bal*FX/GDP (H2 col-shift fixed) + 2013-2025 gongbao RMB bal/GDP; junction 2012=2.815/2013=2.825 seamless
+2019,2.94490167681773,trade_balance_gdp,cn,pct_of_gdp,CN trade_balance_gdp: 2000-2012 customs USD bal*FX/GDP (H2 col-shift fixed) + 2013-2025 gongbao RMB bal/GDP; junction 2012=2.815/2013=2.825 seamless
+2020,3.651231414606107,trade_balance_gdp,cn,pct_of_gdp,CN trade_balance_gdp: 2000-2012 customs USD bal*FX/GDP (H2 col-shift fixed) + 2013-2025 gongbao RMB bal/GDP; junction 2012=2.815/2013=2.825 seamless
+2021,3.81989559925503,trade_balance_gdp,cn,pct_of_gdp,CN trade_balance_gdp: 2000-2012 customs USD bal*FX/GDP (H2 col-shift fixed) + 2013-2025 gongbao RMB bal/GDP; junction 2012=2.815/2013=2.825 seamless
+2022,4.844625754106529,trade_balance_gdp,cn,pct_of_gdp,CN trade_balance_gdp: 2000-2012 customs USD bal*FX/GDP (H2 col-shift fixed) + 2013-2025 gongbao RMB bal/GDP; junction 2012=2.815/2013=2.825 seamless
+2023,4.59176792941673,trade_balance_gdp,cn,pct_of_gdp,CN trade_balance_gdp: 2000-2012 customs USD bal*FX/GDP (H2 col-shift fixed) + 2013-2025 gongbao RMB bal/GDP; junction 2012=2.815/2013=2.825 seamless
+2024,5.234885299951671,trade_balance_gdp,cn,pct_of_gdp,CN trade_balance_gdp: 2000-2012 customs USD bal*FX/GDP (H2 col-shift fixed) + 2013-2025 gongbao RMB bal/GDP; junction 2012=2.815/2013=2.825 seamless
+2025,6.069996055294358,trade_balance_gdp,cn,pct_of_gdp,CN trade_balance_gdp: 2000-2012 customs USD bal*FX/GDP (H2 col-shift fixed) + 2013-2025 gongbao RMB bal/GDP; junction 2012=2.815/2013=2.825 seamless

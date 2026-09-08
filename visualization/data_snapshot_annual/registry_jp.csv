@@ -1,0 +1,9 @@
+﻿variable_id,country,display_name,unit,frequency,level,group_cn,m3_featured_order,source_file,source_ref,notes
+hjy_cpi_yoy,jp,CPI 同比（年频长史）,%,annual,jphist,补充数据·日本(年度),1,jp/cpi_yoy.csv,JP-HIST 08_jp_hist（04_analysis/jp_panel_1970_2025/annual_JP_cpi_yoy.csv）,1970-2025；1999 起转负、2002 最深（见 hover 实际值）；与 CN 对照为 M3 重点 1 号。
+hjy_investment_gdp,jp,投资率（固定资本形成/GDP）,%,annual,jphist,补充数据·日本(年度),2,jp/investment_gdp.csv,JP-HIST 08_jp_hist（04_analysis/jp_panel_1970_2025/annual_JP_investment_gdp.csv）,1970-2023；68SNA 1970-2000 + 2008SNA 2001-2023（v0.3d 单位修正）；1990 峰值→2000 低位；2024+ 待 2008SNA 更新。
+hjy_m2_yoy,jp,M2 同比（年频长史）,%,annual,jphist,补充数据·日本(年度),3,jp/m2_yoy.csv,JP-HIST 08_jp_hist（04_analysis/jp_panel_1970_2025/annual_JP_m2_yoy.csv）,1970-2025；BOJ/旧口径衔接链。
+hjy_real_gdp_yoy,jp,实际GDP同比（年频）,%,annual,jphist,补充数据·日本(年度),4,jp/real_gdp_yoy.csv,JP-HIST 08_jp_hist（04_analysis/jp_panel_1970_2025/annual_JP_real_gdp_yoy.csv）,1970-2025。
+hjy_wage_yoy,jp,工资同比（年频）,%,annual,jphist,补充数据·日本(年度),6,jp/wage_yoy.csv,JP-HIST 08_jp_hist（04_analysis/jp_panel_1970_2025/annual_JP_wage_yoy.csv）,1970-2025；与 CN 城镇单位口径不可横比（C 级形态比较）。
+hjy_birth_rate,jp,出生率（年频·每千人）,‰,annual,jphist,补充数据·日本(年度),5,jp/birth_rate.csv,JP-HIST 08_jp_hist（04_analysis/jp_panel_1970_2025/annual_JP_birth_rate.csv）,1970-2024；e-Stat 人口動態（1899+ 长史，展示自 1970）；1970s 后单边下行。
+hjy_tfr,jp,总和生育率 TFR,人,annual,jphist,补充数据·日本(年度),0,jp/tfr.csv,JP-HIST 08_jp_hist（04_analysis/jp_panel_1970_2025/annual_JP_tfr.csv）,1970-2024；e-Stat/IPSS。
+hjy_land_price_yoy,jp,公示地价同比（MLIT 全国住宅）,%,annual,jphist,补充数据·日本(年度),0,jp/land_price_yoy.csv,JP-HIST 08_jp_hist（04_analysis/jp_panel_1970_2025/annual_JP_land_price_yoy.csv）,1975-2025；1988=+25%（泡沫史实）；M2 地价长期负区间对照（若与池 PROP* 季度重叠则作长史延伸）。

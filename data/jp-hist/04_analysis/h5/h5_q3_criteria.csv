@@ -1,0 +1,10 @@
+﻿criterion,value
+last3_path,2023:J00;2024:OTHER;2025:J00
+j00_count_last3,2
+crit1_2024_interrupts,True
+last5_path,2021:J00;2022:J90;2023:J00;2024:OTHER;2025:J00
+crit2_no_2run_other_j90_last5,True
+P_J00_to_J00,0.0
+crit3_P_J00toJ00_ge_0p5,False
+persistent_J00,False
+appendix_2000_2012,J90:5;J00:0;OTHER:8

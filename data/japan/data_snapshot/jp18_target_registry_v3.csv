@@ -1,0 +1,13 @@
+target_id,type,anchor,unit,current_feasibility,target_underlying_actual,target_underlying_canonical,target_role,formal_canonical_target_frozen,na_rule,note
+FWD36_STATE,state,D_t,simple_return_pct,GREEN_PROXY,NIKKEI225_PRICE,TOPIX_TRI,PROXY,false,tail_NA,P(D_{t+36m})/P(D_t)-1
+FWD60_STATE,state,D_t,simple_return_pct,GREEN_PROXY,NIKKEI225_PRICE,TOPIX_TRI,PROXY,false,tail_NA,同左 h=60m
+FWD120_STATE,state,D_t,simple_return_pct,GREEN_PROXY,NIKKEI225_PRICE,TOPIX_TRI,PROXY,false,tail_NA,同左 h=120m
+FWD36_EXEC,execution,N(D_t),simple_return_pct,GREEN_PROXY,NIKKEI225_PRICE,TOPIX_TRI,PROXY,false,tail_NA,P(D_{t+36m})/P(N(D_t))-1; N(D_t)=决策日后下一实际TSE session (execution-return, 独立于model)
+FWD60_EXEC,execution,N(D_t),simple_return_pct,GREEN_PROXY,NIKKEI225_PRICE,TOPIX_TRI,PROXY,false,tail_NA,同左 h=60m
+FWD120_EXEC,execution,N(D_t),simple_return_pct,GREEN_PROXY,NIKKEI225_PRICE,TOPIX_TRI,PROXY,false,tail_NA,同左 h=120m
+FWD36_LOSS,loss,D_t,flag,GREEN_PROXY,NIKKEI225_PRICE,TOPIX_TRI,PROXY,false,tail_NA,I(R_state<0) 冻结定义 state-based
+FWD60_LOSS,loss,D_t,flag,GREEN_PROXY,NIKKEI225_PRICE,TOPIX_TRI,PROXY,false,tail_NA,同左 h=60m
+FWD120_LOSS,loss,D_t,flag,GREEN_PROXY,NIKKEI225_PRICE,TOPIX_TRI,PROXY,false,tail_NA,同左 h=120m
+FWD36_MDD,mdd,path_D_t_to_D_{t+36m},pct,AMBER_PRICE_PROXY,NIKKEI225_PRICE,TOPIX_TRI,PROXY,false,tail_NA,MDD^price 非 TRI; Gate C 前不升格
+FWD60_MDD,mdd,path_D_t_to_D_{t+60m},pct,AMBER_PRICE_PROXY,NIKKEI225_PRICE,TOPIX_TRI,PROXY,false,tail_NA,同左
+FWD120_MDD,mdd,path_D_t_to_D_{t+120m},pct,AMBER_PRICE_PROXY,NIKKEI225_PRICE,TOPIX_TRI,PROXY,false,tail_NA,同左

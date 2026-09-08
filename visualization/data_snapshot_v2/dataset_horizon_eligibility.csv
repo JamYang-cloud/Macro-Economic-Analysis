@@ -1,0 +1,13 @@
+﻿dataset,horizon_months,n_predictor_complete,n_target_complete_in_dataset,n_target_complete_global,n_joint_complete,first_joint_month,last_joint_month
+baseline_fixed6,36,211,187,187,175,2009-01,2023-07
+baseline_fixed6,60,211,163,163,151,2009-01,2021-07
+baseline_fixed6,120,211,103,103,91,2009-01,2016-07
+baseline_pool14,36,211,187,187,175,2009-01,2023-07
+baseline_pool14,60,211,163,163,151,2009-01,2021-07
+baseline_pool14,120,211,103,103,91,2009-01,2016-07
+extended_2018_no_afre,36,103,67,187,67,2018-01,2023-07
+extended_2018_no_afre,60,103,43,163,43,2018-01,2021-07
+extended_2018_no_afre,120,103,0,103,0,,
+extended_full10,36,78,67,187,42,2020-02,2023-07
+extended_full10,60,78,43,163,18,2020-02,2021-07
+extended_full10,120,78,0,103,0,,

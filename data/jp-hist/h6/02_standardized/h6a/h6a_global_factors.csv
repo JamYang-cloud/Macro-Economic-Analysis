@@ -1,0 +1,200 @@
+year,factor_id,value,unit,n_obs,note,raw_file
+2025,g1_world_gdp_growth,2.9213,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+2024,g1_world_gdp_growth,2.9,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+2023,g1_world_gdp_growth,2.8594,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+2022,g1_world_gdp_growth,3.44,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+2021,g1_world_gdp_growth,6.4851,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+2020,g1_world_gdp_growth,-2.8862,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+2019,g1_world_gdp_growth,2.6803,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+2018,g1_world_gdp_growth,3.2866,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+2017,g1_world_gdp_growth,3.4466,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+2016,g1_world_gdp_growth,2.7897,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+2015,g1_world_gdp_growth,3.1272,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+2014,g1_world_gdp_growth,3.1685,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+2013,g1_world_gdp_growth,2.8897,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+2012,g1_world_gdp_growth,2.7474,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+2011,g1_world_gdp_growth,3.3143,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+2010,g1_world_gdp_growth,4.5209,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+2009,g1_world_gdp_growth,-1.333,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+2008,g1_world_gdp_growth,2.0916,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+2007,g1_world_gdp_growth,4.4312,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+2006,g1_world_gdp_growth,4.4891,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+2005,g1_world_gdp_growth,4.0592,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+2004,g1_world_gdp_growth,4.4954,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+2003,g1_world_gdp_growth,3.0742,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+2002,g1_world_gdp_growth,2.3189,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+2001,g1_world_gdp_growth,2.0299,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+2000,g1_world_gdp_growth,4.5672,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1999,g1_world_gdp_growth,3.5786,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1998,g1_world_gdp_growth,2.7813,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1997,g1_world_gdp_growth,3.9968,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1996,g1_world_gdp_growth,3.5862,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1995,g1_world_gdp_growth,3.1781,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1994,g1_world_gdp_growth,3.4162,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1993,g1_world_gdp_growth,1.858,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1992,g1_world_gdp_growth,2.0632,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1991,g1_world_gdp_growth,1.2252,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1990,g1_world_gdp_growth,2.7084,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1989,g1_world_gdp_growth,3.6382,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1988,g1_world_gdp_growth,4.5292,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1987,g1_world_gdp_growth,3.7514,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1986,g1_world_gdp_growth,3.305,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1985,g1_world_gdp_growth,3.6599,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1984,g1_world_gdp_growth,4.7281,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1983,g1_world_gdp_growth,2.5769,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1982,g1_world_gdp_growth,0.4111,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1981,g1_world_gdp_growth,1.8882,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1980,g1_world_gdp_growth,1.8153,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1979,g1_world_gdp_growth,4.1409,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1978,g1_world_gdp_growth,4.1371,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1977,g1_world_gdp_growth,3.9414,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1976,g1_world_gdp_growth,5.2212,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1975,g1_world_gdp_growth,0.8145,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1974,g1_world_gdp_growth,1.9919,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1973,g1_world_gdp_growth,6.4577,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1972,g1_world_gdp_growth,5.5378,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1971,g1_world_gdp_growth,4.109,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1970,g1_world_gdp_growth,3.7654,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1969,g1_world_gdp_growth,5.9613,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1968,g1_world_gdp_growth,5.9472,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1967,g1_world_gdp_growth,3.7381,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1966,g1_world_gdp_growth,5.4189,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1965,g1_world_gdp_growth,5.6309,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1964,g1_world_gdp_growth,6.6297,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1963,g1_world_gdp_growth,5.0195,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1962,g1_world_gdp_growth,5.3212,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1961,g1_world_gdp_growth,3.9138,pct,1,WB NY.GDP.MKTP.KD.ZG World,wb_ny_gdp_mktp_kd_zg_world_api.json
+1990,g2_vix_mean,23.0635,index,253,CBOE VIX daily close annual mean (FRED VIXCLS host unreachable; same series),cboe_vix_history_daily.csv
+1991,g2_vix_mean,18.3734,index,252,CBOE VIX daily close annual mean (FRED VIXCLS host unreachable; same series),cboe_vix_history_daily.csv
+1992,g2_vix_mean,15.452,index,254,CBOE VIX daily close annual mean (FRED VIXCLS host unreachable; same series),cboe_vix_history_daily.csv
+1993,g2_vix_mean,12.6862,index,253,CBOE VIX daily close annual mean (FRED VIXCLS host unreachable; same series),cboe_vix_history_daily.csv
+1994,g2_vix_mean,13.9255,index,252,CBOE VIX daily close annual mean (FRED VIXCLS host unreachable; same series),cboe_vix_history_daily.csv
+1995,g2_vix_mean,12.3888,index,252,CBOE VIX daily close annual mean (FRED VIXCLS host unreachable; same series),cboe_vix_history_daily.csv
+1996,g2_vix_mean,16.4422,index,254,CBOE VIX daily close annual mean (FRED VIXCLS host unreachable; same series),cboe_vix_history_daily.csv
+1997,g2_vix_mean,22.364,index,251,CBOE VIX daily close annual mean (FRED VIXCLS host unreachable; same series),cboe_vix_history_daily.csv
+1998,g2_vix_mean,25.603,index,252,CBOE VIX daily close annual mean (FRED VIXCLS host unreachable; same series),cboe_vix_history_daily.csv
+1999,g2_vix_mean,24.3719,index,251,CBOE VIX daily close annual mean (FRED VIXCLS host unreachable; same series),cboe_vix_history_daily.csv
+2000,g2_vix_mean,23.315,index,252,CBOE VIX daily close annual mean (FRED VIXCLS host unreachable; same series),cboe_vix_history_daily.csv
+2001,g2_vix_mean,25.7497,index,248,CBOE VIX daily close annual mean (FRED VIXCLS host unreachable; same series),cboe_vix_history_daily.csv
+2002,g2_vix_mean,27.2925,index,252,CBOE VIX daily close annual mean (FRED VIXCLS host unreachable; same series),cboe_vix_history_daily.csv
+2003,g2_vix_mean,21.9829,index,252,CBOE VIX daily close annual mean (FRED VIXCLS host unreachable; same series),cboe_vix_history_daily.csv
+2004,g2_vix_mean,15.4787,index,253,CBOE VIX daily close annual mean (FRED VIXCLS host unreachable; same series),cboe_vix_history_daily.csv
+2005,g2_vix_mean,12.8071,index,252,CBOE VIX daily close annual mean (FRED VIXCLS host unreachable; same series),cboe_vix_history_daily.csv
+2006,g2_vix_mean,12.8065,index,251,CBOE VIX daily close annual mean (FRED VIXCLS host unreachable; same series),cboe_vix_history_daily.csv
+2007,g2_vix_mean,17.5359,index,251,CBOE VIX daily close annual mean (FRED VIXCLS host unreachable; same series),cboe_vix_history_daily.csv
+2008,g2_vix_mean,32.6949,index,253,CBOE VIX daily close annual mean (FRED VIXCLS host unreachable; same series),cboe_vix_history_daily.csv
+2009,g2_vix_mean,31.479,index,252,CBOE VIX daily close annual mean (FRED VIXCLS host unreachable; same series),cboe_vix_history_daily.csv
+2010,g2_vix_mean,22.5489,index,252,CBOE VIX daily close annual mean (FRED VIXCLS host unreachable; same series),cboe_vix_history_daily.csv
+2011,g2_vix_mean,24.2026,index,252,CBOE VIX daily close annual mean (FRED VIXCLS host unreachable; same series),cboe_vix_history_daily.csv
+2012,g2_vix_mean,17.7989,index,250,CBOE VIX daily close annual mean (FRED VIXCLS host unreachable; same series),cboe_vix_history_daily.csv
+2013,g2_vix_mean,14.2301,index,252,CBOE VIX daily close annual mean (FRED VIXCLS host unreachable; same series),cboe_vix_history_daily.csv
+2014,g2_vix_mean,14.176,index,252,CBOE VIX daily close annual mean (FRED VIXCLS host unreachable; same series),cboe_vix_history_daily.csv
+2015,g2_vix_mean,16.6741,index,252,CBOE VIX daily close annual mean (FRED VIXCLS host unreachable; same series),cboe_vix_history_daily.csv
+2016,g2_vix_mean,15.8256,index,252,CBOE VIX daily close annual mean (FRED VIXCLS host unreachable; same series),cboe_vix_history_daily.csv
+2017,g2_vix_mean,11.0902,index,251,CBOE VIX daily close annual mean (FRED VIXCLS host unreachable; same series),cboe_vix_history_daily.csv
+2018,g2_vix_mean,16.6398,index,251,CBOE VIX daily close annual mean (FRED VIXCLS host unreachable; same series),cboe_vix_history_daily.csv
+2019,g2_vix_mean,15.3879,index,252,CBOE VIX daily close annual mean (FRED VIXCLS host unreachable; same series),cboe_vix_history_daily.csv
+2020,g2_vix_mean,29.2513,index,253,CBOE VIX daily close annual mean (FRED VIXCLS host unreachable; same series),cboe_vix_history_daily.csv
+2021,g2_vix_mean,19.6562,index,252,CBOE VIX daily close annual mean (FRED VIXCLS host unreachable; same series),cboe_vix_history_daily.csv
+2022,g2_vix_mean,25.6371,index,256,CBOE VIX daily close annual mean (FRED VIXCLS host unreachable; same series),cboe_vix_history_daily.csv
+2023,g2_vix_mean,16.849,index,257,CBOE VIX daily close annual mean (FRED VIXCLS host unreachable; same series),cboe_vix_history_daily.csv
+2024,g2_vix_mean,15.5507,index,259,CBOE VIX daily close annual mean (FRED VIXCLS host unreachable; same series),cboe_vix_history_daily.csv
+2025,g2_vix_mean,18.9267,index,258,CBOE VIX daily close annual mean (FRED VIXCLS host unreachable; same series),cboe_vix_history_daily.csv
+1990,g2aux_vix_max,36.47,index,253,annual max (aux),cboe_vix_history_daily.csv
+1991,g2aux_vix_max,36.2,index,252,annual max (aux),cboe_vix_history_daily.csv
+1992,g2aux_vix_max,21.02,index,254,annual max (aux),cboe_vix_history_daily.csv
+1993,g2aux_vix_max,17.3,index,253,annual max (aux),cboe_vix_history_daily.csv
+1994,g2aux_vix_max,23.87,index,252,annual max (aux),cboe_vix_history_daily.csv
+1995,g2aux_vix_max,15.74,index,252,annual max (aux),cboe_vix_history_daily.csv
+1996,g2aux_vix_max,21.99,index,254,annual max (aux),cboe_vix_history_daily.csv
+1997,g2aux_vix_max,38.2,index,251,annual max (aux),cboe_vix_history_daily.csv
+1998,g2aux_vix_max,45.74,index,252,annual max (aux),cboe_vix_history_daily.csv
+1999,g2aux_vix_max,32.98,index,251,annual max (aux),cboe_vix_history_daily.csv
+2000,g2aux_vix_max,33.49,index,252,annual max (aux),cboe_vix_history_daily.csv
+2001,g2aux_vix_max,43.74,index,248,annual max (aux),cboe_vix_history_daily.csv
+2002,g2aux_vix_max,45.08,index,252,annual max (aux),cboe_vix_history_daily.csv
+2003,g2aux_vix_max,34.69,index,252,annual max (aux),cboe_vix_history_daily.csv
+2004,g2aux_vix_max,21.58,index,253,annual max (aux),cboe_vix_history_daily.csv
+2005,g2aux_vix_max,17.74,index,252,annual max (aux),cboe_vix_history_daily.csv
+2006,g2aux_vix_max,23.81,index,251,annual max (aux),cboe_vix_history_daily.csv
+2007,g2aux_vix_max,31.09,index,251,annual max (aux),cboe_vix_history_daily.csv
+2008,g2aux_vix_max,80.86,index,253,annual max (aux),cboe_vix_history_daily.csv
+2009,g2aux_vix_max,56.65,index,252,annual max (aux),cboe_vix_history_daily.csv
+2010,g2aux_vix_max,45.79,index,252,annual max (aux),cboe_vix_history_daily.csv
+2011,g2aux_vix_max,48.0,index,252,annual max (aux),cboe_vix_history_daily.csv
+2012,g2aux_vix_max,26.66,index,250,annual max (aux),cboe_vix_history_daily.csv
+2013,g2aux_vix_max,20.49,index,252,annual max (aux),cboe_vix_history_daily.csv
+2014,g2aux_vix_max,26.25,index,252,annual max (aux),cboe_vix_history_daily.csv
+2015,g2aux_vix_max,40.74,index,252,annual max (aux),cboe_vix_history_daily.csv
+2016,g2aux_vix_max,28.14,index,252,annual max (aux),cboe_vix_history_daily.csv
+2017,g2aux_vix_max,16.04,index,251,annual max (aux),cboe_vix_history_daily.csv
+2018,g2aux_vix_max,37.32,index,251,annual max (aux),cboe_vix_history_daily.csv
+2019,g2aux_vix_max,25.45,index,252,annual max (aux),cboe_vix_history_daily.csv
+2020,g2aux_vix_max,82.69,index,253,annual max (aux),cboe_vix_history_daily.csv
+2021,g2aux_vix_max,37.21,index,252,annual max (aux),cboe_vix_history_daily.csv
+2022,g2aux_vix_max,36.45,index,256,annual max (aux),cboe_vix_history_daily.csv
+2023,g2aux_vix_max,26.52,index,257,annual max (aux),cboe_vix_history_daily.csv
+2024,g2aux_vix_max,38.57,index,259,annual max (aux),cboe_vix_history_daily.csv
+2025,g2aux_vix_max,52.33,index,258,annual max (aux),cboe_vix_history_daily.csv
+1970,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+1971,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+1972,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+1973,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+1974,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+1975,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+1976,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+1977,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+1978,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+1979,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+1980,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+1981,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+1982,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+1983,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+1984,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+1985,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+1986,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+1987,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+1988,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+1989,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+1990,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+1991,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+1992,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+1993,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+1994,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+1995,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+1996,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+1997,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+1998,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+1999,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+2000,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+2001,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+2002,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+2003,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+2004,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+2005,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+2006,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+2007,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+2008,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+2009,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+2010,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+2011,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+2012,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+2013,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+2014,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+2015,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+2016,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+2017,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+2018,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+2019,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+2020,g3_covid_dummy,1,0/1,1,1(2020<=t<=2022),-
+2021,g3_covid_dummy,1,0/1,1,1(2020<=t<=2022),-
+2022,g3_covid_dummy,1,0/1,1,1(2020<=t<=2022),-
+2023,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+2024,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+2025,g3_covid_dummy,0,0/1,1,1(2020<=t<=2022),-
+2020,oxcgrt_stringency_cn_mean,68.27,index,366,OxCGRT StringencyIndex_Average annual mean,oxcgrt_compact_national_v1.csv
+2021,oxcgrt_stringency_cn_mean,74.12,index,365,OxCGRT StringencyIndex_Average annual mean,oxcgrt_compact_national_v1.csv
+2022,oxcgrt_stringency_cn_mean,77.56,index,365,OxCGRT StringencyIndex_Average annual mean,oxcgrt_compact_national_v1.csv
+2020,oxcgrt_stringency_jp_mean,32.57,index,366,OxCGRT StringencyIndex_Average annual mean,oxcgrt_compact_national_v1.csv
+2021,oxcgrt_stringency_jp_mean,48.85,index,365,OxCGRT StringencyIndex_Average annual mean,oxcgrt_compact_national_v1.csv
+2022,oxcgrt_stringency_jp_mean,39.68,index,365,OxCGRT StringencyIndex_Average annual mean,oxcgrt_compact_national_v1.csv

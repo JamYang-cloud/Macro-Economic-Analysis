@@ -1,0 +1,4 @@
+﻿factor,artifact_internal_path,artifact_sha256,parent_package,parent_package_id,parent_package_sha256,transform
+World GDP growth (annual),h6/01_raw/global_shocks/wb_ny_gdp_mktp_kd_zg_world_api.json,67a8e3937833f92edcfd3f37c444ff5dfb76ce0ad794b054da0ea898af6e2536,H6-A A1.1 (frozen),JP-HIST_H6A1.1_PATCH_关闭P1_20260907.zip,65483a0db6db5caedfd4172c2f94963be309cd8d90b4119f6e75438085bf5bce,"annual growth -> quarterly step (4 quarters same value), NO smoothing"
+VIX (quarterly mean),h6/01_raw/global_shocks/cboe_vix_history_daily.csv,9258a25814fb936e7df32a96bcf3914fdbf342afb33cdf8759cdfbc8064ddb72,H6-A A1.1 (frozen),JP-HIST_H6A1.1_PATCH_关闭P1_20260907.zip,65483a0db6db5caedfd4172c2f94963be309cd8d90b4119f6e75438085bf5bce,daily close -> quarterly mean; Model B only (1990Q1+)
+COVID dummy,spec §7 frozen (no external file),FROZEN_RULE_2020Q1-2022Q4,H6-B B0 v1.2.3 spec §7,,FROZEN_RULE_SPEC_v1.2.3,2020Q1-2022Q4 = 1 else 0

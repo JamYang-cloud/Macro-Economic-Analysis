@@ -1,0 +1,71 @@
+JP-HIST GATE H2 — STANDARDIZATION FREEZE
+签署日期：2026-09-06
+签署依据：外部审核报告 JP-HIST_H2_v0.3_targeted_reaudit_外部审核报告_20260906.md（PASS — 建议签署 H2 STANDARDIZATION FREEZE）
+审核判定节选："上一轮两个 P0 均已实质修复，未发现新的 Freeze Blocker…… JP-HIST H2 Standardization 可以正式冻结。"
+
+================================================================
+1. FREEZE 元数据
+================================================================
+package_id            : JP-HIST-H2-STD-20260906-v03
+freeze_version        : H2-STANDARDIZATION-FREEZE-20260906
+component_version     : xlsx v0.2 / ZIP v0.2 / README v0.2 / outer SHA v0.3 / coverage_map v0.2 / quality_report v0.2 / standardized_manifest v0.1
+freeze_timestamp      : 2026-09-06
+gate_result           : PASS（外层 SHA closed set / ZIP 48 文件 / 41 CSV / coverage / semantic / anchor 20/20 / H1 stage-gate 全 PASS）
+
+================================================================
+2. 冻结断言（15）
+================================================================
+F01  Standardized 层 41 文件（JP 24 / CN 17）统一 schema year,value,variable,country,unit,source_note
+F02  h2_standardized_manifest_v0.1.csv 与 41 文件 SHA256/bytes/rows/start/end 全对齐（41/41）
+F03  coverage gate valid 定义 = year row 存在 AND value.notna()（P0-1 修复后冻结）
+F04  coverage map 52 变量：JP 16 FULL / 4 PARTIAL / 3 ANCHOR / 3 NOT_MAPPED；CN 13 FULL / 4 PARTIAL / 9 NOT_MAPPED
+F05  semantic_status 5 类分布：EXACT 31 / PRE_TRANSFORM 4 / PROXY_FLOW 1 / PROXY_STOCK 1 / ANCHOR 3（NOT_MAPPED 12 行 blank）
+F06  required_h3_transform 已随 PRE_TRANSFORM/PROXY 行填写（H3 强制消费）
+F07  anchor_tests 20/20 PASS（独立复算一致）
+F08  JP 人口 3 系列（working_age/dependency/youth）= ANCHOR_COVERAGE 普查锚点，非年度连续
+F09  CN 3-4 表人口系列 = 1991-2012 逐年连续（非 anchor），15-64 canonical
+F10  rate 聚合规则冻结：policy_rate=year-end（无事件年沿用前值=利率制度事实）；其余 rate=annual avg
+F11  growth = annual avg YoY；asset price = calendar year return（禁 level concat）
+F12  ESRI 68SNA 年度止 2000（2001Q1 不完整年剔除）；2001+ 需 93SNA/2008SNA 连接（H2 后期）
+F13  RETROSPECTIVE_HISTORICAL 非 PIT；direct_model_use=false
+F14  比较层变换（robust z/percentile/ΔCBR）属 H3 structural state 层，H2 不含
+F15  H1 FREEZE 依赖闭合（FREEZE_H1_20260906.txt 在 governance 内）
+
+================================================================
+3. 冻结写入约束（7）
+================================================================
+W01  H2 冻结后 standardized CSV 变更须显式 revision（v0.2+）并更新 manifest/coverage/quality 三件套
+W02  coverage map 的 status/semantic 变更须同时更新 freeze 断言引用
+W03  H3 不得绕过 semantic_status 直接当 exact 可比变量；PRE_TRANSFORM 须先执行 required_h3_transform
+W04  H3 不得把 PROXY_FLOW 与 PROXY_STOCK 放进同一 exact-comparison feature
+W05  H3 不得把 ANCHOR 按 annual continuous 插值后静默参与主模型
+W06  NOT_MAPPED 在 H3 保持 NA/GAP，不得自动填充
+W07  coverage_ratio = round(n_valid_in_window / n_expected, 3)（冻结舍入规则，P1-3）
+
+================================================================
+4. H2 后期待办（不阻止 FREEZE，记入技能）
+================================================================
+B01  JP GDP 2001+ 拼接（93SNA/2008SNA 官方连接序列 = 新采集，JP-HIST 目标窗 1970-1995 已全覆盖，可选）
+B02  CN 2013-2025 近年段（未授权 H1-P1）
+B03  cgb10y 2002-2007（未授权 H1-P1）
+B04  corp 系列（corp_leverage/corp_land_share/corp_profit 等 3 NOT_MAPPED）JP 侧 income.xls 科目解析
+B05  standardized manifest 增加 lineage/transform_id machine-readable edge（P1-2）
+B06  JP credit_flow 2000 负值核查（BIS 口径修正疑点，H3 前查）
+
+================================================================
+5. 冻结资产哈希（本 record 签署时点）
+================================================================
+SHA256_manifest_h2_v0.3.txt (outer closed set):  eb08a76f9279d40e155f
+h2_standardized_manifest_v0.1.csv:              92c5a783a295a4789892
+h2_coverage_map_v0.2.csv:                        f306688c219107da2fcf
+h2_quality_gate_report_v0.2.md:                  3f9c15856567f9b7467d
+h2_standardization_spec_20260906.md:             c576fe80371d1f70d058
+FREEZE_H1_20260906.txt:                          22b1d7029b3c01fb94b0
+外部审核报告 v0.3 (PASS):                         3ac55eebdcb20fe90a42
+
+================================================================
+6. H3 前置 gate（审核 §11 P1-1 要求）
+================================================================
+G-H3-1  semantic-aware transformation layer 建立（EXACT/PRE_TRANSFORM/PROXY_FLOW/PROXY_STOCK/ANCHOR 驱动的可审计 feature construction）
+G-H3-2  H3 代码对未处理的 semantic 状态硬 fail（不静默通过）
+G-H3-3  进入 H3 前完成本 FREEZE record 落档（RECORD.md / DECISIONS.md / 技能同步）

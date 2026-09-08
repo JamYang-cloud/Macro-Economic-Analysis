@@ -1,0 +1,74 @@
+variable_id,display_name,group,layer,economic_block,frequency,unit,model_tier,persistence_policy,observed_start,observed_end,coverage_rate,risk,na_summary,notes
+cre.new_loan,新增人民币贷款,货币金融,RAW_STATE,Credit,monthly,亿元,Supplemental,PERIODIC_REQUIRE_FRESHNESS,2008-02,2026-07,99.6%,,NOT_RELEASED=1,审核P0-2: 退出Baseline特征
+cre.tsf_flow,社融增量,货币金融,RAW_STATE,Credit,monthly,亿元,Extended,PERIODIC_REQUIRE_FRESHNESS,2015-02,2026-07,61.9%,,NOT_APPLICABLE=84;NOT_RELEASED=1,与存量互补
+cre.tsf_stock,社融存量,货币金融,RAW_STATE,Credit,monthly,万亿元,Extended,PERIODIC_REQUIRE_FRESHNESS,2015-01,2026-07,47.1%,,NOT_APPLICABLE=83;NOT_RELEASED=1;RETROSPECTIVE_NOT_AVAILABLE=34,审核P0-1: 从Baseline降级
+gold.au9999_q,Au9999季度末,资本,RAW_STATE,Gold,quarterly,元/克,Extended,LOW_FREQ_HOLD_WITH_STALE,2016-03,2026-07,56.1%,,NOT_APPLICABLE=98,与基准互证中位差0.81
+gold.sge,上海金基准价(早盘第1轮),资本,RAW_STATE,Gold,daily,元/克,Extended,MARKET_LAST_VALID,2016-04,2026-07,55.6%,,NOT_APPLICABLE=99,审核P0-8: canonical_source为Step2.2生成的拼接文件; 源段: sge_gold_benchmark_history_2016_2023.csv + sge_gold_benchmark_daily.csv
+gro.export_yoy,出口同比,宏观,RAW_STATE,Growth,monthly,%,Extended,PERIODIC_REQUIRE_FRESHNESS,2008-01,2025-10,94.2%,,SOURCE_GAP=13,升级核心前须验证增量
+gro.fai_official_cum,固投官方累计同比,宏观,RAW_STATE,Growth,monthly,%,Current,PERIODIC_REQUIRE_FRESHNESS,2021-09,2026-07,24.2%,,NOT_APPLICABLE=163;NOT_RELEASED=1;SOURCE_GAP=5,Baseline暂不用FAI
+gro.fai_official_samom,固投官方季调环比,宏观,RAW_STATE,Growth,monthly,%,Current,PERIODIC_REQUIRE_FRESHNESS,2022-11,2026-07,18.4%,,NOT_APPLICABLE=163;NOT_RELEASED=1;SOURCE_GAP=18,
+gro.gdp_abs,GDP绝对值(累计),宏观,RAW_STATE,Growth,quarterly,亿元,Extended,LOW_FREQ_HOLD_WITH_STALE,2008-01,2026-07,100.0%,,,可相减得单季名义
+gro.gdp_yoy,GDP同比(累计),宏观,RAW_STATE,Growth,quarterly,%,Baseline,LOW_FREQ_HOLD_WITH_STALE,2008-01,2026-07,100.0%,,,slow-moving state; 勿制造月度GDP; 勿把累计同比相减当单季
+gro.import_yoy,进口同比,宏观,RAW_STATE,Growth,monthly,%,Extended,PERIODIC_REQUIRE_FRESHNESS,2008-01,2025-10,96.0%,,SOURCE_GAP=9,
+gro.ip_cum_yoy,工业增加值累计同比,宏观,RAW_STATE,Growth,monthly,%,Extended,PERIODIC_REQUIRE_FRESHNESS,2008-03,2026-07,99.1%,,NOT_APPLICABLE=1;NOT_RELEASED=1,
+gro.ip_yoy,工业增加值同比,宏观,RAW_STATE,Growth,monthly,%,Baseline,PERIODIC_REQUIRE_FRESHNESS,2008-03,2026-07,99.1%,,NOT_APPLICABLE=1;NOT_RELEASED=1,release_date不可靠段已保守处理
+gro.pmi,制造业PMI,宏观,RAW_STATE,Growth,monthly,指数,Baseline,PERIODIC_REQUIRE_FRESHNESS,2008-02,2026-07,99.6%,,NOT_RELEASED=1,已季调
+gro.pmi_composite,PMI综合产出指数,宏观,RAW_STATE,Growth,monthly,指数,Extended,PERIODIC_REQUIRE_FRESHNESS,2021-10,2026-07,26.0%,,NOT_APPLICABLE=164;NOT_RELEASED=1,
+gro.pmi_employment,PMI从业人员指数,宏观,RAW_STATE,Growth,monthly,指数,Extended,PERIODIC_REQUIRE_FRESHNESS,2018-01,2026-07,46.2%,,NOT_APPLICABLE=119;NOT_RELEASED=1,
+gro.pmi_new_orders,PMI新订单指数,宏观,RAW_STATE,Growth,monthly,指数,Extended,PERIODIC_REQUIRE_FRESHNESS,2018-01,2026-07,46.2%,,NOT_APPLICABLE=119;NOT_RELEASED=1,
+gro.pmi_nonmanufacturing,PMI非制造业商务活动指数,宏观,RAW_STATE,Growth,monthly,指数,Extended,PERIODIC_REQUIRE_FRESHNESS,2021-10,2026-07,26.0%,,NOT_APPLICABLE=164;NOT_RELEASED=1,
+gro.pmi_production,PMI生产指数,宏观,RAW_STATE,Growth,monthly,指数,Extended,PERIODIC_REQUIRE_FRESHNESS,2018-01,2026-07,46.2%,,NOT_APPLICABLE=119;NOT_RELEASED=1,审核P0-6拆分
+gro.pmi_raw_material_inventory,PMI原材料库存指数,宏观,RAW_STATE,Growth,monthly,指数,Extended,PERIODIC_REQUIRE_FRESHNESS,2018-01,2026-07,46.2%,,NOT_APPLICABLE=119;NOT_RELEASED=1,
+gro.pmi_supplier_delivery,PMI供应商配送时间指数,宏观,RAW_STATE,Growth,monthly,指数,Extended,PERIODIC_REQUIRE_FRESHNESS,2018-01,2026-07,46.2%,,NOT_APPLICABLE=119;NOT_RELEASED=1,逆指数(合成时反向)
+gro.retail_sa_mom,社零季调环比(官方),宏观,RAW_STATE,Growth,monthly,%,Current,PERIODIC_REQUIRE_FRESHNESS,2023-08,2023-08,0.4%,HIGH,NOT_APPLICABLE=163;NOT_RELEASED=1;SOURCE_GAP=56;STALE_SOURCE=2,"勿用主表普通环比当SA MoM; Archive仅2条(2023-07/2026-07), 2021-08~2026-06未归档=SOURCE_GAP"
+gro.retail_yoy,社会消费品零售同比,宏观,RAW_STATE,Growth,monthly,%,Baseline,PERIODIC_REQUIRE_FRESHNESS,2008-02,2026-07,99.6%,,NOT_RELEASED=1,官方2026-07=0.6%
+hh.deposit,居民储蓄存款,居民,RAW_STATE,Household,monthly,亿元,Current,PERIODIC_REQUIRE_FRESHNESS,2024-03,2026-07,13.0%,,NOT_APPLICABLE=193;NOT_RELEASED=1,短历史
+hh.deposit_hist,储蓄存款(货币明细1978+),居民,RAW_STATE,Household,monthly,%,Extended,PERIODIC_REQUIRE_FRESHNESS,2008-01,2012-03,21.5%,HIGH,SOURCE_GAP=175,长历史替代
+hh.income_annual,居民人均可支配收入(年度),居民,RAW_STATE,Household,annual,元,Extended,LOW_FREQ_HOLD_WITH_STALE,2014-03,2021-09,40.8%,,NOT_APPLICABLE=71;NOT_RELEASED=3;HANDOFF_TO_QUARTERLY=58,衔接季度表FY段
+hh.income_quarterly,居民人均可支配收入(季度累计),居民,RAW_STATE,Household,quarterly,元,Extended,LOW_FREQ_HOLD_WITH_STALE,2021-10,2026-07,26.0%,,NOT_APPLICABLE=164;NOT_RELEASED=1,迁移重发报告标题年判定
+inf.cpi_core,核心CPI同比,宏观,RAW_STATE,Inflation,monthly,%,Current,PERIODIC_REQUIRE_FRESHNESS,,,0.0%,,NOT_APPLICABLE=163;NOT_RELEASED=1;SOURCE_GAP=59,Archive仅2026-07一条; 2021-08~2026-06未归档=SOURCE_GAP(Current State需补采)
+inf.cpi_yoy,CPI同比,宏观,RAW_STATE,Inflation,monthly,%,Baseline,PERIODIC_REQUIRE_FRESHNESS,2008-02,2026-07,99.6%,,NOT_RELEASED=1,当月值列=100+同比口径
+inf.ppi_yoy,PPI同比,宏观,RAW_STATE,Inflation,monthly,%,Baseline,PERIODIC_REQUIRE_FRESHNESS,2008-01,2026-07,100.0%,,,
+inf.ppirm,PPIRM同比(工业生产者购进价格),宏观,RAW_STATE,Inflation,monthly,%,Current,PERIODIC_REQUIRE_FRESHNESS,,,0.0%,,NOT_APPLICABLE=163;NOT_RELEASED=1;SOURCE_GAP=59,Archive仅2026-07一条; 2021-08~2026-06未归档=SOURCE_GAP
+liq.cbb,央行资产负债表,货币金融,RAW_STATE,Liquidity,monthly,亿元,Supplemental,PERIODIC_REQUIRE_FRESHNESS,2008-01,2026-07,100.0%,,,结构复杂缺失多
+liq.m0_yoy,M0同比,货币金融,RAW_STATE,Liquidity,monthly,%,Extended,PERIODIC_REQUIRE_FRESHNESS,2008-02,2026-07,99.6%,,NOT_RELEASED=1,
+liq.m1_yoy,M1同比,货币金融,RAW_STATE,Liquidity,monthly,%,Extended,PERIODIC_REQUIRE_FRESHNESS,2008-02,2026-07,99.6%,,NOT_RELEASED=1,2008-2024旧口径
+liq.m2_yoy,M2同比,货币金融,RAW_STATE,Liquidity,monthly,%,Baseline,PERIODIC_REQUIRE_FRESHNESS,2008-02,2026-07,99.6%,,NOT_RELEASED=1,用同比非余额水平
+liq.money_detail,货币供应明细(1978+),货币金融,RAW_STATE,Liquidity,monthly,%,Extended,PERIODIC_REQUIRE_FRESHNESS,2008-01,2026-07,100.0%,,,长历史参考
+mar.market_balance,全市场融资余额,货币金融,RAW_STATE,Margin,monthly,亿元,Extended,PERIODIC_REQUIRE_FRESHNESS,2012-01,2025-02,70.9%,HIGH,NOT_APPLICABLE=48;SOURCE_GAP=15;STALE_SOURCE=2,全市场口径
+mar.sz_monthly,深市融资余额(月度),货币金融,RAW_STATE,Margin,monthly,元,Current,PERIODIC_REQUIRE_FRESHNESS,2010-04,2026-07,87.9%,,NOT_APPLICABLE=26;NOT_RELEASED=1,深市代理用于Current
+mkt.000985,中证全指,资本,RAW_STATE,Market,daily,指数点,Extended,MARKET_LAST_VALID,2008-01,2026-07,100.0%,,,广义A股宽基价格参考(审计后重建源)
+mkt.hs300_510300,沪深300全收益代理(ETF),资本,RAW_STATE,Market,daily,净值,Extended,MARKET_LAST_VALID,2012-05,2026-07,76.7%,,NOT_APPLICABLE=52,含费口径; ETF核对用不替代H00300
+mkt.hs300_price,沪深300价格,资本,RAW_STATE,Market,daily,指数点,Baseline,MARKET_LAST_VALID,2008-01,2026-07,100.0%,,,"用于构造momentum/drawdown, 点位不作predictor"
+mkt.hs300_tri,沪深300全收益(TRI),资本,RAW_STATE,Market,daily,指数点,Baseline,MARKET_LAST_VALID,2008-01,2026-07,100.0%,,,主因变量TRI; 目标源不直接作特征
+mkt.hs300_volume,沪深300成交量,资本,RAW_STATE,Market,daily,SOURCE_NATIVE待核,Extended,MARKET_LAST_VALID,2008-01,2026-07,100.0%,,,"字段名volume, 单位待核(勿当成交额/元)"
+mkt.sh000001,上证综指,资本,RAW_STATE,Market,daily,指数点,Extended,MARKET_LAST_VALID,2008-01,2026-07,100.0%,,,宽基参考
+mkt.sz399001,深证成指,资本,RAW_STATE,Market,daily,指数点,Extended,MARKET_LAST_VALID,2008-01,2026-07,100.0%,,,宽基参考
+rate.cn10y,中国10年国债收益率,货币金融,RAW_STATE,Rates,daily,%,Baseline,MARKET_LAST_VALID,2008-01,2026-07,100.0%,,,利率主锚
+rate.cn2y,中国2年国债收益率,货币金融,RAW_STATE,Rates,daily,%,Baseline,MARKET_LAST_VALID,2008-01,2026-07,100.0%,,,期限利差构成
+rate.cn30y,中国30年国债收益率,货币金融,RAW_STATE,Rates,daily,%,Extended,MARKET_LAST_VALID,2008-01,2026-07,100.0%,,,
+rate.cn5y,中国5年国债收益率,货币金融,RAW_STATE,Rates,daily,%,Extended,MARKET_LAST_VALID,2008-01,2026-07,100.0%,,,
+rate.fdr007_mean,FDR007回购定盘利率,货币金融,RAW_STATE,Rates,daily,%,Extended,PERIODIC_REQUIRE_FRESHNESS,2017-06,2025-12,46.2%,,NOT_APPLICABLE=112;SOURCE_GAP=7;COVERAGE_LOW=1,存款类机构资金价
+rate.fr007_mean,FR007回购定盘利率,货币金融,RAW_STATE,Rates,daily,%,Baseline,PERIODIC_REQUIRE_FRESHNESS,2008-01,2026-07,100.0%,,,短端资金主利率; 模型用fr007_monthly
+rate.lpr1y,LPR 1年期,货币金融,RAW_STATE,Rates,event,%,Extended,EVENT_PERSIST_UNTIL_NEXT,2019-08,2026-07,37.7%,,NOT_APPLICABLE=139,贷款定价锚
+rate.lpr5y,LPR 5年期,货币金融,RAW_STATE,Rates,event,%,Extended,EVENT_PERSIST_UNTIL_NEXT,2019-08,2026-07,37.7%,,NOT_APPLICABLE=139,同lpr1y过滤规则
+rate.policy7d,7天逆回购政策利率,货币金融,RAW_STATE,Rates,event,%,Extended,EVENT_PERSIST_UNTIL_NEXT,2015-01,2026-07,62.3%,,NOT_APPLICABLE=84,2024-07-22起为主要政策利率
+rate.rrr_announced,存款准备金率(公布口径),货币金融,RAW_STATE,Rates,event,%,Extended,EVENT_PERSIST_UNTIL_NEXT,2008-01,2026-07,100.0%,,,58条
+rate.rrr_effective,存款准备金率(生效口径),货币金融,RAW_STATE,Rates,event,%,Extended,EVENT_PERSIST_UNTIL_NEXT,2008-01,2026-07,100.0%,,,58条
+rate.shibor3m_mean,SHIBOR 3M,货币金融,RAW_STATE,Rates,daily,%,Extended,PERIODIC_REQUIRE_FRESHNESS,2008-01,2026-07,91.0%,,SOURCE_GAP=6;COVERAGE_LOW=14,Baseline备选(FR007优先); canonical 4555天
+rate.shibor_on_mean,SHIBOR O/N,货币金融,RAW_STATE,Rates,daily,%,Extended,PERIODIC_REQUIRE_FRESHNESS,2008-01,2026-07,91.0%,,SOURCE_GAP=6;COVERAGE_LOW=14,隔夜资金价
+rate.us10y,美国10年国债收益率,货币金融,RAW_STATE,Rates,daily,%,Extended,MARKET_LAST_VALID,2008-01,2026-07,100.0%,,,中美利差/扩展用
+val.pb,沪深300市净率,资本,RAW_STATE,Valuation,daily,倍,Baseline,MARKET_LAST_VALID,2008-01,2026-07,100.0%,,,估值锚
+val.pe_median,沪深300市盈率中位数,资本,RAW_STATE,Valuation,daily,倍,Extended,MARKET_LAST_VALID,2008-01,2026-07,100.0%,,,横截面分布参考
+val.pe_static,沪深300静态市盈率,资本,RAW_STATE,Valuation,daily,倍,Extended,MARKET_LAST_VALID,2008-01,2026-07,100.0%,,,口径参考
+val.pe_ttm,沪深300滚动市盈率(TTM),资本,RAW_STATE,Valuation,daily,倍,Baseline,MARKET_LAST_VALID,2008-01,2026-07,100.0%,,,估值锚; EY=1/PE; 弃静态/中位/等权
+afre_yoy,"社融存量同比, 2020-02起",货币金融,FEATURE,CREDIT,monthly,PCT,EXTENDED,,2020-02,2026-07,35.0%,,NOT_RELEASED=84;LEGACY_REGIME=61,100*(AFRE_t/AFRE_t-12 - 1)
+delta_pmi,PMI环比,宏观,FEATURE,GROWTH,monthly,POINT,BASELINE,,2008-03,2026-07,99.1%,,NOT_RELEASED=2,PMI_t - PMI_t-1 (ref连续)
+ey,盈利收益率,资本,FEATURE,VALUATION,monthly,PCT,BASELINE,,2008-01,2026-07,100.0%,,,100/PE_ttm
+eyg,股债估值差(不称ERP),资本,FEATURE,VALUATION,monthly,PP,BASELINE,,2008-01,2026-07,100.0%,,,100/PE_ttm - cn10y
+fr007_p90,资金面压力(辅助),货币金融,FEATURE,RATES,monthly,PCT,SUPPLEMENTAL,,2008-01,2026-07,100.0%,,,月内P90
+fr007_vol,资金面波动(辅助),货币金融,FEATURE,RATES,monthly,PCT,SUPPLEMENTAL,,2008-01,2026-07,100.0%,,,月内样本std
+loans_12m,12M贷款滚动和,货币金融,FEATURE,CREDIT,monthly,CNY_100M,BASELINE,,2009-01,2026-07,94.6%,,NOT_RELEASED=1;INSUFFICIENT_HISTORY=11,Σ12连续参考月 new_loan
+m1_m2_gap,流动性先行(待实证),货币金融,FEATURE,LIQUIDITY,monthly,PP,EXTENDED,,2008-02,2026-07,99.6%,,NOT_RELEASED=1,m1_yoy - m2_yoy
+pmi_gap,PMI荣枯线余量,宏观,FEATURE,GROWTH,monthly,POINT,BASELINE,,2008-02,2026-07,99.6%,,NOT_RELEASED=1,gro.pmi - 50
+term_spread,期限利差,货币金融,FEATURE,RATES,monthly,PP,BASELINE,,2008-01,2026-07,100.0%,,,cn10y - cn2y

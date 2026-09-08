@@ -1,0 +1,26 @@
+H6-A A1 QC log 2026-09-07T04:56:38Z
+g1 world_gdp_growth: 2025-1961 n=65 na=1
+   spot: 2020=[-2.8862], 2009=[-1.333], 2024=[2.9]
+g2 vix_mean: 1990-2025 n_years=36 (2026 partial excluded)
+   spot: 2020 mean=[29.2513], max=[82.69]; 2008 mean=[32.6949]; 2009 max=[56.65]
+g3 covid_dummy: 1970-2025, =1 in 2020-2022
+aux stringency CN/JP 2020-2022 n_days: CN2020=366, CN2021=365, CN2022=365, JP2020=366, JP2021=365, JP2022=365
+   oxcgrt_stringency_cn_mean 2020 = 68.27
+   oxcgrt_stringency_cn_mean 2021 = 74.12
+   oxcgrt_stringency_cn_mean 2022 = 77.56
+   oxcgrt_stringency_jp_mean 2020 = 32.57
+   oxcgrt_stringency_jp_mean 2021 = 48.85
+   oxcgrt_stringency_jp_mean 2022 = 39.68
+h6a_global_factors.csv rows=199
+h6a_event_mask.csv rows=10
+   mask JP 1997 E01 -> jp_candidate
+   mask JP 1998 E01 -> jp_candidate
+   mask JP 2000 E02 -> jp_candidate
+   mask JP 2001 E02 -> jp_candidate
+   mask JP 2002 E02 -> jp_candidate
+   mask JP 2008 E03 -> jp_candidate
+   mask JP 2009 E03 -> jp_candidate
+   mask CN 2020 E05 -> window_aggregation,cn_summary
+   mask CN 2021 E05 -> window_aggregation,cn_summary
+   mask CN 2022 E05 -> window_aggregation,cn_summary
+provenance manifest rows=3

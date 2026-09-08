@@ -1,0 +1,3 @@
+factor_id,planned_provider,actual_provider,provider_change_status,concept_change,errata_file,approved_by,date
+g2_vix_mean,FRED (VIXCLS),CBOE Official (VIX daily close),APPROVED_ERRATUM,NO,errata/H6A1_FRED_to_CBOE_errata.md,external audit (JP-HIST_H6A1_因子采集_外部审核报告_20260907.md §20),2026-09-07
+g2aux_vix_max,FRED (VIXCLS),CBOE Official (VIX daily close),APPROVED_ERRATUM,NO,errata/H6A1_FRED_to_CBOE_errata.md,external audit (同上 §20),2026-09-07

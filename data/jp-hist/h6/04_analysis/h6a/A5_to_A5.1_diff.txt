@@ -1,0 +1,25 @@
+# A5 -> A5.1 diff (external REWORK closure, governance/lineage only)
+date: 2026-09-07
+basis: JP-HIST_H6A_A5_全链汇总_外部审核报告_20260907.md (P1x2 / P2x2)
+
+## Changes
+- lineage schema upgraded to recommended 15-field (stage, artifact_id, artifact_name, artifact_sha256,
+  artifact_role, parent_artifact_ids, parent_package, parent_package_sha256, artifact_internal_path,
+  freeze_timestamp, run_started_at, run_completed_at, status, scope, verification_status);
+  file h6a_unified_lineage_v1.1.csv (v1.0 kept as-is, read-only)
+- parent_artifact_ids: filled for all 27 rows (ROOT for specs/registries); was 22/27 empty
+- verification: Merkle-like parent-package closure (external path B) - 8 stage zip SHAs locked in
+  h6a_parent_package_registry.csv; each non-A5-carried artifact located inside parent zip by content SHA
+  (artifact_internal_path records in-zip label); verification_status per row
+- machine QC h6a_lineage_qc_v1.1.txt: parent_missing=0, historical_hash_only=0, sha_verified=27,
+  sha_failed=0, VERIFIED_IN_A5_PACKAGE=10, VERIFIED_IN_PARENT_PACKAGE=17
+- run clock: NA_NOT_RECORDED sentinel (24 rows); real clocks kept for a1 parser (04:32:52-04:40:50Z)
+  and A4.3 rerun (16:14:37-45Z, 2 rows) - no invented historical times
+- H6-B spec row: scope=H6B_SHARED, status=FROZEN_FOR_NEXT_STAGE_NOT_EXECUTED
+- FREEZE_H6A F1 wording: H6-A execution spec frozen; H6-B spec archived as pre-registered design, NOT executed
+- unified audit doc section 2 rewritten; "MISSING=0" now scoped to hash/status/path with explicit counts
+- manifest regenerated (pure-hash)
+
+## Unchanged (prohibited-list compliance)
+No A2/A3/A4 rerun; no gate/breakpoint change; no Allowed/Prohibited claim change; no new control/lag
+analysis; FREEZE_H6A substantive skeleton untouched; A0-A4 freezes untouched.

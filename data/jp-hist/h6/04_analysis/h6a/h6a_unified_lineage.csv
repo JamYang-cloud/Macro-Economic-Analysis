@@ -1,0 +1,28 @@
+﻿stage,artifact,sha256,freeze_timestamp,run_started_at,run_completed_at,parent_artifacts,status,path
+A0,h6a_spec_FROZEN_v1.1,409de94e5a8261fc1a2c0d3afbba989b9034a81385fdcde193c28193e66f1689,2026-09-07,,,A0_audit_pkg,FROZEN,00_registry/h6a_spec_FROZEN_v1.1.md
+A0,h6b_spec_FROZEN_v1.1,96064f0edfc3cfdeca0d6e882f521c1726c6274d458482334769abfe05863cca,2026-09-07,,,,FROZEN,00_registry/h6b_spec_FROZEN_v1.1.md
+A0,event_registry_v1.1,e2d1a16c48f1540d139282e37d11194d828a7d9d915bab16c0482e24c4b0ffc5,2026-09-07,,,,FROZEN,00_registry/h6a_external_event_registry_v1.1.csv
+A0,event_operation_matrix_v1.1,416d236da371f96f246ff98358020d6fe67946ce2adc9277c49e15b86370bb78,2026-09-07,,,,FROZEN,00_registry/h6a_event_operation_matrix_v1.1.csv
+A0,factor_registry_v1.1,328a75a35a654fa3f66a767ebb89237ca1f0b79a063468b18ce10f018f7fd9b7,2026-09-07,,,,FROZEN,00_registry/h6a_global_factor_registry_v1.1.csv
+A0,mechanism_registry_v1.1,93d9d5df72b89c7d50baccdca0ac536453051aa2b9c9d555ae6e7c924d3d6e46,2026-09-07,,,,FROZEN,00_registry/h6b_mechanism_registry_v1.1.csv
+A1,a1_parser_canonical,9170d7c19d6f8c6f405261ec536d31eec2cab3a1625c5fa96d09c7209ec991a9,2026-09-07,2026-09-07T04:32:52Z,2026-09-07T04:40:50Z,3 raw files + frozen registries,FROZEN,04_analysis/h6a/engine/a1_parse_factors.py
+A1,global_factors,0dc016ef0411a10f66a6244e91252684f2fd4e36545622c2e4011bd7f45eca95,2026-09-07,,,,FROZEN,02_standardized/h6a/h6a_global_factors.csv
+A1,event_mask,694f00b2bfc00f48bc3cdd938f29512159320297b3741ba1a9d6e2a6324580e6,2026-09-07,,,,FROZEN,03_features/h6a_event_mask.csv
+A2,leo_engine_v1.2,f539c19393c49e7e65cd5ae2065424f00f56a03d63fd7ea4d902546281cc31ae,2026-09-07,,,parent_lineage.csv,FROZEN,04_analysis/h6a/engine/a2_leo_v1.2.py
+A2,gate_machine_v1.2,978268a758347151e2b5c7943b9a61e8cbc4c079d91a0b3e488bc12489a5ee7f,2026-09-07,,,,FROZEN,04_analysis/h6a/Gate_machine_v1.2.txt
+A2,gate_a2_machine,0367a54e95bce63e300bd39f054bd8ae7c91f463d39fa9230c380e40e6bea3b0,2026-09-07,,,,FROZEN,04_analysis/h6a/gate_a2_machine.csv
+A2,baseline_differential,03afa3322d3a291c0cb664b0faf7bb15f566aed58beb381d098573172bc17a61,2026-09-07,,,,FROZEN,04_analysis/h6a/baseline_differential_test.csv
+A2,FREEZE_H6A2,b52db1e3c0eb51ee96d3c73fa153fa0f78b26a95c8f713556867aba82405826b,2026-09-07,,,,FROZEN,FREEZE_H6A2_20260907.txt
+A3,resid_engine_v1.2,f910b19678645b10f35bb5784c204132a0b91a45c7b36f228adb0b881ae72ea8,2026-09-07,,,A2 frozen outputs,FROZEN,04_analysis/h6a/engine/a3_resid_v1.2.py
+A3,gateA3_machine_v1.2,de875c34a3c3d2fd2c59acd26a0bab904da519ea7ca35a14b1fd542582a22627,2026-09-07,,,,FROZEN,04_analysis/h6a/a3/a3_gateA3_machine_v1.2.csv
+A3,mechanism_recon_v1.2,9dc9fedc3badbdd5363f46d2e89b627f3b8d89d1ec248a29b2bdc9ea469b6fb9,2026-09-07,,,,FROZEN,04_analysis/h6a/a3/a3_mechanism_reconciliation_v1.2.csv
+A3,bootstrap_val_v1.2,c240ba0bc9f053a30dd6a4dcb85e50e05e752cc0d5dc7df9d4c626ef46daac73,2026-09-07,,,,FROZEN,04_analysis/h6a/a3/a3_bootstrap_validation_v1.2.csv
+A3,perm_val_v1.2,e166f17af15e69915fa990f308e098197a88ee896d0caee7dd75ae24e649863f,2026-09-07,,,,FROZEN,04_analysis/h6a/a3/a3_permutation_validation_v1.2.csv
+A3,FREEZE_H6A3,a54899e7440e291685cb1a9dc9fe6eaae7492107fcda3e6af255fa895107b82e,2026-09-07,,,,FROZEN,FREEZE_H6A3_20260907.txt
+A4,a4_method_spec_v1.1,dae4586826bc202738dba6bbe123e99829aeb321fc8122a5cc9dc0189e774a23,2026-09-07T08:01:20Z,,,,FROZEN,00_registry/h6a_a4_method_spec_v1.1.md
+A4,bp_engine_v1.2,e33bddeb31ae5fd8fa460b86b16b908ba0b696d0e28ec649032741cc0e82aae4,2026-09-07,2026-09-07T16:14:37Z,2026-09-07T16:14:45Z,a4_method_spec,FROZEN,04_analysis/h6a/engine/a4_bp_v1.2.py
+A4,breaks_primary,d21a6494e63786e0d57dca2911bec58e8a21fe5cd33ccd4004bf3b13bf232906,2026-09-07,,,,FROZEN,04_analysis/h6a/a4/a4_breaks_primary.csv
+A4,criterion_sensitivity,ea738285cd446113864d11cbc999e82423c8d9f8bd1465355cc4d3d311c7add2,2026-09-07,,,,FROZEN,04_analysis/h6a/a4/a4_criterion_sensitivity.csv
+A4,mmax_sensitivity,8179ef8b2ea3dfe390fe5db88e1345ce5c91ea56747a6dd0f59a39876fb991e5,2026-09-07,,,,FROZEN,04_analysis/h6a/a4/a4_mmax_sensitivity.csv
+A4,a4_freeze_meta,9c7d61e576bd9c3798d286fba0ed146d04a163cdc495df45a8dbb7aefcf9a10f,2026-09-07,,,,FROZEN,04_analysis/h6a/a4/a4_method_freeze_meta.csv
+A4,FREEZE_H6A4,64a5961bb2eca7302598f367ef11226d72e6cfadd72cc75511582b8b930e67d2,2026-09-07,,,,FROZEN,FREEZE_H6A4_20260907.txt

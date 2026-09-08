@@ -1,0 +1,21 @@
+﻿check,wrapper,frozen,match
+classify_year 2013,J90,J90,True
+classify_year 2014,J90,J90,True
+classify_year 2015,JGAP,JGAP,True
+classify_year 2016,J90,J90,True
+classify_year 2017,J00,J00,True
+classify_year 2018,J90,J90,True
+classify_year 2019,J90,J90,True
+classify_year 2020,J90,J90,True
+classify_year 2021,J00,J00,True
+classify_year 2022,J90,J90,True
+classify_year 2023,J00,J00,True
+classify_year 2024,JGAP,JGAP,True
+classify_year 2025,J00,J00,True
+Dwindow_mode_MANHATTAN,22,22,True
+Dwindow_mode_EUCLID,16,16,True
+Dwindow_mode_RANKSTATE,22,22,True
+Dwindow_mode_SHAPECORR,14,14,True
+heldout_D_cpi_yoy,0.0112,0.0112,True
+heldout_D_m2_yoy,0.3685,0.3685,True
+heldout_D_investment_gdp,0.7534,0.7534,True

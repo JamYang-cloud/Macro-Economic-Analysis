@@ -1,0 +1,13 @@
+﻿key,value,source
+b_window_l22,B 窗（CN 2005-2015）四类独立度量一致指向中心滞后 L=22,FREEZE_H4 F02
+d_window_p,"D 窗 MANHATTAN L22：10,000-rep max-stat block null p=0.0009（method-specific）",FREEZE_H4 F03
+no_robust_single_lag,无跨 metric/norm 稳健的单一固定滞后（A-D 窗 × 5 norm × 4 metric）,FREEZE_H4 F04
+mixed_13,CN 2013-2025 归属：J90×7 + J00×4 + JGAP/OTHER×2（两法 13/13 一致）,FREEZE_H5 F01
+cpi_hinge,CPI 是分类铰链非机制：CF 三轨翻转 5/13·4/13·5/13 唯一达阈值；held-out 坍缩至 JP 差的 1.6%,FREEZE_H5 F02
+inv_replication,investment 为唯一核心 gate held-out 同向复现（D 0.753 vs JP 0.989；boot90 CI 不含 0；p≈0.16 描述性）,FREEZE_H5 F03
+m2_secondary,"M2 为 secondary non-gate 复现（D 0.369 vs JP 0.234；CI [0.096,0.636] 不含 0）",FREEZE_H5 F03
+q3_no_persist,至 2025 无 persistent J00：P(J00→J00)=0（0/3）；J90→J00=J90→J90=0.43 对称,FREEZE_H5 F05
+jgap_diag,JGAP=JP 1999-2002 过渡带（诊断用，非独立机制态）；2024 rep=JP 2002,H5-FINAL JGAP
+cn_cpi_near0,CN CPI 2023-25 = 0.2/0.2/0.0（未转负）；JP 1999 转负、2002 最深 −0.91,FREEZE_H5 F06
+cn_inv_path,CN 投资率峰值 2011 48.3% → 2024 40.5%（−16.2% 相对，未止跌）；JP 峰值 1990 31.7% → 2000 25.6%（−19.3%）,h5final_eventtime_paths
+discipline,凡「复现」= held-out 描述性方向复现；标准化幅度比 ≠ 经济强度/因果；宏观/回报/风险三层分列,FREEZE_H5 W02-W05

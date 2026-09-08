@@ -1,0 +1,11 @@
+n_variables=37
+n_gates=16
+deflation_threshold_missing=0
+missingness_threshold_missing=0
+theta_definition_missing=0
+sign_orientation_missing=0
+gate_b1_machine_executable=TRUE
+gate_b3_machine_executable=TRUE
+shock_application_missing=0
+source_priority_missing=0
+analysis_cutoff_frozen=TRUE

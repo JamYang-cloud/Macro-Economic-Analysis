@@ -1,0 +1,51 @@
+H6-A A2.2 Gate machine (FROZEN rule: 4 metrics, nonNA>=3, |adj-full|<=5) — 2026-09-07T13:23:10Z
+baseline full shares: J90 7 / JGAP 2 / J00 4 / OTHER 0
+Gate -E01: A1 PASS=False (dominant=True, agr=True, lag_frozen=False, nonNA=4)
+Gate -E02: A1 PASS=False (dominant=True, agr=True, lag_frozen=False, nonNA=4)
+Gate -E03: A1 PASS=False (dominant=True, agr=True, lag_frozen=False, nonNA=4)
+Gate -E05: A1 PASS=False (dominant=True, agr=True, lag_frozen=False, nonNA=4)
+Gate A2 2013-2019: PASS=True (N=7, majority J90->J90 unchanged=True, agreement=1.0>=thr 0.5, note=)
+Gate A2 2023-2025: PASS=True (N=3, majority J00->J00 unchanged=True, agreement=1.0>=thr 0.5, note=DESCRIPTIVE_SMALL_N)
+Gate A2 overall (machine, gate_a2_machine.csv): PASS=True
+  lag[Baseline^{full},MANHATTAN] adj=22 full=22 disp_full=0 lfl=22
+  lag[Baseline^{full},EUCLID] adj=16 full=16 disp_full=0 lfl=16
+  lag[Baseline^{full},RANKSTATE] adj=22 full=22 disp_full=0 lfl=22
+  lag[Baseline^{full},SHAPECORR] adj=14 full=14 disp_full=0 lfl=14
+  lag[Baseline^{avail},MANHATTAN] adj=22 full=22 disp_full=0 lfl=22
+  lag[Baseline^{avail},EUCLID] adj=22 full=16 disp_full=6 lfl=22
+  lag[Baseline^{avail},RANKSTATE] adj=22 full=22 disp_full=0 lfl=22
+  lag[Baseline^{avail},SHAPECORR] adj=14 full=14 disp_full=0 lfl=14
+  lag[-E01,MANHATTAN] adj=22 full=22 disp_full=0 lfl=22
+  lag[-E01,EUCLID] adj=22 full=16 disp_full=6 lfl=16
+  lag[-E01,RANKSTATE] adj=22 full=22 disp_full=0 lfl=22
+  lag[-E01,SHAPECORR] adj=14 full=14 disp_full=0 lfl=14
+  lag[-E02,MANHATTAN] adj=16 full=22 disp_full=6 lfl=22
+  lag[-E02,EUCLID] adj=16 full=16 disp_full=0 lfl=16
+  lag[-E02,RANKSTATE] adj=16 full=22 disp_full=6 lfl=22
+  lag[-E02,SHAPECORR] adj=45 full=14 disp_full=31 lfl=14
+  lag[-E03,MANHATTAN] adj=22 full=22 disp_full=0 lfl=22
+  lag[-E03,EUCLID] adj=16 full=16 disp_full=0 lfl=16
+  lag[-E03,RANKSTATE] adj=22 full=22 disp_full=0 lfl=22
+  lag[-E03,SHAPECORR] adj=25 full=14 disp_full=11 lfl=14
+  lag[-E05,MANHATTAN] adj=22 full=22 disp_full=0 lfl=22
+  lag[-E05,EUCLID] adj=22 full=16 disp_full=6 lfl=22
+  lag[-E05,RANKSTATE] adj=22 full=22 disp_full=0 lfl=22
+  lag[-E05,SHAPECORR] adj=14 full=14 disp_full=0 lfl=14
+  mech[Baseline^{full},cpi_yoy] D=0.0112 gJ90=8 gJ00=3 vJ90=8 vJ00=3 OK
+  mech[Baseline^{avail},cpi_yoy] D= gJ90=6 gJ00=2 vJ90=6 vJ00=2 INFEASIBLE_AFTER_PRESPECIFIED_MASK
+  mech[-E01,cpi_yoy] D=0.0112 gJ90=8 gJ00=3 vJ90=8 vJ00=3 OK
+  mech[-E02,cpi_yoy] D=0.045 gJ90=9 gJ00=3 vJ90=9 vJ00=3 OK
+  mech[-E03,cpi_yoy] D=0.0112 gJ90=8 gJ00=3 vJ90=8 vJ00=3 OK
+  mech[-E05,cpi_yoy] D= gJ90=6 gJ00=2 vJ90=6 vJ00=2 INFEASIBLE_AFTER_PRESPECIFIED_MASK
+  mech[Baseline^{full},m2_yoy] D=0.3685 gJ90=7 gJ00=3 vJ90=7 vJ00=3 OK
+  mech[Baseline^{avail},m2_yoy] D=0.3899 gJ90=5 gJ00=3 vJ90=5 vJ00=3 OK
+  mech[-E01,m2_yoy] D=0.3685 gJ90=7 gJ00=3 vJ90=7 vJ00=3 OK
+  mech[-E02,m2_yoy] D=0.4424 gJ90=7 gJ00=4 vJ90=7 vJ00=4 OK
+  mech[-E03,m2_yoy] D=0.3685 gJ90=7 gJ00=3 vJ90=7 vJ00=3 OK
+  mech[-E05,m2_yoy] D=0.3899 gJ90=5 gJ00=3 vJ90=5 vJ00=3 OK
+  mech[Baseline^{full},investment_gdp] D=0.7534 gJ90=7 gJ00=4 vJ90=7 vJ00=3 OK
+  mech[Baseline^{avail},investment_gdp] D= gJ90=5 gJ00=3 vJ90=5 vJ00=2 INFEASIBLE_AFTER_PRESPECIFIED_MASK
+  mech[-E01,investment_gdp] D=0.1364 gJ90=6 gJ00=5 vJ90=6 vJ00=4 OK
+  mech[-E02,investment_gdp] D=0.9824 gJ90=7 gJ00=5 vJ90=7 vJ00=4 OK
+  mech[-E03,investment_gdp] D=0.7534 gJ90=7 gJ00=4 vJ90=7 vJ00=3 OK
+  mech[-E05,investment_gdp] D= gJ90=5 gJ00=3 vJ90=5 vJ00=2 INFEASIBLE_AFTER_PRESPECIFIED_MASK

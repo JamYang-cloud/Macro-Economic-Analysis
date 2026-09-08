@@ -1,0 +1,55 @@
+H6-A A2 LEO Gate machine — 2026-09-07T13:07:54
+baseline dominant (13y): J90 | shares:
+  Baseline^{full}: J90 0.5385 / JGAP 0.1538 / J00 0.3077 / OTHER 0.0 (avail) | N_masked=0 | dominant=J90 | Agreement=1.0
+  Baseline^{avail}: J90 0.5 / JGAP 0.2 / J00 0.3 / OTHER 0.0 (avail) | N_masked=3 | dominant=J90 | Agreement=1.0
+  -E01: J90 0.5385 / JGAP 0.1538 / J00 0.3077 / OTHER 0.0 (avail) | N_masked=0 | dominant=J90 | Agreement=1.0
+  -E02: J90 0.5385 / JGAP 0.0769 / J00 0.3846 / OTHER 0.0 (avail) | N_masked=0 | dominant=J90 | Agreement=0.9231
+  -E03: J90 0.5385 / JGAP 0.1538 / J00 0.3077 / OTHER 0.0 (avail) | N_masked=0 | dominant=J90 | Agreement=1.0
+  -E05: J90 0.5 / JGAP 0.2 / J00 0.3 / OTHER 0.0 (avail) | N_masked=3 | dominant=J90 | Agreement=1.0
+Gate -E01: A1 PASS=False (dominant=True, agr=True, lag=False)
+Gate -E02: A1 PASS=False (dominant=True, agr=True, lag=False)
+Gate -E03: A1 PASS=True (dominant=True, agr=True, lag=True)
+Gate -E05: A1 PASS=True (dominant=True, agr=True, lag=True)
+Gate -E05 A2: PASS=True sub1_maj=True sub2_maj=True agr1=1.0 agr2=1.0
+  lag[Baseline^{full},MANHATTAN] mode=22 (base_avail=22) disp=0 na=0.0
+  lag[Baseline^{full},EUCLID] mode=16 (base_avail=16) disp=0 na=0.0
+  lag[Baseline^{full},RANKSTATE] mode=22 (base_avail=22) disp=0 na=0.0
+  lag[Baseline^{full},SHAPECORR] mode=14 (base_avail=14) disp=0 na=0.0
+  lag[Baseline^{avail},MANHATTAN] mode=22 (base_avail=22) disp=0 na=0.0
+  lag[Baseline^{avail},EUCLID] mode=22 (base_avail=22) disp=0 na=0.0
+  lag[Baseline^{avail},RANKSTATE] mode=22 (base_avail=22) disp=0 na=0.0
+  lag[Baseline^{avail},SHAPECORR] mode=14 (base_avail=14) disp=0 na=0.0
+  lag[-E01,MANHATTAN] mode=22 (base_avail=22) disp=0 na=0.0
+  lag[-E01,EUCLID] mode=22 (base_avail=16) disp=6 na=0.0
+  lag[-E01,RANKSTATE] mode=22 (base_avail=22) disp=0 na=0.0
+  lag[-E01,SHAPECORR] mode=14 (base_avail=14) disp=0 na=0.0
+  lag[-E02,MANHATTAN] mode=16 (base_avail=22) disp=6 na=0.0
+  lag[-E02,EUCLID] mode=16 (base_avail=16) disp=0 na=0.0
+  lag[-E02,RANKSTATE] mode=16 (base_avail=22) disp=6 na=0.0
+  lag[-E02,SHAPECORR] mode=45 (base_avail=14) disp=31 na=0.0
+  lag[-E03,MANHATTAN] mode=22 (base_avail=22) disp=0 na=0.0
+  lag[-E03,EUCLID] mode=16 (base_avail=16) disp=0 na=0.0
+  lag[-E03,RANKSTATE] mode=22 (base_avail=22) disp=0 na=0.0
+  lag[-E03,SHAPECORR] mode=25 (base_avail=14) disp=11 na=0.0
+  lag[-E05,MANHATTAN] mode=22 (base_avail=22) disp=0 na=0.0
+  lag[-E05,EUCLID] mode=22 (base_avail=22) disp=0 na=0.0
+  lag[-E05,RANKSTATE] mode=22 (base_avail=22) disp=0 na=0.0
+  lag[-E05,SHAPECORR] mode=14 (base_avail=14) disp=0 na=0.0
+  mech[Baseline^{full},cpi_yoy] D=0.0112 nJ90=8 nJ00=3 OK
+  mech[Baseline^{avail},cpi_yoy] D= nJ90=6 nJ00=2 INFEASIBLE_AFTER_PRESPECIFIED_MASK
+  mech[-E01,cpi_yoy] D=0.0112 nJ90=8 nJ00=3 OK
+  mech[-E02,cpi_yoy] D=0.045 nJ90=9 nJ00=3 OK
+  mech[-E03,cpi_yoy] D=0.0112 nJ90=8 nJ00=3 OK
+  mech[-E05,cpi_yoy] D= nJ90=6 nJ00=2 INFEASIBLE_AFTER_PRESPECIFIED_MASK
+  mech[Baseline^{full},m2_yoy] D=0.3685 nJ90=7 nJ00=3 OK
+  mech[Baseline^{avail},m2_yoy] D=0.3899 nJ90=5 nJ00=3 OK
+  mech[-E01,m2_yoy] D=0.3685 nJ90=7 nJ00=3 OK
+  mech[-E02,m2_yoy] D=0.4424 nJ90=7 nJ00=4 OK
+  mech[-E03,m2_yoy] D=0.3685 nJ90=7 nJ00=3 OK
+  mech[-E05,m2_yoy] D=0.3899 nJ90=5 nJ00=3 OK
+  mech[Baseline^{full},investment_gdp] D=0.7534 nJ90=7 nJ00=4 OK
+  mech[Baseline^{avail},investment_gdp] D= nJ90=5 nJ00=3 INFEASIBLE_AFTER_PRESPECIFIED_MASK
+  mech[-E01,investment_gdp] D=0.1364 nJ90=6 nJ00=5 OK
+  mech[-E02,investment_gdp] D=0.9824 nJ90=7 nJ00=5 OK
+  mech[-E03,investment_gdp] D=0.7534 nJ90=7 nJ00=4 OK
+  mech[-E05,investment_gdp] D= nJ90=5 nJ00=3 INFEASIBLE_AFTER_PRESPECIFIED_MASK

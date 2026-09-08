@@ -1,0 +1,21 @@
+﻿test_id,country,variable,year,expected,actual,tolerance,status,note
+JP-CPI-1974,JP,cpi_yoy,1974,23.2,23.101,1.0,PASS,CPI 石油危机通胀
+JP-TFR-1970,JP,tfr,1970,2.13,2.13,0.02,PASS,TFR 1970
+JP-TFR-1989,JP,tfr,1989,1.57,1.57,0.02,PASS,TFR 1.57 shock
+JP-TFR-2005,JP,tfr,2005,1.26,1.26,0.02,PASS,TFR 最低点
+JP-POLICY-1990,JP,policy_rate,1990,6.0,6.0,0.05,PASS,政策利率顶点
+JP-POLICY-1995,JP,policy_rate,1995,0.5,0.5,0.05,PASS,零利率前夜
+JP-GDP-1960,JP,real_gdp_yoy,1960,13.1,13.06,0.5,PASS,高度增长期
+JP-INV-1970,JP,investment_gdp,1970,35.5,35.508,1.0,PASS,投资高峰
+JP-NIKKEI-1990,JP,equity_return,1990,-38.7,-38.717,1.0,PASS,泡沫破裂
+JP-NIKKEI-2008,JP,equity_return,2008,-42.1,-42.124,1.0,PASS,金融危机
+JP-LAND-1988,JP,land_price_yoy,1988,25.0,25.0,1.0,PASS,地价泡沫
+JP-JGB-1990,JP,jgb10y,1990,6.62,6.619,0.2,PASS,JGB 10Y
+JP-UNEMP-2003,JP,unemployment,2003,5.24,5.242,0.2,PASS,失业率峰值
+JP-ODEP-2020,JP,dependency_ratio,2020,48.5,48.457,1.0,PASS,老年抚养比
+CN-M2-2009,CN,m2_yoy,2009,27.68,27.68,0.5,PASS,四万亿 M2
+CN-TSF-2009,CN,credit_flow_level,2009,139104.0,139104.0,500.0,PASS,社融激增
+CN-BR-2000,CN,birth_rate,2000,14.03,14.03,0.1,PASS,出生率
+CN-AGE-2010,CN,youth_dependency,2010,22.3,22.3,0.3,PASS,少儿抚养比(3-4表)
+CN-GDP-2007,CN,real_gdp_yoy,2007,14.2,14.2,0.5,PASS,GDP 峰值年
+CN-CPI-2008,CN,cpi_yoy,2008,5.9,5.9,0.3,PASS,通胀高峰

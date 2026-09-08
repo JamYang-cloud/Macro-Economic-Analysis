@@ -1,0 +1,42 @@
+﻿filename,country,variable,n_rows,start_year,end_year,unit,source_note,sha256,bytes
+annual_CN_birth_rate.csv,CN,birth_rate,34,1978,2012,per1000,NBS 2013年鉴 3-2 出生率 1978-2012,a03adc9537952d7853d90411c8354db0d01892695381bcbe0c86767c5e530481,2490
+annual_CN_cpi_yoy.csv,CN,cpi_yoy,22,1978,2012,pct,NBS 2013年鉴 10-1 CPI(上年=100)-100 1978-2012,c544ac7bfaba1e8a7706e6fa244ed24df1de159ad1ad64c3204c5808574c3bef,1973
+annual_CN_credit_flow_level.csv,CN,credit_flow_level,11,2002,2012,100myuan_per_yr,NBS 社融增量(flow) 19-11 (D01 scheme B) 2002-2012,d8c54c1b197acb5b7d3000cbf5890467a8b293025739976563b27c56c73a7850,1196
+annual_CN_dependency_ratio.csv,CN,dependency_ratio,25,1982,2012,pct,NBS 2013年鉴 3-4 老年抚养比(65+/15-64) 1982-2012,215a54471c14e3e60a4c3c12d96fcc1191e5887d5997ea8ab72a0f4908ad2dbb,2616
+annual_CN_equity_return.csv,CN,equity_return,8,2000,2007,pct_calendar_year,腾讯 上证综指 2000-2007 daily,c6ba9740636cb0553f515f00ad0ee49a5142c33a8bb6ebc8b0066cf08ff0c287,790
+annual_CN_export_yoy.csv,CN,export_yoy,25,1980,2012,pct,NBS 2013年鉴 6-3 出口USD level derived YoY 1978-2012,330f0b0cc3613368fc72d4a150ca0db862768e3f07339ccc0c706daa9b412b8c,2511
+annual_CN_iip_yoy.csv,CN,iip_yoy,25,1999,2023,pct,OECD CHNPRINTO01IXPYM 1999-2023 bridge,ea44791635c15b0509204823279c3ef94ee33b98035c7a4d9f2336ac13ee9402,1920
+annual_CN_investment_gdp.csv,CN,investment_gdp,35,1978,2012,pct_of_gdp,NBS 2013年鉴 2-18 资本形成率 1978-2012,9e90816d7b99717182377c89b2a3667e7e27971b71db2b4a0fbaeea9742371dc,3181
+annual_CN_m2_yoy.csv,CN,m2_yoy,22,1991,2012,pct,NBS 2013年鉴 19-4 M2 YoY 1991-2012,38f2b363c04c1ba02f0225aaa232eb58aa049d02e4d085beccee49ca3edbb58c,1516
+annual_CN_nominal_gdp_yoy.csv,CN,nominal_gdp_yoy,13,2000,2012,pct,NBS 2013年鉴 2-1 GDP当年价 derived YoY 2000-2012,784b3560e7f82fa6537b6a3589a5310db4deb68d9143af279a4e5385c936cec3,1184
+annual_CN_property_price_level.csv,CN,property_price_level,15,1998,2012,yuan_m2,NBS 2013年鉴 5-36 商品房均价 1998-2012,25e7fbf357339f4cda2e6f7ec9eff389b74b8b55ffaf92391b6d3cd64bcaec5d,1454
+annual_CN_real_gdp_yoy.csv,CN,real_gdp_yoy,13,2000,2012,pct,NBS 2013年鉴 2-4 GDP指数(上年=100)-100 2000-2012,98ed8c894aa2ecc275a2022e9e6b162ee0d8b6cf744d013f13e726199894c8f6,1146
+annual_CN_reer_level.csv,CN,reer_level,33,1994,2026,idx2020=100,FRED RBCNBIS 1994+ broad,1c0b512de48660dc2fb6e9425c773072da80d18cc3d6c8b4f1bb280c6230963d,2418
+annual_CN_trade_balance_level.csv,CN,trade_balance_level,26,1978,2012,usd_100m,"NBS 2013年鉴 6-3 出口-进口 USD 1978-2012 (GDP ratio需汇率折算, H2.6)",7642aece327826435e59fae15e895acaa8cfb1fa7bd07a3cf535e9daa905a05a,3460
+annual_CN_wage_yoy.csv,CN,wage_yoy,13,2000,2012,pct,NBS 2013年鉴 4-11 城镇工资 derived YoY 2000-2012,c83170c85ab1cbcb89f24c8590258c0231218f97aaf2f0e14fe9cf2e914e5344,1107
+annual_CN_working_age_growth.csv,CN,working_age_growth,24,1987,2012,pct,NBS 2013年鉴 3-4 15-64 pop growth 15-64 canonical 1982-2012,4996eb285be87a06b0dd35fb4e09141ab25a6ae12162da0d5f1d46c9411e8bb1,2732
+annual_CN_youth_dependency.csv,CN,youth_dependency,25,1982,2012,pct,NBS 2013年鉴 3-4 少儿抚养比(0-14/15-64) 1982-2012,4fd3cf5626c2695de4b0b48b137bceeab4f754d4b5c6b5bf9689447b060b8195,2640
+annual_JP_birth_rate.csv,JP,birth_rate,123,1899,2024,per1000,e-Stat 人口動態 0003411595 1899+,81cc8b0f74c840aae9a486df21da5617bf4d7f32ce6947252a2f93597663c3fd,8502
+annual_JP_cpi_yoy.csv,JP,cpi_yoy,57,1970,2026,pct,统计局 2025base CPI all 1970+ annual avg yoy,cce7c8eca70c356afce4adff6c9af47e73442efe3d172c7cf0b8cb75aa6afb74,5003
+annual_JP_credit_flow_level.csv,JP,credit_flow_level,61,1965,2025,10亿yen_per_yr,BIS CRDQJPAPUBIS Q4 stock annual difference (D01 scheme B) 1965+,4210fa25aa4e56d8abe1738699065fb3f823a21268a71421bc691b430dcb5e28,7583
+annual_JP_credit_stock_level.csv,JP,credit_stock_level,62,1964,2025,10亿yen,FRED CRDQJPAPUBIS BIS 1964+ Q4 stock,411a63af9d6ea14feba8211c183c443a7948987750d32dc22bc5670ee8f2d3a6,5136
+annual_JP_dependency_ratio.csv,JP,dependency_ratio,27,1884,2024,pct,IPSS 表2-5 65+/15-64 15-64 canonical (ANCHOR),967238183663c61aa89e99b6548671833ce5fa8106b038dc9ef4068d0bd165a7,2590
+annual_JP_equity_return.csv,JP,equity_return,78,1949,2026,pct_calendar_year,FRED NIKKEI225 1949+,da79b629406c82a087ba82aa1a73d70764e39f3ab5d54103658fd13bd5ce3cc8,6252
+annual_JP_export_yoy.csv,JP,export_yoy,74,1951,2024,pct,Customs 输出额 annual YoY 1951-2024,0d4e0790bd418059f21c5134badcf300a467c55087e5e8e98e6610443c39b4b6,6006
+annual_JP_fx_usdjpy_level.csv,JP,fx_usdjpy_level,70,1957,2026,JPY/USD,FRED CCUSMA02JPM618N 1957+,dfb3d03511d72e3be1f5dc61399f6b402f57051523f1dc1d4e8770f10983cc44,5468
+annual_JP_gdp_deflator_level.csv,JP,gdp_deflator_level,46,1955,2000,idx_base1955,ESRI 68SNA 名目/実質 GDE ratio 1955-2000,0bc748dcbe2d535d6efb15dfc9e4afd8f99bbf3e2dfd16dabb7993fd5146f63a,4787
+annual_JP_iip_yoy.csv,JP,iip_yoy,72,1955,2026,pct,FRED JPNPRINTO01GPSAM 1955+ (idx prev=100),d45973469bf1a3042b0df798b919a6ea9cccf15c1913c79b9c984550a0410763,5935
+annual_JP_investment_gdp.csv,JP,investment_gdp,46,1955,2000,pct_of_gdp,ESRI 68SNA fixed cap/GDE 1955-2000,be9d4977bf417179bc2da74610ecadece461e97be38b1913fcf3532ec2b3dd26,4073
+annual_JP_jgb10y.csv,JP,jgb10y,41,1986,2026,pct_year_end,MOF 国債金利 10年 日度→year-end 1974+,1214eaf343eb0191b558bb442ff194c0f03b1313f778004408c9cebcfb73f920,3367
+annual_JP_land_price_yoy.csv,JP,land_price_yoy,52,1975,2026,pct,MLIT 公示地価 全国住宅 変動率 1975-2026,6e031b6f7d678b94f5231e5c3a0bb9d3b3cc5b19496dc2945771dda55a74ac7d,4342
+annual_JP_m2_yoy.csv,JP,m2_yoy,63,1955,2017,pct,FRED MYAGM2JPM189S 1955-2017 SA,3d2f0d6e35e70bc08441d2ccbf23cea40f4b4cf44b6b8903f1b12e2b66f139ad,4415
+annual_JP_nominal_gdp_yoy.csv,JP,nominal_gdp_yoy,45,1956,2000,pct,ESRI 68SNA 名目GDE annual YoY 1956-2000 (complete years only),2c7201d9351589f07a90f6649e89aad19882df45fb4f5c68d5d64fb05b45240e,5028
+annual_JP_policy_rate.csv,JP,policy_rate,72,1955,2026,pct_year_end,BOJ 公定歩合 event-day→year-end; 无事件年=前值延续 1955-2026,6dacaf29b9de781986d6da41761b24d7d74dc3d443fa43665b2fced8f77f8662,8132
+annual_JP_real_gdp_yoy.csv,JP,real_gdp_yoy,45,1956,2000,pct,ESRI 68SNA 実質GDE annual YoY 1956-2000 (complete years only),4089d79e643941fb00b4a1d6876cba3b24103486c32240f6bf31cab8f95b4e0a,4887
+annual_JP_reer_level.csv,JP,reer_level,33,1994,2026,idx2020=100,FRED RBJPBIS 1994+ broad,a1ab06e2adc1a85265bd106dd82054b1c399cb0e89a90a6402caa7a7fdfaf7d2,2458
+annual_JP_tfr.csv,JP,tfr,78,1947,2024,children_per_woman,e-Stat 人口動態 0003411595 1947+,f764cf98292242da22407e63d109e689327ec3ee58e75eba0bc616cad4f111d5,5733
+annual_JP_trade_balance_level.csv,JP,trade_balance_level,75,1950,2024,1000jpy,Customs 输出-输入 annual 1950-2024,ce9008c0fa3852c26696455c66bc1d7f1714a33b5db53e9a5b66c4238a4041a9,6516
+annual_JP_unemployment.csv,JP,unemployment,72,1955,2026,%,FRED LRUNTTTTJPM156S 1955+,8ac5cb5506ed554af9d6b5f2f468bbac68f35cd3045a9624b2c52195ae4bbc25,4736
+annual_JP_wage_yoy.csv,JP,wage_yoy,72,1955,2026,pct,FRED LCEAMN01JPM661N 1955+ (idx prev=100),8af4d8c5e91679bc830237a32f679e26925b58c202b475f83265a2f29ee62b82,5901
+annual_JP_working_age_growth_anchor.csv,JP,working_age_growth_anchor,26,1888,2024,pct_inter_anchor,"IPSS 表2-5 15-64 pop inter-census growth (ANCHOR, not annual)",99ecc8cf7248c1ed174ae129700fb2cd397c662a90a84b5236b7164aa799f8d8,3550
+annual_JP_youth_dependency.csv,JP,youth_dependency,27,1884,2024,pct,IPSS 表2-5 0-14/15-64 15-64 canonical (ANCHOR),15d45a6d94c519b645293f74eb354ddd12a55a1f177b530d52af8e27f9e6abf6,2626

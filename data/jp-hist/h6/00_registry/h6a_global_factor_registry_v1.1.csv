@@ -1,0 +1,8 @@
+factor_id,factor_name,concept,provider,source_url,raw_frequency,target_frequency,annualization,role,availability,notes
+g1,world_gdp_growth,全球实际GDP增速(World),World Bank,"https://databank.worldbank.org/ (NY.GDP.MKTP.KD.ZG, aggregate=World)",annual,annual,none,main,"1961+; complete for H6-A confirmatory comparison window",历史缺口不插值；不称覆盖全部 JP-HIST 历史
+g2,vix_mean,全球金融压力(年度均值),FRED,"https://fred.stlouisfed.org/series/VIXCLS",daily,annual,年度算术均值,main,"1990+",仅覆盖 1990+：Residual-B 与 Baseline-B 均在 JP>=1990 common support 上比较(方案1)
+g2aux,vix_max,全球金融压力(年度最大),FRED,"https://fred.stlouisfed.org/series/VIXCLS",daily,annual,年度最大值,aux_sensitivity,"1990+",仅 aux sensitivity
+g3,covid_dummy,COVID 年份虚拟变量,none,none,annual,annual,1(2020<=t<=2022),main,2020-2022,零额外数据；最稳健
+aux1,oxcgrt_stringency_cn,中国防疫政策强度(年度均值),OxCGRT,"https://github.com/OxCGRT/covid-policy-dataset",daily,annual,年度均值+可选days>threshold,auxiliary,2020-2022,中国地方差异大→仅 auxiliary
+aux2,oxcgrt_stringency_jp,日本防疫政策强度(年度均值),OxCGRT,"https://github.com/OxCGRT/covid-policy-dataset",daily,annual,年度均值+可选days>threshold,auxiliary,2020-2022,仅 auxiliary
+notin_v1,oil_trade_fedfunds_dollar,原油/贸易/Fed funds/美元,多个,不适用,不适用,不适用,不适用,not_in_v1,不适用,v1 明确不采（防 CN 短样本高维控制）

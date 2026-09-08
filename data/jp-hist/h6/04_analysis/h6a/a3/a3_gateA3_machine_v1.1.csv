@@ -1,0 +1,8 @@
+﻿category,D_CN,CI90_lo,CI90_hi,perm_p,effect_rule_pass,status
+Baseline,0.7534,-0.0067,0.9464,0.1384,True,OK
+ResidA,,,,,,INFEASIBLE_GROUP_N<3
+BaselineB90_CS,0.2145,-0.4536,0.3642,0.0355,False,OK
+ResidB,-0.9824,-1.1996,-0.5233,0.1204,False,OK
+Gate_A3_Overall,,,,,False,
+ResidA_required,,,,,False,
+Baseline_or_minusCOVID,,,,,True,minusCOVID=INFEASIBLE_AFTER_PRESPECIFIED_MASK

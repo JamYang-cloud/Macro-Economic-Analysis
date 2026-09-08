@@ -1,0 +1,7 @@
+﻿variable_id,country,display_name,unit,frequency,level,group_cn,m3_featured_order,source_file,source_ref,notes
+hjy_cpi_yoy,cn,CPI 同比（年频长史）,%,annual,jphist,补充数据·中国(年度),1,cn/cpi_yoy.csv,JP-HIST 08_jp_hist（04_analysis/cn_panel_2000_2025/annual_CN_cpi_yoy.csv）,1978-2025；JP-HIST 冻结链（H2 + H1P1 延伸）；M3 重点对比 1 号（0 线=转负分界）。
+hjy_investment_gdp,cn,投资率（固定资本形成/GDP）,%,annual,jphist,补充数据·中国(年度),2,cn/investment_gdp.csv,JP-HIST 08_jp_hist（04_analysis/cn_panel_2000_2025/annual_CN_investment_gdp.csv）,1978-2024；2012 衔接断点≈2pp：年鉴旧基准 47.76 vs 世行四经普基准 45.82（SNA 修订），看趋势勿跨 2012 取绝对差。
+hjy_m2_yoy,cn,M2 同比（年频长史）,%,annual,jphist,补充数据·中国(年度),3,cn/m2_yoy.csv,JP-HIST 08_jp_hist（04_analysis/cn_panel_2000_2025/annual_CN_m2_yoy.csv）,1991-2025；1990 年代高增→2010s 中低个位（日本 1970s-90s 路径的对照项）。
+hjy_real_gdp_yoy,cn,实际GDP同比（年频）,%,annual,jphist,补充数据·中国(年度),4,cn/real_gdp_yoy.csv,JP-HIST 08_jp_hist（04_analysis/cn_panel_2000_2025/annual_CN_real_gdp_yoy.csv）,2000-2025。
+hjy_wage_yoy,cn,城镇单位工资名义增速（年频）,%,annual,jphist,补充数据·中国(年度),6,cn/wage_yoy.csv,JP-HIST 08_jp_hist（04_analysis/cn_panel_2000_2025/annual_CN_wage_yoy.csv）,2000-2025；2013 前=年鉴城镇单位口径、2013 起=NBS 非私营官方名义增速全链；2014/2020 为增速反推（DERIVED）；与 JP 不可横比（C 级形态）。
+hjy_birth_rate,cn,出生率（年频·每千人）,‰,annual,jphist,补充数据·中国(年度),5,cn/birth_rate.csv,JP-HIST 08_jp_hist（02_standardized/annual_CN_birth_rate.csv）,1978-2025；1978-2012=NBS 2013 年鉴 3-2、2013-2025=最新发布衔接；与 JP 同为每千人官方出生率（B 级可比）。

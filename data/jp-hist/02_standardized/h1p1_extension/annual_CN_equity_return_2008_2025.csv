@@ -1,0 +1,19 @@
+year,value,variable,country,unit,source_note
+2008,-65.3094,equity_return,cn,pct,Tencent SH000001 2008 calendar return from 2007 close 5248.69 (cross-verified) to 2008 close 1820.8; B-grade
+2009,79.98248032469067,equity_return,cn,pct,Tencent SH000001 qfq daily calendar-year return 2008-2025; parent=tencent_equity/sh000001_daily_2008_2025.csv; B-grade market source
+2010,-14.313063925576552,equity_return,cn,pct,Tencent SH000001 qfq daily calendar-year return 2008-2025; parent=tencent_equity/sh000001_daily_2008_2025.csv; B-grade market source
+2011,-21.6753083957722,equity_return,cn,pct,Tencent SH000001 qfq daily calendar-year return 2008-2025; parent=tencent_equity/sh000001_daily_2008_2025.csv; B-grade market source
+2012,3.169471951696368,equity_return,cn,pct,Tencent SH000001 qfq daily calendar-year return 2008-2025; parent=tencent_equity/sh000001_daily_2008_2025.csv; B-grade market source
+2013,-6.749282764760068,equity_return,cn,pct,Tencent SH000001 qfq daily calendar-year return 2008-2025; parent=tencent_equity/sh000001_daily_2008_2025.csv; B-grade market source
+2014,52.86911974593331,equity_return,cn,pct,Tencent SH000001 qfq daily calendar-year return 2008-2025; parent=tencent_equity/sh000001_daily_2008_2025.csv; B-grade market source
+2015,9.413605055214113,equity_return,cn,pct,Tencent SH000001 qfq daily calendar-year return 2008-2025; parent=tencent_equity/sh000001_daily_2008_2025.csv; B-grade market source
+2016,-12.306240428573844,equity_return,cn,pct,Tencent SH000001 qfq daily calendar-year return 2008-2025; parent=tencent_equity/sh000001_daily_2008_2025.csv; B-grade market source
+2017,6.557783763580827,equity_return,cn,pct,Tencent SH000001 qfq daily calendar-year return 2008-2025; parent=tencent_equity/sh000001_daily_2008_2025.csv; B-grade market source
+2018,-24.591115666869257,equity_return,cn,pct,Tencent SH000001 qfq daily calendar-year return 2008-2025; parent=tencent_equity/sh000001_daily_2008_2025.csv; B-grade market source
+2019,22.30321985644972,equity_return,cn,pct,Tencent SH000001 qfq daily calendar-year return 2008-2025; parent=tencent_equity/sh000001_daily_2008_2025.csv; B-grade market source
+2020,13.86666754094923,equity_return,cn,pct,Tencent SH000001 qfq daily calendar-year return 2008-2025; parent=tencent_equity/sh000001_daily_2008_2025.csv; B-grade market source
+2021,4.800076013440568,equity_return,cn,pct,Tencent SH000001 qfq daily calendar-year return 2008-2025; parent=tencent_equity/sh000001_daily_2008_2025.csv; B-grade market source
+2022,-15.1250899779657,equity_return,cn,pct,Tencent SH000001 qfq daily calendar-year return 2008-2025; parent=tencent_equity/sh000001_daily_2008_2025.csv; B-grade market source
+2023,-3.700886296394623,equity_return,cn,pct,Tencent SH000001 qfq daily calendar-year return 2008-2025; parent=tencent_equity/sh000001_daily_2008_2025.csv; B-grade market source
+2024,12.666852665440874,equity_return,cn,pct,Tencent SH000001 qfq daily calendar-year return 2008-2025; parent=tencent_equity/sh000001_daily_2008_2025.csv; B-grade market source
+2025,18.41062605914505,equity_return,cn,pct,Tencent SH000001 qfq daily calendar-year return 2008-2025; parent=tencent_equity/sh000001_daily_2008_2025.csv; B-grade market source

@@ -1,0 +1,10 @@
+﻿na_reason,category,count,pct_of_na,variables
+(有值),HAS_VALUE,15391,-,全部
+NOT_APPLICABLE,NOT_APPLICABLE,2770,82.91%,cre.tsf_flow; cre.tsf_stock; ext.gold_reserve_value; gold.au9999_q; gold.sge; gro.fai_official_cum; gro.ip_cum_yoy; gro.ip_yoy; gro.pmi_composite; gro.pmi_employment; gro.pmi_new_orders; gro.pmi_nonmanufacturing; gro.pmi_production; gro.pmi_raw_material_inventory; gro.pmi_supplier_delivery; hh.deposit; hh.income_annual; hh.income_quarterly; inf.cpi_core; inf.ppirm; liq.afre_stock_yoy_official; mar.market_balance; mar.sz_monthly; mkt.hs300_510300; rate.fdr007_mean; rate.lpr1y; rate.lpr5y; rate.policy7d
+NOT_RELEASED,NOT_RELEASED,123,3.68%,cre.new_loan; cre.tsf_flow; cre.tsf_stock; ext.forex_reserve; ext.gold_reserve_value; gov.fiscal_revenue; gro.fai_official_cum; gro.ip_cum_yoy; gro.ip_yoy; gro.pmi; gro.pmi_composite; gro.pmi_employment; gro.pmi_new_orders; gro.pmi_nonmanufacturing; gro.pmi_production; gro.pmi_raw_material_inventory; gro.pmi_supplier_delivery; gro.retail_yoy; hh.deposit; hh.income_annual; hh.income_quarterly; inf.cpi_core; inf.cpi_yoy; inf.ppirm; liq.fx_loans_change; liq.m0_yoy; liq.m1_yoy; liq.m2_yoy; liq.total_deposits_change; mar.market_balance; mar.sz_monthly; afre_yoy; delta_pmi; loans_12m; m1_m2_gap; pmi_gap
+SOURCE_GAP,SOURCE_GAP,206,6.17%,gro.fai_official_cum; hh.deposit_hist; liq.afre_stock_yoy_official; mar.market_balance; rate.fdr007_mean; rate.shibor3m_mean; rate.shibor_on_mean
+COVERAGE_LOW,SOURCE_GAP,29,0.87%,rate.fdr007_mean; rate.shibor3m_mean; rate.shibor_on_mean
+STALE_SOURCE,SOURCE_GAP,36,1.08%,mar.market_balance; afre_yoy
+RETROSPECTIVE_NOT_AVAILABLE,DEFINITION_BREAK,108,3.23%,cre.tsf_stock; liq.afre_stock_yoy_official
+INSUFFICIENT_HISTORY,NOT_APPLICABLE,11,0.33%,loans_12m
+HANDOFF_TO_QUARTERLY,DEFINITION_BREAK,58,1.74%,hh.income_annual

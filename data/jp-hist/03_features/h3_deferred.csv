@@ -1,0 +1,2 @@
+country,registry_variable,short_var,semantic_status,defer_reason,note
+cn,cn.hist.trade_balance_gdp,trade_balance_gdp,PRE_TRANSFORM,DEFERRED_FX,needs USDCNY annual FX (H1-P1)

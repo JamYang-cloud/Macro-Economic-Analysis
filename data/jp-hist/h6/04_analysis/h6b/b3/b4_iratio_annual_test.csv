@@ -1,0 +1,3 @@
+﻿country,n_years,window,theta_annual_C_to_Iratio,direction,credit_proxy,i_ratio_proxy,note
+JP,21,1985-2005,0.7727,POS,"nfc_credit_gdp annual mean (B1 frozen, sign -1)",investment_gdp pct annual (H6A; aux; sign -1),"annual auxiliary test (same-year Spearman, robust-z); NOT part of quarterly main Verdict; reports B4 annual directional consistency"
+CN,15,2010-2024,-0.6179,NEG,"nfc_credit_gdp annual mean (B1 frozen, sign -1)",investment_gdp pct annual (H6A; aux; sign -1),"annual auxiliary test (same-year Spearman, robust-z); NOT part of quarterly main Verdict; reports B4 annual directional consistency"

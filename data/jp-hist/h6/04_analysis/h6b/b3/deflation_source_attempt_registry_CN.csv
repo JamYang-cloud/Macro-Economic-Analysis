@@ -1,0 +1,8 @@
+﻿class,source,result,reason
+CN Core CPI,akshare macro_china_cpi_core,ERR,"AttributeError(""module 'akshare' has no attribute 'macro_china_cpi_core'"")"
+CN Core CPI,akshare (macro_china_cpi_core/monthly),NOT_FOUND,无核心CPI接口或列
+CN Services CPI,akshare macro_china_cpi_yearly,NOT_FOUND,无服务CPI行
+CN GDP deflator,NBS quarterly GDP (nominal/real),NOT_CONSTRUCTIBLE,"NBS 不发布季度实际 GDP 水平指数(仅增速),名义/实际相除禁(冻结规则禁 level 相除);官方季度 deflator 无"
+CN Wage,akshare,NOT_FOUND,接口不存在
+CN Core CPI,NBS esData,NOT_LOCATED,"esData 树首屏未定位核心CPI indicator;官方季度 core CPI 发布主渠道为月度新闻稿(2013+),esData 收录存疑"
+STATUS,audit P1-4,COLLECTION_INCOMPLETE,"CN core CPI(2013+)/services 官方月度新闻稿渠道已知但未采(历史逐月拼接成本高);D-B 需>=4类,CN 现仅 CPI/PPI 2 类 → 正式状态=COLLECTION_INCOMPLETE 而非 INFEASIBLE;不阻断主 Verdict(D 独立)"

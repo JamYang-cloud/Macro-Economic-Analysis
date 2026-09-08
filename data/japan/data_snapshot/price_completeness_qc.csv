@@ -1,0 +1,8 @@
+﻿qc_item,value
+tse_sessions_total,7846
+range,1995-01-04~2026-12-30
+tse_session_price_missing_count,3
+missing_session_dates,1996-12-25|2007-12-25|2008-12-25
+missing_impact_on_state_exec_loss,"0 (379 D_t 与全部 N(D_t) 均有价, 审核20节)"
+missing_impact_on_mdd,0 (审核22节外部核验: 补值后无 MDD 改变)
+calendar_vs_price_independent,true (2020-10-01 FRED有值TSE无交易; 3缺值TSE有交易FRED无值)

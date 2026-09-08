@@ -1,0 +1,14 @@
+year,value,variable,country,unit,transform_id
+2000,,nominal_gdp_yoy_robustz,cn,robust_z,H3-ROBUSTZ-cn-nominal_gdp_yoy
+2001,-1.5070852130460026,nominal_gdp_yoy_robustz,cn,robust_z,H3-ROBUSTZ-cn-nominal_gdp_yoy
+2002,-1.5249356301209978,nominal_gdp_yoy_robustz,cn,robust_z,H3-ROBUSTZ-cn-nominal_gdp_yoy
+2003,-0.7267669809105088,nominal_gdp_yoy_robustz,cn,robust_z,H3-ROBUSTZ-cn-nominal_gdp_yoy
+2004,0.49726161851771644,nominal_gdp_yoy_robustz,cn,robust_z,H3-ROBUSTZ-cn-nominal_gdp_yoy
+2005,-0.2626561369606399,nominal_gdp_yoy_robustz,cn,robust_z,H3-ROBUSTZ-cn-nominal_gdp_yoy
+2006,0.35700834149989874,nominal_gdp_yoy_robustz,cn,robust_z,H3-ROBUSTZ-cn-nominal_gdp_yoy
+2007,1.8411430183066222,nominal_gdp_yoy_robustz,cn,robust_z,H3-ROBUSTZ-cn-nominal_gdp_yoy
+2008,0.6222145380426817,nominal_gdp_yoy_robustz,cn,robust_z,H3-ROBUSTZ-cn-nominal_gdp_yoy
+2009,-2.1650005852386736,nominal_gdp_yoy_robustz,cn,robust_z,H3-ROBUSTZ-cn-nominal_gdp_yoy
+2010,0.3289576860963354,nominal_gdp_yoy_robustz,cn,robust_z,H3-ROBUSTZ-cn-nominal_gdp_yoy
+2011,0.26265613696064033,nominal_gdp_yoy_robustz,cn,robust_z,H3-ROBUSTZ-cn-nominal_gdp_yoy
+2012,-1.5300357492852819,nominal_gdp_yoy_robustz,cn,robust_z,H3-ROBUSTZ-cn-nominal_gdp_yoy

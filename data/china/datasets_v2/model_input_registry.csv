@@ -1,0 +1,15 @@
+﻿input_id,source_type,source_key,model_tier,economic_block,replacement_group,replaces_registry_ids,include_default,notes
+ey,FEATURE,ey,BASELINE,VALUATION,VAL_PE,val.pe_ttm,TRUE,PE→EY 工程替代 (100/PE)
+eyg,FEATURE,eyg,BASELINE,VALUATION,VAL_PE+RATE_CN10Y,val.pe_ttm;rate.cn10y,TRUE,PE+10Y→EYG 组合替代
+term_spread,FEATURE,term_spread,BASELINE,RATES,RATE_CN10Y2Y,rate.cn10y;rate.cn2y;rate.cn10y2y,TRUE,CN10Y-CN2Y→期限利差 (cn10y2y 的工程实现)
+pmi_gap,FEATURE,pmi_gap,BASELINE,GROWTH,GRO_PMI,gro.pmi,TRUE,PMI→PMI Gap 替代 (PMI-50)
+delta_pmi,FEATURE,delta_pmi,BASELINE,GROWTH,,,TRUE,增量特征: PMI 环比 (14 候选外的 engineered 补充)
+loans_12m,FEATURE,loans_12m,BASELINE,CREDIT,CRE_LOANS_12M,cre.loans_12m,TRUE,12M 贷款滚动和 (registry cre.loans_12m 的工程实现)
+val.pb,STATE,val.pb,BASELINE,VALUATION,,val.pb,TRUE,"市净率 (无 engineered 替代, 原候选保留)"
+rate.fr007_mean,STATE,rate.fr007_mean,BASELINE,RATES,,rate.fr007_monthly,TRUE,FR007 月均 (原候选 fr007_monthly 的状态实现)
+gro.ip_yoy,STATE,gro.ip_yoy,BASELINE,GROWTH,,gro.ip_yoy,TRUE,工业增加值同比 (原候选保留)
+gro.retail_yoy,STATE,gro.retail_yoy,BASELINE,GROWTH,,gro.retail_yoy,TRUE,社零同比 (原候选保留)
+gro.gdp_yoy,STATE,gro.gdp_yoy,BASELINE,GROWTH,,gro.gdp_yoy_latest_known,TRUE,GDP 同比 last-known (原候选 gdp_yoy_latest_known 的状态实现)
+inf.cpi_yoy,STATE,inf.cpi_yoy,BASELINE,INFLATION,,inf.cpi_yoy,TRUE,CPI 同比 (INFLATION block 正式输入)
+inf.ppi_yoy,STATE,inf.ppi_yoy,BASELINE,INFLATION,,inf.ppi_yoy,TRUE,PPI 同比 (INFLATION block 正式输入)
+liq.m2_yoy,STATE,liq.m2_yoy,BASELINE,LIQUIDITY,,liq.m2_yoy,TRUE,M2 同比 (LIQUIDITY block 正式输入)

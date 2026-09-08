@@ -1,0 +1,5 @@
+﻿category,n_J90,n_J00,n_JGAP_excluded,n_OTHER_excluded,pool_N,expected_pool_N,n_perm,seed,empirical_p
+Baseline,7,3,0,2,10,10,2000,20260907,0.1384
+ResidA,0,0,0,0,0,0,2000,20260907,
+BaselineB90_CS,4,5,0,3,9,9,2000,20260907,0.0355
+ResidB,3,6,0,3,9,9,2000,20260907,0.1204

@@ -1,0 +1,14 @@
+﻿parameter,value,notes
+model_A_regressors,"[1, WorldGDP_growth_q, COVID_dummy_q]",H6-A A3 语义继承;季度化见下
+model_B_regressors,A + VIX_q,VIX 1990+ common-support;不缩 robust-z 标定窗
+world_gdp_q_construction,WB annual growth 1961-2025 年内平铺 step(4季同值),禁插值平滑;WB JSON 已存 h6/01_raw/global_shocks/
+vix_q_aggregation,CBOE 日度→季度 mean,与 annual mean 规则同构
+covid_dummy_q,"2020Q1-2022Q4=1,其余 0",对应 H6-A annual 2020-22
+jp_fit_domain,1985Q1-2005Q4 primary;Model B 1990Q1+ common-support,候选年下限≠标准化观察集(H6-A A3.2 教训)
+cn_fit_domain,2005Q1-latest_by_cutoff_2026-08-31(extended)或 2010Q1-latest_by_cutoff_2026-08-31(primary),按窗
+residualize_input,标准化前值(raw quarterly/annual value),RobustZ(û);birth 类用 Δ 前值
+minimum_n,回归段 n≥20 季度,否则 INFEASIBLE_AFTER_PRESPECIFIED_MASK
+annual_slow_variables,land_price/wage/I_ratio 不参与季度 shock 回归,保留 raw + annual 单独 robustness
+infeasibility_rule,数据不足→INFEASIBLE_AFTER_PRESPECIFIED_MASK,禁扩窗/降阈
+reported_tracks,Mechanism^Raw / ^ShockAdjusted / ^FirstDiff,每链必须;仅 raw 成立→降级 descriptive
+reporting_limitation,GLOBAL_GROWTH_CONTROL_ANNUAL_STEP_QUARTERLY,WB annual growth 年内平铺不产生真正季度全球冲击信息；Model A quarterly track 为 annual-step control，最终报告必须标注此限制（外审 P2）

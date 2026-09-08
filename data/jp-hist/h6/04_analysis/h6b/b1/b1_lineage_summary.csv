@@ -1,0 +1,24 @@
+﻿variable,country,std_file,raw_parent
+corporate_leverage,JP,h6b_q_corporate_leverage.csv,h6/01_raw/jp/mof_corporate/assets.xls + liabilities.xls (H1-lineage)
+corporate_profitability,JP,h6b_q_corporate_profitability.csv,h6/01_raw/jp/mof_corporate/income.xls (H1-lineage)
+mof_interest_burden,JP,h6b_q_mof_interest_burden.csv,h6/01_raw/jp/mof_corporate/income.xls (H1-lineage)
+corporate_land_share,JP,h6b_q_corporate_land_share.csv,h6/01_raw/jp/mof_corporate/assets.xls (H1-lineage)
+i_q_gfcf,JP,h6b_q_i_q_gfcf_jp.csv,h6/01_raw/jp/esri/68SNA def_fy01168+gaku_* (H1) + ESRI QE gaku-mk2621.csv (B1.1) + FRED JPNNGDP
+housing_starts,JP,h6b_q_housing_starts_jp.csv,e-Stat 0003119771 json/csv + MLIT monthly publication7{01-06}/8{01-06}.xls (B1.1)
+boj_ffa_corp_liab,JP,h6b_q_boj_ffa_corp_liab.csv,h6/01_raw/jp/boj_ffa/ffas410l900_stock.json + ffsa260l400_stock.json
+credit_flow_jp,JP,h6b_q_credit_flow_jp.csv,h6/01_raw/jp/boj_ffa/ffaf410l900_flow.json + fffa260l400_flow.json + FRED JPNNGDP
+credit_impulse_jp,JP,h6b_q_credit_impulse_jp.csv,derived: diff(credit_flow_jp)
+corporate_leverage,CN,h6b_q_corporate_leverage_cn.csv,h6/01_raw/cn/nbs_corporate/assets+liabilities json (esData)
+corporate_profitability,CN,h6b_q_corporate_profitability_cn.csv,h6/01_raw/cn/nbs_corporate/profit_total+revenue+main_revenue json (esData)
+corporate_leverage,CN,h6b_q_corporate_leverage_cn_leading_sparse.csv,"h6/01_raw/cn/nbs_corporate (esData, sparse pre-2011)"
+corporate_profitability,CN,h6b_q_corporate_profitability_cn_leading_sparse.csv,"h6/01_raw/cn/nbs_corporate (esData, sparse pre-2011)"
+property_investment,CN,h6b_q_property_investment_cn.csv,h6/01_raw/cn/nbs_property (esData)
+housing_starts,CN,h6b_q_housing_starts_cn.csv,h6/01_raw/cn/nbs_property (esData)
+property_sales_area,CN,h6b_q_property_sales_area_cn.csv,h6/01_raw/cn/nbs_property (esData)
+property_sales_value,CN,h6b_q_property_sales_value_cn.csv,h6/01_raw/cn/nbs_property (esData)
+developer_funding,CN,h6b_q_developer_funding_cn.csv,h6/01_raw/cn/nbs_property (esData)
+cn_pboc_sector_credit,CN,h6b_q_cn_pboc_sector_credit.csv,h6/01_raw/cn/pboc/*.htm (PBOC 官网逐年)
+nfc_credit_gdp,JP+CN,h6b_q_nfc_credit_gdp.csv,h6/01_raw/bis_credit/WS_TC_csv_flat.csv
+hh_credit_gdp,JP+CN,h6b_q_hh_credit_gdp.csv,h6/01_raw/bis_credit/WS_TC_csv_flat.csv
+residential_property_price,JP+CN,h6b_q_residential_property_price.csv,h6/01_raw/bis_property_price/WS_SPP_csv_flat.csv
+identity_qc,JP,h6b_mof_identity_qc.csv,assets+liabilities+income xls (H1-lineage)

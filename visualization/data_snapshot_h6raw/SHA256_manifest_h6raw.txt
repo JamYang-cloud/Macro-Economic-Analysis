@@ -1,0 +1,4 @@
+# SHA256 manifest — data_snapshot_h6raw (JP-HIST 原始层精选 只读展示快照)
+2090bd0e8bb3d7765a120caf0f2a9499b904330d8852563b942d61b129a11a6f  h6r_cn_reer.csv
+cf2865905e1b4b10f5eb5dd717795c79512cb90091d38fca8689ba261e1677ff  h6r_cn_usdcny.csv
+334a9b1abc52c29a40626852b9f6cec4a3ee6cb7b793948de4856e7fb684ccf8  registry_raw.csv

@@ -1,0 +1,9 @@
+H6-A A3.1 QC (REWORK closure)
+P0-1 non-circular MBB: block starts s in [0, n-L], no modulo wrap; see a3_bootstrap_validation.csv
+P0-2 permutation: labels shuffled within J90 U J00 only, n fixed; see a3_permutation_validation.csv
+P1-1 Model-B common support: BaselineB90_CS (JP norm 1990-2025) <-> ResidB (JP 1990-2025); same_support=True in check csv
+P1-2 wording: 'not robust to prespecified global-shock adjustment' (no causal attribution)
+Baseline flavor == frozen (assert 13/13, D modes 22/16/22/14, CH D 0.0112/0.3685/0.7534)
+input = standardized_pre_normalization_value; x -> shock reg -> u_hat -> RobustZ -> similarity
+Model A/B confirmatory; Model T diagnostic only; no post-hoc control expansion
+Gate A3: ResidA must PASS & (Baseline or -COVID) PASS; overall rows machineized in gate CSV

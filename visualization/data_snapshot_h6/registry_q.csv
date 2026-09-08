@@ -1,0 +1,25 @@
+﻿variable_id,country,display_name,unit,frequency,level,group_cn,m3_featured_order,source_file,source_ref,notes
+h6q_cn_core_cpi,cn,核心CPI同比（季均·不含食品能源）,%,quarterly,h6b,补充数据·中国(通缩·季度),1,h6q_cn_core_cpi.csv,JP-HIST h6/02_standardized/h6b/h6b_d_cpi_core_cn.csv (FROZEN H6-B),2013Q1+ 官方核心CPI结构性起点（非缺口）；补 M1 月频 SOURCE_GAP 段；CN 2023-25 ≈0 未转负
+h6q_cn_corp_leverage,cn,规上工业企业资产负债率（季末）,比值,quarterly,h6b,补充数据·中国(机制·季度),2,h6q_cn_corp_leverage.csv,JP-HIST h6/02_standardized/h6b/h6b_q_corporate_leverage_cn.csv (FROZEN H6-B),SECTOR_PROXY 仅工业（≠JP法人全行业）；2011Q1+ 连续段；只比趋势禁绝对值横比
+h6q_cn_corp_profit,cn,规上工业利润率（单季还原）,比值,quarterly,h6b,补充数据·中国(机制·季度),,h6q_cn_corp_profit.csv,JP-HIST h6/02_standardized/h6b/h6b_q_corporate_profitability_cn.csv (FROZEN H6-B),2011Q1+；单季利润/单季营收（2018 前主营业务收入口径）
+h6q_cn_developer_fund,cn,开发商到位资金（单季还原）,亿元,quarterly,h6b,补充数据·中国(机制·季度),,h6q_cn_developer_fund.csv,JP-HIST h6/02_standardized/h6b/h6b_q_developer_funding_cn.csv (FROZEN H6-B),2000Q1+；房地产开发企业本年到位资金
+h6q_cn_housing_starts,cn,住房新开工面积（单季还原）,m²,quarterly,h6b,补充数据·中国(机制·季度),4,h6q_cn_housing_starts.csv,JP-HIST h6/02_standardized/h6b/h6b_q_housing_starts_cn.csv (FROZEN H6-B),2000Q1+（2000Q2-Q4 登记缺失）；与 JP 户数口径不同，形态示意
+h6q_cn_pboc_credit_yoy,cn,企业中长期贷款余额同比（季末）,%,quarterly,h6b,补充数据·中国(机制·季度),,h6q_cn_pboc_credit_yoy.csv,JP-HIST h6/02_standardized/h6b/h6b_q_cn_pboc_sector_credit_yoy.csv (FROZEN H6-B),2011Q1+；PBOC 信贷收支表 非金融企业及机关团体口径
+h6q_cn_policy_rate,cn,政策利率（1Y基准→LPR链·季末）,%,quarterly,h6b,补充数据·中国(机制·季度),,h6q_cn_policy_rate.csv,JP-HIST h6/02_standardized/h6b/h6b_q_cn_policy_rate_stance.csv (FROZEN H6-B),2010Q1+；2019-08 LPR 改革断点（基准利率→LPR 衔接）
+h6q_cn_ppi,cn,PPI同比（季均）,%,quarterly,h6b,补充数据·中国(通缩·季度),3,h6q_cn_ppi.csv,JP-HIST h6/02_standardized/h6b/h6b_d_ppi_cn.csv (FROZEN H6-B),2006Q1+ 标准化起点；与月频同源作季度对照
+h6q_cn_property_invest,cn,房地产开发投资（单季还原）,亿元,quarterly,h6b,补充数据·中国(机制·季度),,h6q_cn_property_invest.csv,JP-HIST h6/02_standardized/h6b/h6b_q_property_investment_cn.csv (FROZEN H6-B),2000Q1+；与 M1 月频固投总量口径不同（仅房地产开发）
+h6q_cn_res_price,cn,住宅价格指数（BIS 段）,指数,quarterly,h6b,补充数据·中国(机制·季度),4,h6q_cn_res_price.csv,JP-HIST h6/02_standardized/h6b/h6b_q_residential_property_price.csv (FROZEN H6-B),2005Q2+；源文件无基准说明→只比形态，禁绝对横比
+h6q_cn_sales_area,cn,商品房销售面积（单季还原）,m²,quarterly,h6b,补充数据·中国(机制·季度),,h6q_cn_sales_area.csv,JP-HIST h6/02_standardized/h6b/h6b_q_property_sales_area_cn.csv (FROZEN H6-B),2000Q1+；新建商品房
+h6q_cn_sales_value,cn,商品房销售额（单季还原）,亿元,quarterly,h6b,补充数据·中国(机制·季度),,h6q_cn_sales_value.csv,JP-HIST h6/02_standardized/h6b/h6b_q_property_sales_value_cn.csv (FROZEN H6-B),2000Q1+；新建商品房
+h6q_cn_services_cpi,cn,服务CPI同比（季均）,%,quarterly,h6b,补充数据·中国(通缩·季度),,h6q_cn_services_cpi.csv,JP-HIST h6/02_standardized/h6b/h6b_d_cpi_services_cn.csv (FROZEN H6-B),2016Q1+ 官方起点非缺口；42 季全（M1 从未有服务价格）
+h6q_jp_core_cpi,jp,核心CPI同比（除生鲜·季均）,%,quarterly,h6b,补充数据·日本(通缩·季度),1,h6q_jp_core_cpi.csv,JP-HIST h6/02_standardized/h6b/h6b_d_cpi_core_jp.csv (FROZEN H6-B),1971Q1+；2025基准；1990s 转负区间=M3 着色段
+h6q_jp_corp_leverage,jp,法人企业资产负债率（全行业除金融）,比值,quarterly,h6b,补充数据·日本(机制·季度),2,h6q_jp_corp_leverage.csv,JP-HIST h6/02_standardized/h6b/h6b_q_corporate_leverage.csv (FROZEN H6-B),1954Q2-2026Q1 资产负债表周期直接观测；泡沫峰值 1989-91 前后
+h6q_jp_corp_profit,jp,法人利润率（经常利润/销售额）,比值,quarterly,h6b,补充数据·日本(机制·季度),,h6q_jp_corp_profit.csv,JP-HIST h6/02_standardized/h6b/h6b_q_corporate_profitability.csv (FROZEN H6-B),1954Q2+
+h6q_jp_deflator,jp,GDP平减指数同比（季）,%,quarterly,h6b,补充数据·日本(通缩·季度),,h6q_jp_deflator.csv,JP-HIST h6/02_standardized/h6b/h6b_d_gdp_deflator_jp.csv (FROZEN H6-B),1995Q1-2023Q3；FRED 镜像停更
+h6q_jp_gfcf,jp,投资率 GFCF/GDP（季）,比值,quarterly,h6b,补充数据·日本(机制·季度),,h6q_jp_gfcf.csv,JP-HIST h6/02_standardized/h6b/h6b_q_i_q_gfcf_jp.csv (FROZEN H6-B),1955Q1+；68SNA 段×splice + ESRI QE
+h6q_jp_housing_starts,jp,新設住宅着工戸数（季）,戸,quarterly,h6b,补充数据·日本(机制·季度),4,h6q_jp_housing_starts.csv,JP-HIST h6/02_standardized/h6b/h6b_q_housing_starts_jp.csv (FROZEN H6-B),1965Q1+（MLIT 建築着工統計；2024 止）；与 CN 面积口径不同，形态示意
+h6q_jp_interest_burden,jp,法人利息负担（利息/经常利润）,比值,quarterly,h6b,补充数据·日本(机制·季度),,h6q_jp_interest_burden.csv,JP-HIST h6/02_standardized/h6b/h6b_q_mof_interest_burden.csv (FROZEN H6-B),1954Q2+；高息期负担倍数可观
+h6q_jp_land_share,jp,法人土地持有占资产比,比值,quarterly,h6b,补充数据·日本(机制·季度),,h6q_jp_land_share.csv,JP-HIST h6/02_standardized/h6b/h6b_q_corporate_land_share.csv (FROZEN H6-B),1954Q2+；1988-1990 泡沫期土地杠杆峰值标注
+h6q_jp_policy_rate,jp,政策利率（公定歩合贴现率·季均）,%,quarterly,h6b,补充数据·日本(机制·季度),,h6q_jp_policy_rate.csv,JP-HIST h6/02_standardized/h6b/h6b_q_jp_policy_rate_stance.csv (FROZEN H6-B),1984Q1-2017Q2；FRED 镜像 2017-04 停更
+h6q_jp_ppi,jp,PPI同比（CGPI·季均）,%,quarterly,h6b,补充数据·日本(通缩·季度),3,h6q_jp_ppi.csv,JP-HIST h6/02_standardized/h6b/h6b_d_ppi_jp.csv (FROZEN H6-B),1984Q1-2022Q4；BOJ CGPI，2022Q4 停更注
+h6q_jp_res_price,jp,住宅价格指数（BIS）,指数,quarterly,h6b,补充数据·日本(机制·季度),4,h6q_jp_res_price.csv,JP-HIST h6/02_standardized/h6b/h6b_q_residential_property_price.csv (FROZEN H6-B),1955Q1+；源文件无基准说明→只比形态，禁绝对横比

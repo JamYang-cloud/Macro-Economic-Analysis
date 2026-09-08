@@ -1,0 +1,13 @@
+﻿feature_id,中文名,单位,分组,国家
+call_unc_boj_m,日本无担保隔夜拆借利率(政策利率代理),%,利率,日本
+usdjpy_m,美元兑日元汇率(月末可知值),日元/美元,汇率,日本
+m2_yoy_canonical,货币供应 M2 同比(regime 衔接),% 同比,货币,日本
+mb_yoy,基础货币同比(官方),% 同比,货币,日本
+boj_assets,日本银行总资产,亿日元,货币/央行,日本
+tankan_mfg_di,短观制造业景气判断 DI,DI,景气,日本
+tankan_nonmfg_di,短观非制造业景气判断 DI,DI,景气,日本
+m2_yoy,M2 现行段同比(审计列),% 同比,货币(审计),日本
+m2_ref_avg_yoy,M2 参考段同比(审计列),% 同比,货币(审计),日本
+m2_old_avg_yoy,M2 旧段同比(审计列),% 同比,货币(审计),日本
+nikkei225_close,日经 225 收盘价(PRICE PROXY),点,股票,日本
+policy_regime_id,货币政策 regime,,政策,日本

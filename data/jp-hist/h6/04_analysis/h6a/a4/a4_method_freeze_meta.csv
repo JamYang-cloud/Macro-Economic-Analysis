@@ -1,0 +1,2 @@
+﻿freeze_timestamp,spec_sha256,engine_sha256,run_started_at,run_completed_at,primary_criterion,m_max,min_segment
+2026-09-07T08:01:20Z,dae4586826bc202738dba6bbe123e99829aeb321fc8122a5cc9dc0189e774a23,e33bddeb31ae5fd8fa460b86b16b908ba0b696d0e28ec649032741cc0e82aae4,2026-09-07T16:14:37Z,2026-09-07T16:14:45Z,BIC2=(2m+1)ln n,"jp=6, cn=4",5

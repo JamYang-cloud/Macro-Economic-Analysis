@@ -1,0 +1,13 @@
+﻿event_id,country,event_date,event_type,institution,regime_change,comparability_effect,official_source_url,source_grade,retrieved_at,note
+JP-POL-001,JP,1971-08-15,FX_REGIME_SHOCK,US Gov/Nixon,TRUE,布雷顿森林解体起点; 日元固定汇率制度开始松动(360/USD),https://www.imes.boj.or.jp/jp/historical/kinyushi/nenpyo1965_1984.pdf,B,2026-09-06,"Nixon Shock; BOJ金融史年表1965-1984(B级机构年表); 事件层标注, FX仅在浮动段可比"
+JP-POL-002,JP,1973-02-14,FX_REGIME_FLOAT,MOF/BOJ,TRUE,日元转向浮动汇率——FX变化率从此有经济含义(1971-73过渡),https://www.imes.boj.or.jp/jp/historical/kinyushi/nenpyo1965_1984.pdf,B,2026-09-06,史密森协议(1971-12)后1973-02进入浮动; BOJ金融史年表B级
+JP-POL-003,JP,1973-10-06,OIL_SHOCK,OPEC,FALSE,"第一次石油危机——通胀/增长冲击, 非制度",https://www.imes.boj.or.jp/jp/historical/kinyushi/nenpyo1965_1984.pdf,B,2026-09-06,事件对齐层候选; BOJ金融史年表B级
+JP-POL-004,JP,1980-12-01,CAPITAL_ACCOUNT_LIB,MOF/外為法,TRUE,外汇法原则自由化——资本流动制度巨变; CN侧资本账户仍管制→两端口径不对称,https://www.imes.boj.or.jp/jp/historical/kinyushi/nenpyo1965_1984.pdf,B,2026-09-06,1980-12外為法改正(原则自由化); BOJ金融史年表B级
+JP-POL-005,JP,1985-09-22,FX_AGREEMENT,G5/Plaza Accord,TRUE,广场协议——日元急剧升值起点; 与CN 2015-08汇改的类比事件,https://www.imes.boj.or.jp/research/papers/japanese/kk34-2-3.pdf,B,2026-09-06,"BOJ IMES 1980s金融政策运营研究(B级机构研究, 覆盖Plaza前后政策); 事件对齐层关键锚"
+JP-POL-006,JP,1989-05-31,MONETARY_TIGHTEN,BOJ,TRUE,公定歩合引上げ開始(2.5→3.25)——泡沫抑制起点; 1989-05→1990-08共5次至6.0,https://www.boj.or.jp/en/statistics/boj/other/discount/cdab0100.csv,A,2026-09-06,官方CSV实测事件日1989-05-31; A级(event-specific官方数据)
+JP-POL-007,JP,1990-03-27,CREDIT_TOTAL_REGULATION,MOF(大蔵省),TRUE,不動産融資総量規制——信用层制度性收紧; CN 2020三条红线类比对,https://www.imes.boj.or.jp/research/papers/japanese/kk38-2-2.pdf,B,2026-09-06,IMES 1990s金融政策研究实证1990年3月末大蔵省总量规制; B级机构研究; 具体日H1精化
+JP-POL-008,JP,1990-08-30,MONETARY_TIGHTEN_PEAK,BOJ,TRUE,公定歩合至6.0%周期顶点(1990-08-30)——资产泡沫见顶背景,https://www.boj.or.jp/en/statistics/boj/other/discount/cdab0100.csv,A,2026-09-06,官方CSV实测事件日; A级
+JP-POL-009,JP,1991-07-01,MONETARY_EASING,BOJ,TRUE,转降息(6.0→5.5)——破裂后宽松起点,https://www.boj.or.jp/en/statistics/boj/other/discount/cdab0100.csv,A,2026-09-06,官方CSV实测; A级
+JP-POL-010,JP,1992-01-01,TAX_POLICY,政府/地価税,TRUE,地価税施行(1991-05创设/1992-01施行)——土地政策制度化收紧,https://www.imes.boj.or.jp/research/papers/japanese/18-J-05.pdf,B,2026-09-06,IMES论文实证(1991-05创设1992-01施行); B级
+JP-POL-011,JP,1995-09-08,MONETARY_EASING_HIST_LOW,BOJ,TRUE,公定歩合0.5%历史低位——超低利率时代前夜,https://www.boj.or.jp/en/statistics/boj/other/discount/cdab0100.csv,A,2026-09-06,官方CSV实测; A级
+JP-POL-012,JP,1999-02-12,ZIRP,BOJ,TRUE,零利率政策ZIRP开始——政策利率名义下限时代(JP侧结构性约束),https://www.boj.or.jp/en/statistics/boj/other/discount/,B,2026-09-06,超出主窗但影响1995+解读; BOJ官方统计页B级(政策决定决议URL H1升A)

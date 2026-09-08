@@ -1,0 +1,7 @@
+event_id,event_name,scope,country,start_year,end_year,event_type,expected_modules,confirmatory_or_diagnostic,source,notes
+E01,亚洲金融危机及日本金融压力,Asia/JP-heavy,JP,1997,1998,financial_crisis,ALL,confirmatory,"建议书 §4.1；日本 1997-98 叠加国内金融压力与消费税调整",CN 侧 1997-98 亦受波及但以 JP 侧重
+E02,Dot-com / 全球科技泡沫破裂,global/US-led,JP+CN,2000,2002,asset_bubble_burst,ALL,confirmatory,"建议书 §4.1；全球/US 主导",JP 候选掩码主对象（LEO-2）
+E03,全球金融危机,global,JP+CN,2008,2009,financial_crisis,ALL,confirmatory,建议书 §4.1,global
+E04,欧债/全球二次金融压力,global/Europe-led,JP+CN,2011,2012,financial_crisis,ALL,auxiliary,建议书 §4.1,不参与 confirmatory 判定
+E05,COVID-19,global + country-specific,JP+CN,2020,2022,pandemic,ALL,confirmatory,建议书 §4.1,主检验用年度 dummy 2020-2022
+E06,中国2022特殊防疫/活动冲击,CN-specific,CN,2022,2022,policy_shock,ALL,diagnostic,建议书 §4.1,与 E05 不等同；只作 diagnostic

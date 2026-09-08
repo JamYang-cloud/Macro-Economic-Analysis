@@ -1,0 +1,14 @@
+H6-A A4.1 break diagnostics (spec v1.1 frozen) — 2026-09-07T16:09:56Z
+primary BIC2=(2m+1)ln n; m_max JP=6/CN=4; CI: iid N=1000 + MBB(L3) N=300
+jp/investment_gdp/raw: BIC2 m=6 (BOUNDARY) crit_sensitive=False break_after=[1974|1981|1987|1992|1997|2007] ci90_iid=[1974-1974;1981-1981;1987-1987;1992-1992;1997-1997;2006-2008] ci90_mbb=[1974-1974;1981-1981;1987-1987;1992-1992;1997-1997;2006-2008]
+jp/investment_gdp/ResidA: BIC2 m=2 crit_sensitive=True break_after=[1975|1997] ci90_iid=[1974-1976;1996-1998] ci90_mbb=[1975-1976;1996-1998]
+jp/cpi_yoy/raw: BIC2 m=2 crit_sensitive=False break_after=[1976|1981] ci90_iid=[1975-1978;1981-1998] ci90_mbb=[1976-1979;1981-1994]
+jp/cpi_yoy/ResidA: BIC2 m=2 crit_sensitive=True break_after=[1976|1981] ci90_iid=[1975-1979;1981-2003] ci90_mbb=[1976-1979;1981-1999]
+jp/m2_yoy/raw: BIC2 m=3 crit_sensitive=False break_after=[1974|1979|1990] ci90_iid=[1974-1974;1979-1990;1990-2007] ci90_mbb=[1974-1974;1979-1990;1990-2005]
+jp/m2_yoy/ResidA: BIC2 m=2 crit_sensitive=True break_after=[1975|1990] ci90_iid=[1975-1976;1990-1991] ci90_mbb=[1975-1976;1989-1991]
+cn/investment_gdp/raw: BIC2 m=2 crit_sensitive=False break_after=[2007|2014] ci90_iid=[2007-2008;2013-2015] ci90_mbb=[2007-2007;2013-2016]
+cn/investment_gdp/ResidA: BIC2 m=2 crit_sensitive=True break_after=[2007|2014] ci90_iid=[2007-2008;2013-2014] ci90_mbb=[2007-2007;2013-2014]
+cn/cpi_yoy/raw: BIC2 m=0 crit_sensitive=True break_after=[-] ci90_iid=[] ci90_mbb=[]
+cn/cpi_yoy/ResidA: BIC2 m=0 crit_sensitive=True break_after=[-] ci90_iid=[] ci90_mbb=[]
+cn/m2_yoy/raw: BIC2 m=3 crit_sensitive=False break_after=[2005|2010|2016] ci90_iid=[2004-2005;2010-2011;2015-2019] ci90_mbb=[2004-2005;2010-2011;2015-2018]
+cn/m2_yoy/ResidA: BIC2 m=1 crit_sensitive=True break_after=[2010] ci90_iid=[2008-2014] ci90_mbb=[2007-2014]

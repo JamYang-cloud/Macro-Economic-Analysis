@@ -1,0 +1,21 @@
+﻿concept_family,cn_variable_id,cn_name,cn_start,cn_freq,jp_series_id,jp_name,jp_start,jp_freq,comparability,normalization,early_source,m3_first_release,notes
+CPI同比,inf.cpi_yoy,CPI同比,2008-01,M,CPI2025_ALL,CPI総合同比(官方2025基),1970-01,M,A,直出,pit,TRUE,JP官方1970+; 早年另有1955+镜像
+核心CPI同比,inf.cpi_core,核心CPI同比,2021-01,M,CPI2025_CORE,CPI核心同比(官方2025基),1970-01,M,B,直出,pit,TRUE,CN registry仅2021+(官方2013+未入库); 定义略异
+PPI同比,inf.ppi_yoy,PPI同比,2006-01,M,ppi_manufacturing_1960,制造PPI(镜像2015=100),1960-02,M,B,直出,early_history,TRUE,JP镜像2022停更; 官方CGPI可后补
+M2同比,liq.m2_yoy,M2同比,2008-01,M,m2_yoy_canonical,M2同比(regime衔接),1995-01,M,B,直出,state,TRUE,JP canonical自1995(底层M2_OLD 1967+); M2定义两国不同
+M1-M2剪刀差,liq.m1_m2_gap,M1-M2剪刀差,,M,,JP侧无对应,,,C,直出,,FALSE,JP无M1-M2剪刀差概念(暂缺)
+政策/货币利率,rate.fr007,FR007回购定盘,2006-01,M,discount_rate_boj_1953,公定歩合贴现率,1953-01,M,B,直出,early_history,TRUE,CN市场利率vs JP政策金利; 替代: CN rate.policy7d(2015+)
+隔夜拆借/政策利率,rate.shibor_on,SHIBOR隔夜,2006-10,M,call_unc_boj_m,无担保隔夜拆借(日度月值),1998-01,M,B,直出,state,TRUE,口径近似(拆借利率)
+10Y国债收益率,rate.cn10y,中国10年国债收益率,2008-01,M,JGB10Y_FRED,日本10年国债(FRED镜像),1989-01,M,A,直出,pit,TRUE,JP 1989前缺(国债流通市场未成熟)
+人民币/日元兑美元,缺(CN registry无汇率序列),,,,usdjpy_m/美元兑日元,,1971-01,M,C,直出,,FALSE,CN侧汇率未入库(需后补USDCNH/CFETS); JP镜像USDJPY 1971+; 暂不可比
+股指(价格),mkt.sh000001,上证综指,2008-01,D,nikkei225_daily_full_1949,日经225(PRICE PROXY),1949-05,D,B,rebase100,early_history,TRUE,JP=价格代理TRI未解GateC标注; CN有hs300_tri真TRI
+GDP同比,gro.gdp_yoy,GDP同比(累计),2006-Q1,Q,gdp_real_yoy_fy_1955_cao,実質GDP增速(FY),1955FY,A,C,直出,early_history,TRUE,"JP仅FY年度(内閣府1955-2022, 跨SNA基准拼接)与CN日历季度差半年; 年频对照(JP年度值延展为月平台), CN 2008+"
+城镇调查失业率,缺(CN registry无失业率序列),,,,UNEMPLOY_ILO,失业率(ILO口径),1955-01,M,C,直出,pit,FALSE,CN失业率未入库(2018+调查失业率口径); 需后补
+社零/零售同比,gro.retail_yoy,社会消费品零售同比,2008-01,M,retail_sales_mom_1955,零售销售(镜像环比%),1955-02,M,C,自算12m累积,early_history,TRUE,JP官方零售2002+未PIT; 镜像为环比需累积; JP官方段可后补
+工业产出(环比镜像),,,,IIP_FRED_MOM,工业生产(镜像环比),1955-02,M,C,C,直出,pit,FALSE,CN侧工业增加值同比(registry未入库); JP镜像MoM需自算同比且2022段镜像停; 暂不可比
+出口同比,gro.export_yoy,出口同比,1982-01,M,EXPORT_FRED_SA,出口(镜像SA),1955-01,M,C,直出,pit,TRUE,镜像SA口径; customs官方段未PIT
+房价,pro.house_price,新房价格指数同比,2015-01,M,PROP_NOMINAL,房价指数(BIS),1955-Q1,Q,C,YoY或直出,pit,TRUE,CN仅2015+(口径新房价格); JP BIS名义/实际
+信贷/信用,cre.new_loan,新增人民币贷款,2008-01,M,CREDIT_PNFS_U,私人非金融部门信贷(BIS),1964-Q4,Q,C,GDP占比或YoY,pit,FALSE,CN新增贷款流量vs JP信贷存量口径差大; 需更仔细映射(首版跳过)
+老龄化(65+占比),缺(CN侧待采),,,,aging_65plus_share_1950_soumu,65岁以上人口占比,1950,A,C,直出,early_history,FALSE,CN老龄化序列未采(统计年鉴/世界银行可补); JP総務省1950-2050(2025推计29.4%)
+制造业景气,gro.pmi,制造业PMI,2008-01,M,tankan_mfg_di,短观制造业DI,1974-Q2,Q,C,直出,state,TRUE,PMI扩散指数vs DI调查性质不同; 形态对比
+工资/收入,hh.income_quarterly,居民人均可支配收入(季),2021-Q3,Q,WAGE_MFG_HOURLY_FRED,制造业时薪(镜像),1955-01,M,C,YoY,pit,FALSE,CN居民可支配收入vs JP制造业时薪口径差极大; 首版跳过

@@ -1,0 +1,17 @@
+﻿gate_id,link,theta_definition,direction_rule,bootstrap,ci_rule,gate_criteria,machine_executable,verdict_in,notes
+Gate B1,P→B,"θ=(1/5)Σ_{k=0..4}ρ_S(X_t^d,Y_{t+k}^d) window-average Spearman",sgn(θ^JP)=sgn(θ^CN)=expected +1(恶化同向),MBB L=3 n=2000 non-circular time-index joint-pair;aux L=2/4;valid_share≥0.9 req/0.5-0.9 cond/<0.5 INFEASIBLE,每个方向一致 family 的 θ 至少一国 bootstrap 90% CI 不含 0;另一国不得显著反向,≥2 不同 family(PRICE/ACTIVITY/INVENTORY-SALES)与 BS 方向一致;family index=family 内变量 robust-z 等权平均;同 family 多条 series 不重复计独立;可得 family<2→INFEASIBLE,TRUE,Verdict 输入,"Property 恶化(价格↓/活动↓/销售↓库存↑)⇒BS 恶化(杠杆↑/流动↓);family 冻结 PRICE/ACTIVITY/INVENTORY-SALES;sign_multiplier 由 deterioration_direction 机器推导(↓→−1/↑→+1),sign registry v1.2.3"
+Gate B2,B→R,"θ=(1/5)Σ_{k=0..4}ρ_S(X_t^d,Y_{t+k}^d) window-average Spearman",两国方向一致,MBB L=3 n=2000 non-circular time-index joint-pair;aux L=2/4;valid_share≥0.9 req/0.5-0.9 cond/<0.5 INFEASIBLE,至少一国 bootstrap 90% CI 不跨 0;另一国不得显著反向;θ 为 5-lag window-average 非单 lag,BS 恶化 ⇒ Profitability 恶化 两国同向 + CI 规则,TRUE,Verdict 输入,MOF/NBS 双源独立验证杠杆→盈利通道
+Gate B3,R→C,"θ=(1/5)Σ_{k=0..4}ρ_S(X_t^d,Y_{t+k}^d) window-average Spearman(两腿 B3a quantity / B3b demand)",两国方向一致,MBB L=3 n=2000 non-circular time-index joint-pair;aux L=2/4;valid_share≥0.9 req/0.5-0.9 cond/<0.5 INFEASIBLE,B3b stance 宽松子窗(stance_by_level:政策利率≤全窗中位数 或 stance_by_change:QoQ 下行)内 demand proxy 中位变化≤全窗中位变化,B3a quantity(θ_R→Cq)方向一致 + B3b demand 腿支持;stance 或 demand proxy 任一不可得→整体 INFEASIBLE_AFTER_PRESPECIFIED_MASK;禁以贷款总量下降单代信用需求,TRUE,Verdict 输入,"结论名称冻结=CREDIT_DEMAND_PROXY_EVIDENCE(demand-consistent credit behavior);禁 IDENTIFIED_CREDIT_DEMAND;demand proxy=CN PBOC 企业中长期贷款 YoY/JP BOJ FFA NFC credit impulse,均为 observed equilibrium quantity 非纯需求;stance 按 stance_by_level/stance_by_change 分列输出,禁 OR 合并后无法归因"
+Gate B4,C→I,"θ=(1/5)Σ_{k=0..4}ρ_S(X_t^d,Y_{t+k}^d) window-average Spearman",两国方向一致 + I 不进 classifier,MBB L=3 n=2000 non-circular time-index joint-pair;aux L=2/4;valid_share≥0.9 req/0.5-0.9 cond/<0.5 INFEASIBLE,CI 同 B2;I_q 与 I_ratio 双口径报告,CreditDemand↓/Impulse↓ ⇒ Investment↓ 两国同向 + CI 规则,TRUE,Verdict 输入,天然 held-out(建议书 §十七);Investment channel 双口径: I_q(季度主链)+ I_ratio(年度连续性锚)
+Verdict-STRONG,全链,-,-,-,-,evaluable≥3 且 ≥3 链 PASS 且不缺 P→B 与 C→I,TRUE,Mechanism Verdict,STRONG MECHANISM CORRESPONDENCE;禁 causal equivalence
+Verdict-PARTIAL,全链,-,-,-,-,evaluable≥3 且 ≥2 PASS 非 STRONG,TRUE,Mechanism Verdict,PARTIAL MECHANISM CORRESPONDENCE
+Verdict-GEOMETRY,全链,-,-,-,-,evaluable≥3 且 ≤1 PASS 或关键链反向,TRUE,Mechanism Verdict,GEOMETRY WITHOUT MECHANISM;与 H6-A feature-geometry 衔接
+Verdict-INFEASIBLE,全链,-,-,-,-,evaluable<3(minimum evaluable links=3),TRUE,Mechanism Verdict,预定出口;禁扩窗/降阈/合并
+D-A,D,-,-,-,-,CPI YoY<0 仅描述,TRUE,D 模块独立(不进主 Verdict),Headline deflation 描述标签;非 Gate
+D-B,D,-,-,-,-,六类(CPI/Core/Services/PPI/GDP deflator/Wage)≥3/可得类(需≥4 类可得)YoY<1.0%,TRUE,D 模块独立,阈值 B0 冻结：YoY<1.0%；1.0% 为研究分类阈值，不代表唯一经济学通缩边界
+D-C,D,-,-,-,-,D-B 连续 ≥4 季度,TRUE,D 模块独立,Persistent deflation regime
+D-D,D,-,-,-,-,broad/persistent + 主机制链(§8)机制证据,TRUE,D 模块独立,CPI<0 永不单独触发 Japanization
+D1,D,-,-,-,-,"headline∈[-0.5,+0.5]% 时 core/services/PPI/deflator 同向?",TRUE,D 口径稳健性,Sign robustness
+D2,D,-,-,-,-,rebase/weight 重叠期差异记录;正常 rebase 不自动=manipulation,TRUE,D 口径稳健性,rebase registry;definition_break 入册
+D3,D,-,-,-,-,负增长类别占比 diffusion,TRUE,D 口径稳健性,分类指数可得性受限按变量 registry
+D4,D,-,-,-,-,CPI↔PPI↔GDP deflator 三角;发散→PRICE_SYSTEM_DIVERGENCE,TRUE,D 口径稳健性,禁 STATISTICAL_MANIPULATION 标记

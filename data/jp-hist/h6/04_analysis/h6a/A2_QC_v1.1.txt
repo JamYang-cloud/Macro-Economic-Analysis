@@ -1,0 +1,8 @@
+H6-A A2.1 QC
+empty-mask classification vs frozen: 0 mismatch (assert)
+4-state vs frozen jgap: 13/13 (assert)
+D-window modes vs frozen grid: MANHATTAN 22 / EUCLID 16 / RANKSTATE 22 / SHAPECORR 14 (assert)
+held-out baseline D vs frozen: CPI 0.0112 / M2 0.3685 / INV 0.7534 (assert)
+event mask consumed rows: 10 (assert), duplicates: 0 (assert)
+gate spec ref: H6-A v1.1 FROZEN §8 (GATE_METRICS=4, comparator=BaselineFull)
+outputs: regime/lag/transition/mechanism/leo *_v1.1 + differential test + consumption log + parent lineage

@@ -1,0 +1,11 @@
+﻿event_id,country,event_date,event_type,institution,regime_change,comparability_effect,official_source_url,source_grade,retrieved_at,note
+CN-POL-001,CN,2001-12-11,WTO_ACCESSION,WTO/国务院,TRUE,入世——出口/外资制度性开放起点; JP对应1960s-70s贸易自由化,https://www.wto.org/english/thewto_e/countries_e/china_e.htm,B,2026-09-06,"WTO官方中国页(B级机构国别信息, 含2001-12-11入世)"
+CN-POL-002,CN,2005-07-21,FX_REGIME_REFORM,PBOC,TRUE,汇改: 参考一篮子有管理浮动(不再盯单一美元)——FX变化含义起点,https://www.safe.gov.cn/hebei/2015/0504/470.html,A,2026-09-06,2005-07-21公告全文(SAFE官方转载实证); A级(event-specific公告)
+CN-POL-003,CN,2008-11-09,FISCAL_STIMULUS,国务院,FALSE,四万亿刺激——信贷/投资脉冲(扩大内需十项措施),https://de.china-embassy.gov.cn/zytz/200912/t20091223_2824350.htm,B,2026-09-06,"2008-11-05国务院常务会议十项措施(驻德使馆官方记事转载, B级官方记事); 事件对齐层候选"
+CN-POL-004,CN,2010-06-19,FX_REGIME_REFORM2,PBOC,TRUE,二次汇改(增强弹性)——2010-06重启汇改进程,https://www.pbc.gov.cn/zhengcehuobisi/125207/125217/125925/index.html,C,2026-09-06,PBOC汇率政策栏目入口(C级general page); 具体公告页H1定位升A/B
+CN-POL-005,CN,2015-08-11,FX_MIDPRICE_REFORM,PBOC,TRUE,811汇改(中间价报价市场化)——汇率弹性实质化; 与JP 1985广场后升值类比对,https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=50777,A,2026-09-06,2015-08-11央行声明全文(商务部政策库官方转载实证); A级
+CN-POL-006,CN,2015-12-18,SUPPLY_SIDE_REFORM,国务院/中央,TRUE,供给侧结构性改革——与JP 1980s结构改革/1990s过剩产能处理对照,https://www.gov.cn/xinwen/2015-12/21/content_5026332.htm,C,2026-09-06,"gov.cn新闻(C级, 具体页已核可达200但通稿原文URL H1精化升B)"
+CN-POL-007,CN,2018-04-27,ASSET_MGMT_REGULATION,PBOC/银保监/证监会/外汇局,TRUE,资管新规——影子银行/表外收缩; 与JP 1990窗口指导+总量规制影子信贷收敛类比,https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/index.html,C,2026-09-06,PBOC沟通交流栏目(C级); 资管新规全文URL H1定位升A/B
+CN-POL-008,CN,2019-08-17,LPR_REFORM,PBOC,TRUE,LPR改革(贷款定价锚市场化)——政策利率传导重构; JP对应1988-11短期prime市场化,https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/index.html,C,2026-09-06,PBOC栏目(C级); 2019-08-17公告URL H1定位; JP对比: 1988短期prime转市场联动
+CN-POL-009,CN,2020-08-20,PROPERTY_FINANCING_RULE,住建部/央行,TRUE,三条红线(房企融资约束)——地产信用收紧; JP 1990-03总量规制类比对,https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/index.html,C,2026-09-06,央行住建部座谈会(央行栏目C级); 事件对齐核心候选(JP1990↔CN2020); 官方发布页H1定位升A/B
+CN-POL-010,CN,2022-11-11,PROPERTY_SUPPORT,PBOC/银保监,TRUE,地产三支箭(信贷/债券/股权融资支持)——地产政策转向稳,https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/index.html,C,2026-09-06,金融16条+三支箭(PBOC栏目C级); 具体发布URL H1定位升A/B

@@ -1,0 +1,24 @@
+concept,module,jp_variable,cn_variable,unit_match,frequency_match,institutional_comparability,comparison_grade,semantic_jp,semantic_cn,note
+real_gdp_growth,GROWTH,real_gdp_yoy,real_gdp_yoy,YES,YES,HIGH,A,EXACT,EXACT,双侧 annual avg YoY
+iip_growth,GROWTH,iip_yoy,iip_yoy,YES,YES,HIGH,A,EXACT,EXACT,OECD 同源 bridge primary
+investment_rate,GROWTH,investment_gdp,investment_gdp,YES,YES,MEDIUM,B,EXACT,EXACT,JP=68SNA资本形成/GDP;CN=支出法资本形成率;SNA基准不同但同为国内资本形成口径
+cpi_inflation,INFLATION,cpi_yoy,cpi_yoy,YES,YES,HIGH,A,EXACT,EXACT,JP 2025base官方/CN CPI;均 annual avg YoY
+gdp_deflator_inflation,INFLATION,gdp_deflator_yoy,NA,NA,NA,MEDIUM,NA,EXACT,NOT_MAPPED,CN deflator 无标准化(H2 NOT_MAPPED);INFLATION 模块 CN 侧仅 cpi
+m2_growth,MONEY_CREDIT,m2_yoy,m2_yoy,YES,YES,HIGH,A,EXACT,EXACT,JP BOJ/CN M2;均 broad money YoY
+policy_rate_state,MONEY_CREDIT,policy_rate,NA,NA,NA,LOW,NA,EXACT,NOT_MAPPED,CN policy 无(LPR 2019+ 窗内不存在);CN 侧该维度 GAP
+jgb10y_state,MONEY_CREDIT,jgb10y,NA,NA,NA,LOW,NA,EXACT,NOT_MAPPED,CN cgb10y 2002-2007 未授权(H1-P1);GAP
+export_growth,EXTERNAL,export_yoy,export_yoy,YES,YES,HIGH,A,EXACT,EXACT,Customs/海关 均货物贸易 YoY
+trade_balance_gdp,EXTERNAL,trade_balance_gdp,NA,NA,NA,MEDIUM,NA,PRE_TRANSFORM,DEFERRED_FX,JP /GDE 已做;CN USD/CNY 币种不匹配 deferred(H1-P1 USDCNY)
+reer_state,EXTERNAL,reer,reer,YES,YES,HIGH,B,EXACT,EXACT,JP RBJPBIS宽/CN RBCNBIS宽 同 basket family;JP 1994+ 窗内部分覆盖
+fx_state,EXTERNAL,fx_usdjpy,NA,NA,NA,LOW,NA,EXACT,NOT_MAPPED,CN 名义汇率无标准化;汇率制度变迁跨窗 descriptive
+land_price_growth,PROPERTY_ASSET,land_price_yoy,NA,NA,NA,MEDIUM,NA,PARTIAL,NOT_MAPPED,CN 无 land price(prop_price 是住宅均价非地价);不同 concept
+property_price_growth,PROPERTY_ASSET,NA,property_price_yoy,NA,NA,MEDIUM,NA,NOT_MAPPED,PRE_TRANSFORM,CN 住宅均价 YoY;JP 侧无直接对应;descriptive only
+nikkei_return,PROPERTY_ASSET,nikkei_return,NA,NA,NA,MEDIUM,B,EXACT,NOT_MAPPED,JP NIKKEI calendar return
+equity_return,PROPERTY_ASSET,NA,equity_return,NA,NA,MEDIUM,B,NOT_MAPPED,EXACT,CN 上证 calendar return;与 nikkei 同 equity asset 层但不同股指
+wage_growth,DEMOGRAPHY_LABOR,wage_yoy,wage_yoy,YES,YES,MEDIUM,B,EXACT,EXACT,JP 每月勤劳统计/CN 城镇单位工资;口径有差但同 wage growth
+unemployment_state,DEMOGRAPHY_LABOR,unemployment,NA,NA,NA,MEDIUM,NA,EXACT,NOT_MAPPED,CN 失业 2018+ 才连续(窗内 GAP)
+working_age_growth,DEMOGRAPHY_LABOR,working_age_growth_anchor,working_age_growth,NO,NO,MEDIUM,C,ANCHOR,EXACT,JP=普查锚点6obs/窗 CN=annual;仅 anchor 年比对或 descriptive;禁插值 JP
+dependency_ratio,DEMOGRAPHY_LABOR,dependency_ratio,dependency_ratio,NO,NO,MEDIUM,C,ANCHOR,EXACT,同上 anchor 限制
+youth_dependency,DEMOGRAPHY_LABOR,youth_dependency,youth_dependency,NO,NO,MEDIUM,C,ANCHOR,EXACT,同上 anchor 限制
+tfr,DEMOGRAPHY_LABOR,tfr,NA,NA,NA,HIGH,NA,EXACT,NOT_MAPPED,CN TFR 非年度未标准化;GAP
+birth_rate,DEMOGRAPHY_LABOR,birth_rate,birth_rate,YES,YES,HIGH,B,EXACT,EXACT,JP e-Stat 人口動態/CN 年鉴出生率 per-mille

@@ -1,0 +1,24 @@
+# A5.1 -> A5.2 diff (external REWORK closure; lineage-only)
+date: 2026-09-07
+basis: JP-HIST_H6A_A5.1_PATCH_外部审核报告_20260907.md (P1x2 / P2x1)
+
+## P1-1 A0 parent package closed-set
+- JP-HIST_H6A0_v1.1_FROZEN_定档包_20260907.zip carried inside A5.2 package (SHA 5d16f398... verified == registry)
+- inner 07_mechanism_registry_v1.1.csv verified == 93d9d5df... == lineage; explains version transition
+  from 外审包 ffbc8f... (pre-P2-fix) to FROZEN 定档包 93d9... (P2 fix: PENDING_CROSSWALK 统一), repo==lineage
+
+## P1-2 external parent referential integrity
+- new h6a_external_parent_registry.csv: raw_wb_gdp / raw_cboe_vix / raw_oxcgrt (scope H6A_A1_raw,
+  recorded in A1.1 lineage csv, shas matched) + h4v03d_engine / h5_state_sequence (scope H4-H5_FROZEN,
+  recorded in A2.2 required_parent_artifacts.csv, shas matched)
+- lineage QC upgraded to referential: parent_ref_total=52 (internal 43 + external 9), unresolved=0;
+  parent_missing=0 now explicitly labeled syntax-level; parent_package_verified=27, failed=0;
+  artifact_sha_verified=27, failed=0
+
+## P2 A5 parent-package naming
+- 10 A5-carried rows: parent_package = exact zip name JP-HIST_H6A_A5_全链汇总_审核包_20260907.zip;
+  verification_status = VERIFIED_IN_A5_V1_PARENT_PACKAGE (disambiguated from current A5.2 pkg)
+
+## Unchanged
+- no A2/A3/A4 rerun; machine outputs, Gate, lag, breakpoint, bootstrap, claims, substantive conclusion
+  untouched; FREEZE_H6A substantive skeleton untouched (only earlier H6-B scope wording kept)

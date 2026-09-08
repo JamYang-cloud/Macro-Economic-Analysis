@@ -1,0 +1,14 @@
+year,value,variable,country,unit,transform_id
+2000,,wage_yoy_robustz,cn,robust_z,H3-ROBUSTZ-cn-wage_yoy
+2001,1.0413590441919045,wage_yoy_robustz,cn,robust_z,H3-ROBUSTZ-cn-wage_yoy
+2002,-0.16178663487445374,wage_yoy_robustz,cn,robust_z,H3-ROBUSTZ-cn-wage_yoy
+2003,-0.9547690142590993,wage_yoy_robustz,cn,robust_z,H3-ROBUSTZ-cn-wage_yoy
+2004,0.2757208847860399,wage_yoy_robustz,cn,robust_z,H3-ROBUSTZ-cn-wage_yoy
+2005,0.3486388047294557,wage_yoy_robustz,cn,robust_z,H3-ROBUSTZ-cn-wage_yoy
+2006,-0.09798345492396475,wage_yoy_robustz,cn,robust_z,H3-ROBUSTZ-cn-wage_yoy
+2007,1.9801772634633823,wage_yoy_robustz,cn,robust_z,H3-ROBUSTZ-cn-wage_yoy
+2008,1.237325954039834,wage_yoy_robustz,cn,robust_z,H3-ROBUSTZ-cn-wage_yoy
+2009,-1.1871948840787367,wage_yoy_robustz,cn,robust_z,H3-ROBUSTZ-cn-wage_yoy
+2010,-0.39421250469409114,wage_yoy_robustz,cn,robust_z,H3-ROBUSTZ-cn-wage_yoy
+2011,0.09798345492396475,wage_yoy_robustz,cn,robust_z,H3-ROBUSTZ-cn-wage_yoy
+2012,-1.0459164141883686,wage_yoy_robustz,cn,robust_z,H3-ROBUSTZ-cn-wage_yoy

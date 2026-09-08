@@ -1,0 +1,72 @@
+JP-HIST H1 RAW SOURCE FREEZE
+================================
+日期：2026-09-06
+状态：PASS / GATE H1 RAW SOURCE FREEZE（用户确认签署；外部审核链：v0.1 FAIL → v0.2 CONDITIONAL PASS → 更新包 CONDITIONAL PASS/FREEZE BLOCKED → v0.4 targeted re-audit 修复完成 → 用户确认）
+审核报告：JP-HIST_H1_v0.1_外部核查报告_20260906.md / JP-HIST_H1_v0.2_外部审核报告.md / JP-HIST_H1_v0.2_更新包外部审核报告_20260906.md
+响应文档：JP-HIST_H1_v0.1_审核响应与修订_20260906.md / JP-HIST_H1_v0.2_更新包审核响应与修订_20260906.md
+审核包：source_snapshot/h1_audit_package/（package_id: JP-HIST-H1-P0-20260906-v04）
+
+H1 审核边界声明
+---------------
+- 本冻结覆盖 H1-P0 raw collection 的实体完整性与治理闭合（manifest/ZIP/lineage/vision evidence）
+- 冻结的是 raw source layer；数值正确性经抽样验证（P1-2 5/5 MATCH + gap audit），非逐值全审
+- derived CSV 数值的最终标准化（断点拼接/频率统一/口径变换）属 H2 Standardization，不在本冻结内
+- 不得把「H1 raw frozen」理解为「canonical series 已定」——canonical 决策见 h2_decision_log_draft
+
+冻结断言（v0.4 targeted re-audit 后）
+-----------------------------------
+manifest_rows = 67
+zip_entries = 67
+manifest_zip_filename_match = 67/67
+manifest_zip_sha_match = 67/67
+manifest_zip_bytes_match = 67/67
+zip_crc_test = PASS
+derived_lineage_closed = 14/14
+lineage_edges_rows = 17
+multi_parent_edges_closed = TRUE
+extraction_audit_class = aux/AUDIT_ARTIFACT
+variable_to_source_rows = 52 (JP 26 + CN 26)
+jp1_lineage_resolved = 10/10
+source_grade_A = 60 / B = 2 / NA = 5 (67 rows)
+rod_distribution = raw 47 / derived 14 / aux 6
+freeze_gate_passes = 12/12 (h1_freeze_gate_check_20260906.csv)
+closed_set_artifacts = 10
+closed_set_hash_mismatch = 0
+vision_snapshots = 3 (all sha256 registered)
+cn_gap_data_covered = 17/18 (唯一缺口 cgb10y)
+cn_gap_data_proxy_flagged = 1 (credit_gdp PROXY_FLOW_CONCEPT_PARTIAL)
+
+H2 前必冻结 decision points（不得静默默认；正式清单见 h2_decision_log_draft_20260906.md）
+------------------------------------------------------------------
+D01 credit stock/flow 最终比较方法（审核多次强调）：A canonical stock（金融机构贷款余额/GDP 或 TSF stock/GDP 可用期）vs B separate flow concept（credit_flow_gdp：JP BIS 存量差分 vs CN 社融增量）——禁止静默把 BIS credit stock/difference 与 TSF flow 拼接为同一变量
+D07 JP/CN industrial production boundary：OECD 同源 bridge（已采）vs CN 规上工业增加值官方（H1-P1 补采后判断）
+D08 REER basket family：JP RBJPBIS broad vs CN RBCNBIS broad 同 family 优先（RNJPBIS narrow fallback）
+D09 人口年度连续性：IPSS 27 obs ANCHOR_SERIES；连续年度需 Statistics Bureau 人口推計月报（H1-P1/H2 补采与否）
+（另 D02 property proxy / D03 policy-rate regime CN 已在 H0/H0.8 部分覆盖，H2 正式定版）
+
+写入约束（不得静默变更）
+-----------------------
+1. H1 raw source layer 冻结：01_raw/ 下 67 文件 + manifest v0.5 不得静默增删改；如需修订须显式 revision（新 manifest 版本 + 审核包重打）
+2. JP1 lineage 引用冻结：10 项复用（RBJPBIS/RNJPBIS/JPNPRINTO01G/cpi_2025base/MYAGM2/CCUSMA+DEXJPUS/NIKKEI225/LRUNTT/LCEAMN/CRDQJPAPABIS）hash 见 jp1_lineage_reference.csv，不重复存储
+3. vision extraction 冻结：3 张 snapshot（Z0201C/Z0204C/Z0411C）+ extraction_audit 记录为证据链；任何 derived 修订须更新 parent_sha 链
+4. source_grade 分级冻结：A（官方直采）60 / B（OECD bridge、腾讯行情）2 不得静默上调
+5. CN_GAP_DATA 缺口如实：cgb10y=GAP（中债官网受限）、credit_gdp=PROXY_FLOW（非 canonical）——不得在 H2 静默转 COVERED 而不走 decision
+6. raw package zip（jp_hist_h1_raw_source_package_v0.2.zip）SHA 见 SHA256_manifest_h1_v0.4.txt；归档须闭合集合 10 artifacts 齐全
+7. 本 freeze 为 raw source 层；H2 Standardization 需另行授权启动（credit canonical 构造前先冻结 D01）
+
+产物清单（source_snapshot/h1_audit_package/ + 01_raw/ 引用）
+--------------------------------------------------------
+JP-HIST_H1_审核包_20260906_v0.2.xlsx（11 sheets）
+h1_source_manifest_v0.5.csv（67 行 19 列）
+jp_hist_h1_raw_source_package_v0.2.zip（67 文件）
+h1_variable_source_map_v0.2.csv（52 行）
+jp1_lineage_reference.csv（10 行）
+h1_extraction_audit_v0.1.csv
+h1_source_grade_breaks_v0.2.csv
+h1_lineage_edges_v0.2.csv（17 edges）
+h1_zip_integrity_check_20260906.csv（67 data rows）
+h1_freeze_gate_check_20260906.csv（12 gates）
+H1_audit_README_v0.2.md
+H1_v0.2_P1_completion_20260906.md
+h2_decision_log_draft_20260906.md
+SHA256_manifest_h1_v0.4.txt

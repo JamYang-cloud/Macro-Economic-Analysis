@@ -1,0 +1,5 @@
+﻿category,D_CN,CI90_lo,CI90_hi,perm_p,effect_rule_pass,status
+Baseline,0.7534,0.0273,1.4283,0.1469,True,OK
+ResidA,,,,,,INFEASIBLE_GROUP_N<3
+ResidB,-0.9824,-1.2924,-0.5358,0.076,False,OK
+BaselineB90,0.7534,0.0273,1.4283,0.1469,True,OK

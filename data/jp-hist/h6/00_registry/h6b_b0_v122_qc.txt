@@ -1,0 +1,17 @@
+n_variables=37
+n_gates=16
+sign_direction_multiplier_mismatch=0
+sign_variable_registry_cross_mismatch=0
+sign_expected_chain_invalid=0
+gate_variable_unregistered=0
+registry_duplicate_variable_id=0
+deflation_threshold_missing=0
+missingness_threshold_missing=0
+theta_definition_missing=0
+gate_b1_machine_executable=TRUE
+gate_b3_machine_executable=TRUE
+b3_demand_interpretation=PROXY
+shock_application_missing=0
+source_priority_missing=0
+analysis_cutoff_frozen=TRUE
+manifest_sha_failed=0

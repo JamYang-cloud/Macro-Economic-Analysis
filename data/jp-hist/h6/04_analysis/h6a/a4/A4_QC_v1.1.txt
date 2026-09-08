@@ -1,0 +1,14 @@
+H6-A A4.1 QC — frozen spec h6a_a4_method_spec_v1.1; primary BIC2=(2m+1)ln n; aux BIC1=(m+1)ln n
+m_max primary JP=6/CN=4; minseg=5; iid boot N=1000 + MBB L=3 N=300; seed 20260907
+jp/investment_gdp/raw: BIC2 m=6 (boundary) breaks=[1974|1981|1987|1992|1997|2007] BIC1 m=6
+jp/investment_gdp/ResidA: BIC2 m=2 breaks=[1975|1997] BIC1 m=6
+jp/cpi_yoy/raw: BIC2 m=2 breaks=[1976|1981] BIC1 m=2
+jp/cpi_yoy/ResidA: BIC2 m=2 breaks=[1976|1981] BIC1 m=4
+jp/m2_yoy/raw: BIC2 m=3 breaks=[1974|1979|1990] BIC1 m=3
+jp/m2_yoy/ResidA: BIC2 m=2 breaks=[1975|1990] BIC1 m=5
+cn/investment_gdp/raw: BIC2 m=2 breaks=[2007|2014] BIC1 m=2
+cn/investment_gdp/ResidA: BIC2 m=2 breaks=[2007|2014] BIC1 m=3
+cn/cpi_yoy/raw: BIC2 m=0 breaks=[-] BIC1 m=3
+cn/cpi_yoy/ResidA: BIC2 m=0 breaks=[-] BIC1 m=2
+cn/m2_yoy/raw: BIC2 m=3 breaks=[2005|2010|2016] BIC1 m=3
+cn/m2_yoy/ResidA: BIC2 m=1 breaks=[2010] BIC1 m=2

@@ -1,0 +1,53 @@
+﻿country,registry_variable,std_variable,std_file,window_status,std_range,note
+JP,jp.hist.real_gdp_yoy,real_gdp_yoy,annual_JP_real_gdp_yoy.csv,FULL_WINDOW,1956-2000,正式系列1955Q1-1979Q4+参考系列1980Q1-2001Q1; growth-only使用; 2026-09-
+JP,jp.hist.nominal_gdp_yoy,nominal_gdp_yoy,annual_JP_nominal_gdp_yoy.csv,FULL_WINDOW,1956-2000,与real_gdp同源同名CSV(gaku_mg01168_1.csv等)
+JP,jp.hist.investment_gdp,investment_gdp,annual_JP_investment_gdp.csv,FULL_WINDOW,1955-2000,QE demand-side有民间设备投资/住宅; 或ESRI 1998年报1970+结构表
+JP,jp.hist.iip_yoy,iip_yoy,annual_JP_iip_yoy.csv,FULL_WINDOW,1955-2026,官方connected previous data (Jan 1978-Dec 2022); 2026-09-06页面实
+JP,jp.hist.corp_profit_yoy,-,-,NOT_MAPPED,,historical.xls含income statement(ordinary profit); 2026-09-06
+JP,jp.hist.cpi_yoy,cpi_yoy,annual_JP_cpi_yoy.csv,FULL_WINDOW,1970-2026,全国年平均1970年~官方页面实证(e-Stat 00200573/tstat=000001150147); YoY为主
+JP,jp.hist.gdp_deflator_yoy,gdp_deflator_level,annual_JP_gdp_deflator_level.csv,FULL_WINDOW,1955-2000,deflator CSV随68SNA段提供
+JP,jp.hist.m2_yoy,m2_yoy,annual_JP_m2_yoy.csv,FULL_WINDOW,1955-2017,项目已持M2_OLD_EOP 1955-01起531月(FROZEN); BOJ API 2026-02起可降低复核成本
+JP,jp.hist.policy_rate,policy_rate,annual_JP_policy_rate.csv,FULL_WINDOW,1955-2026,官方CSV四段2026-09-06实测: cdab0040(1955-68)/cdab0050(1969-72)/cda
+JP,jp.hist.jgb10y,jgb10y,annual_JP_jgb10y.csv,PARTIAL_WINDOW(ov=10y),1986-2026,官方jgbcm_all.csv 1974年~页面实证; 1970-74初期用policy/prime代替
+JP,jp.hist.corp_leverage,-,-,NOT_MAPPED,,liabilities/assets同源historical.xls
+JP,jp.hist.credit_gdp,credit_stock_level,annual_JP_credit_stock_level.csv,FULL_WINDOW,1964-2025,JP0实证CRDQJPAPABIS 1964Q4起100%; 项目未采(JP1未用); 作为bank credit第二阶
+JP,jp.hist.export_yoy,export_yoy,annual_JP_export_yoy.csv,FULL_WINDOW,1951-2024,1950年起年度表2026-09-06实证(1950-2024完整); FRED镜像XTEXVA01 1955+已持
+JP,jp.hist.trade_balance_gdp,trade_balance_level,annual_JP_trade_balance_level.csv,NOT_STANDARDIZED,,分子Customs年度、分母ESRI GDP; 或直接FRED NETTRADE_SA 1955+已持
+JP,jp.hist.fx_usdjpy,fx_usdjpy_level,annual_JP_fx_usdjpy_level.csv,FULL_WINDOW,1957-2026,JP0实证CCUSMA02JPM618N 1957+月均835月100%; USDJPY_DAILY 1971+已持; 
+JP,jp.hist.reer,reer_level,annual_JP_reer_level.csv,PARTIAL_WINDOW(ov=2y),1994-2026,JP0实证RNJPBIS 1964+月均100%
+JP,jp.hist.land_price_yoy,land_price_yoy,annual_JP_land_price_yoy.csv,PARTIAL_WINDOW(ov=21y),1975-2026,"H0.7定案: MLIT公示地価=canonical(官方/Excel直下/许可自由/定义稳定), JREI=1959+"
+JP,jp.hist.nikkei_return,equity_return,annual_JP_equity_return.csv,FULL_WINDOW,1949-2026,JP0实证NIKKEI225 1949-05-16起20170行; 项目已持日次全史; return/drawdown层
+JP,jp.hist.working_age_growth,working_age_growth_anchor,annual_JP_working_age_growth_anchor.csv,FULL_WINDOW,1888-2024,人口1920+官方; 年龄结构表每年; 待H1确认机器可读excel布局
+JP,jp.hist.unemployment,unemployment,annual_JP_unemployment.csv,FULL_WINDOW,1955-2026,官方长期1953+; 项目已持FRED LRUNTTTT 1955+858月; e-Stat页面实证
+JP,jp.hist.wage_yoy,wage_yoy,annual_JP_wage_yoy.csv,FULL_WINDOW,1955-2026,项目已持FRED WAGE_MFG 1955+856月(制造业时薪)/WAGE_PRIVATE 1970+; 官方源H1
+JP,jp.hist.dependency_ratio,dependency_ratio,annual_JP_dependency_ratio.csv,FULL_WINDOW,1884-2024,年龄结构派生
+JP,jp.hist.corp_land_share,-,-,NOT_MAPPED,,"解释用(企业囤地→泡沫), 不进CN-JP similarity; CN无企业土地市值科目=CN_GAP_STRUCTU"
+JP,jp.hist.tfr,tfr,annual_JP_tfr.csv,FULL_WINDOW,1947-2024,"IPSS长表1947-2004+ e-Stat確定数至最新, 2026-09-06双源可达实证; CN官方无年度TFR→"
+JP,jp.hist.birth_rate,birth_rate,annual_JP_birth_rate.csv,FULL_WINDOW,1899-2024,"CN统计年鉴出生率1949+官方年度——两国年度齐全, 真可比变量; 与CN CBR同列crosswalk"
+JP,jp.hist.youth_dependency,youth_dependency,annual_JP_youth_dependency.csv,FULL_WINDOW,1884-2024,与existing dependency_ratio(老年抚养)互补成抚养比双侧; 1920+
+CN,cn.hist.real_gdp_yoy,real_gdp_yoy,annual_CN_real_gdp_yoy.csv,FULL_WINDOW,2000-2012,2000-2008段官方有源未采(项目PIT从2008起); H1-P0 CN侧补采即可
+CN,cn.hist.nominal_gdp_yoy,nominal_gdp_yoy,annual_CN_nominal_gdp_yoy.csv,FULL_WINDOW,2000-2012,
+CN,cn.hist.investment_gdp,investment_gdp,annual_CN_investment_gdp.csv,FULL_WINDOW,1978-2012,JP投资share为SNA口径; CN用资本形成率更可比(勿用FAI月度)
+CN,cn.hist.iip_yoy,iip_yoy,annual_CN_iip_yoy.csv,FULL_WINDOW,1999-2023,2000s早期规上工业增加值月度可得性需H1验证(有官方年鉴工业总产值年度兜底)
+CN,cn.hist.corp_profit_yoy,-,-,NOT_MAPPED,,CN无全企业利润统计(仅规上工业/上市); 用GROWTH模式+注记口径差
+CN,cn.hist.cpi_yoy,cpi_yoy,annual_CN_cpi_yoy.csv,FULL_WINDOW,1978-2012,2000-2008段官方月度有源未采
+CN,cn.hist.gdp_deflator_yoy,-,-,NOT_MAPPED,,名义/实际GDP派生
+CN,cn.hist.m2_yoy,m2_yoy,annual_CN_m2_yoy.csv,FULL_WINDOW,1991-2012,1996-2007段央行月报/年鉴可采; FRED CN M2亦1960s+但口径注意(IMF镜像)
+CN,cn.hist.policy_rate,-,-,NOT_MAPPED,,制度不可绝对映射(JP ODR vs CN基准/LPR/DR007); 必须PERCENTILE_ONLY; 2000s
+CN,cn.hist.cgb10y,-,-,NOT_MAPPED,,项目catalog cn10y 2008+(来源东财); 2002-2007官方中债曲线可回溯但需验证免费窗口
+CN,cn.hist.corp_leverage,-,-,NOT_MAPPED,,工业部门代理(非全行业); percentile参与
+CN,cn.hist.credit_gdp,credit_flow_level,annual_CN_credit_flow_level.csv,PARTIAL_WINDOW(ov=11y),2002-2012,JP对应BIS信贷1964+; CN社融官方起点2002(年度报告口径); 2000-2002窗短缺; 备选BIS CN
+CN,cn.hist.export_yoy,export_yoy,annual_CN_export_yoy.csv,FULL_WINDOW,1980-2012,2000-2008段官方有源未采
+CN,cn.hist.trade_balance_gdp,trade_balance_level,annual_CN_trade_balance_level.csv,FULL_WINDOW,1978-2012,
+CN,cn.hist.fx_usdcny,-,-,NOT_MAPPED,,JP 1971前固定汇率段同理——FX仅在浮动段可比(EVENT_ONLY/EXCL固定段)
+CN,cn.hist.reer,reer_level,annual_CN_reer_level.csv,FULL_WINDOW,1994-2026,FRED BIS系列可直达
+CN,cn.hist.property_price_yoy,property_price_level,annual_CN_property_price_level.csv,FULL_WINDOW,1998-2012,"JP=地价(1970+), CN官方无全国连续地价指数→用70城房价(住宅资产价格)作proxy并明确EVENT_ONL"
+CN,cn.hist.equity_return,equity_return,annual_CN_equity_return.csv,PARTIAL_WINDOW(ov=8y),2000-2007,项目catalog hs300 2008+; JP-HIST需2000s→补上证综指1990s-2000s段; 项目已有
+CN,cn.hist.working_age_growth,working_age_growth,annual_CN_working_age_growth.csv,FULL_WINDOW,1987-2012,2000s年度数据官方年鉴可得(1%抽样+推算); 与JP 15-64差: CN官方15-59口径
+CN,cn.hist.unemployment,-,-,NOT_MAPPED,,关键CN缺口: 2000-2017无ILO口径调查失业率(登记失业率制度不可比JP 1953+ LFS)→早期CN窗该变
+CN,cn.hist.wage_yoy,wage_yoy,annual_CN_wage_yoy.csv,FULL_WINDOW,2000-2012,JP毎月勤労統計1954+月度vs CN年度平均工资——频率降级为Y; 2000s可得
+CN,cn.hist.dependency_ratio,dependency_ratio,annual_CN_dependency_ratio.csv,FULL_WINDOW,1982-2012,
+CN,cn.hist.corp_land_share,-,-,NOT_MAPPED,,结构性恒缺: 不进入crosswalk/coverage分母; JP侧保留作解释变量
+CN,cn.hist.tfr,-,-,NOT_MAPPED,,"官方年度TFR不存在(结构性); 只作普查锚点描述性对照, crosswalk层eligible=FALSE; 勿把推算"
+CN,cn.hist.birth_rate,birth_rate,annual_CN_birth_rate.csv,FULL_WINDOW,1978-2012,"两国官方年度齐全→crosswalk主变量; 注: CBR含年龄结构影响, 比较下降轨迹时与TFR锚点交叉验证"
+CN,cn.hist.youth_dependency,youth_dependency,annual_CN_youth_dependency.csv,FULL_WINDOW,1982-2012,统计年鉴总抚养比/少儿抚养比表(15-64口径)可用

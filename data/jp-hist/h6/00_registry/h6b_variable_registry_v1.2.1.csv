@@ -1,0 +1,38 @@
+﻿variable_id,chain,channel_role,concept_cn,jp_source,jp_semantic,cn_source,cn_semantic,frequency,window,transform,phase,notes,sign_multiplier,core_gate_eligible,missing_threshold,aggregation_rule,source_table_or_series,definition_break_expected
+investment_gdp,I,core,投资率(固定资本形成/GDP),ESRI(已有标准化),PRIMARY,NBS-WB(已有标准化),PRIMARY,annual,JP 1955-2000(68SNA)/2001+ bridge; CN 1978-2025,ratio,B1,H6-A 同口径连续性锚 I_ratio;v1.1 P0 outcome 保留,1,TRUE,0.85 obs,annual ratio,NBS 资本形成率表/ESRI 68SNA,CN 2017 SNA revision
+i_q_gfcf,I,core,季度投资/GFCF(主链检验 I_q),ESRI 季度 GFCF(68SNA+93SNA bridge),PRIMARY,NBS 固定资产投资/地产开发投资(月度→季度),PROXY_NFC_INVESTMENT,quarterly,JP 1985Q1-2005Q4 primary; CN 2010Q1-latest,flow→ratio,B1,"v1.2 修订项三;I_ratio 高频代理,报相关与重叠",1,TRUE,0.85 obs,Q4 flow sum /GDP,ESRI 68SNA+93SNA/FRED JPNGFCF,JP 68SNA-93SNA 衔接 2001
+i_mof_capex,I,aux,法人企業統計 设备投资/资本支出,MOF 法人統計 capex sheet,PRIMARY,,,quarterly→annual,JP,ratio,B2,CN 无同口径→JP-only 辅助,1,FALSE,0.70 obs,Q4 flow,MOF income.xls capex sheet,
+nfc_credit_gdp,C,core,非金融企业信贷/GDP,BIS Total Credit,PRIMARY,BIS Total Credit,PRIMARY,quarterly,JP 1964Q4+; CN 2006Q1+,stock ratio,B1,WS_TC bulk 已下载(pre-B0 probe);%GDP 直接取 367 序列,1,TRUE,0.85 obs,Q4 stock %GDP,BIS WS_TC,BIS 定义 break 以官方为准
+hh_credit_gdp,C,core,居民信贷/GDP,BIS Total Credit,PRIMARY,BIS Total Credit,PRIMARY,quarterly,同上,stock ratio,B1,同上,1,TRUE,0.85 obs,Q4 stock %GDP,BIS WS_TC,同上
+bis_dsr,C,aux,偿债率 DSR(within-country z),BIS DSR,PRIMARY,BIS DSR 或无→INFEASIBLE_PREDICTED,PRIMARY,quarterly,JP 1999+; CN 如可得,demean/z,B2,起点 1999 不覆盖 JP 1985-1998→该段用 mof_interest_burden 分列(修订项四);禁跨国绝对比,1,FALSE,0.70 obs,Q4,BIS DSR,起点 1999 结构性
+credit_impulse_jp,C,aux,信用脉冲 JP=Δ(Flow/GDP),BOJ FFA(NFC 借贷流量),SECONDARY,,,quarterly→annual,JP,Δ flow ratio,B2,与 MOF 互为 cross-check 不强制拼接,1,FALSE,0.70 obs,Δ(Q4 flow/GDP),BOJ FFA,FFA retroactive revision
+credit_impulse_cn,C,aux,信用脉冲 CN,,,PBOC 社融(2002-2012 复用 annual_CN_credit_flow_level;2013+ 补齐),SECONDARY,annual→quarterly,CN 2002+,Δ flow ratio,B2,TSF flow≠CreditStock;v1.1 registry 行保留,1,FALSE,0.70 obs,Δ(annual flow/GDP),PBOC 社融,TSF 2018/2019 专项债纳入
+boj_ffa,C,aux,资金循环(交叉核验),BOJ FFA,PRIMARY,,,quarterly,JP,level,B2,下载日期/vintage/series_code 治理;retroactive revision 不静默覆盖,-1,FALSE,0.70 obs,Q4 level,BOJ FFA,vintage 治理
+cn_pboc_sector_credit,C,core,PBOC 部门信贷(住户+非金融企业),,,PBOC 信贷收支表(住户短/中长;企业短/中长;票据),PRIMARY,monthly→quarterly,CN 2010Q1+,stock,B1,Gate B3 supply/demand 区分的 demand 侧数据基础,1,TRUE,0.85 obs,Q4 stock,PBOC 信贷收支表,部门口径 2015 调整
+cn_tsf_structure,C,aux,社融结构(人民币贷款/企业债/政府债/股权),,,PBOC 社融(flow+stock),PRIMARY,monthly→quarterly,CN,flow share,B2,2023 起范围纳入部分非存款类金融机构=definition break 入册,1,FALSE,0.70 obs,Q4 share,PBOC 社融,2023 范围扩大
+land_price,P,core,土地价格(JP),MLIT 公示地价(衔接 land_price_yoy),PRIMARY,,,annual,JP 1975+,YoY,B1,JP 资产概念=土地;CN 无同概念官方长史→仅 JP;年度保留不插值季度,-1,TRUE,0.85 obs,annual YoY,MLIT 公示地価,昭和/平成/令和 mapping
+residential_property_price,P,core,住宅价格(两国),BIS Residential Property Price(JP 1955Q1+),SECONDARY,NBS 70城新宅(2011+)+BIS CN(2005Q2+),PROXY,quarterly,JP 1955Q1+; CN 2005Q2+,index,B1,WS_SPP bulk 已下载(pre-B0 probe);两国不同资产概念→PROXY,-1,TRUE,0.85 obs,Q4 index,BIS WS_SPP,两国资产概念差异 PROXY
+cn_property_price_70_2nd,P,aux,70城二手住宅价格,,,NBS 70城二手,PROXY,monthly→quarterly,CN 2011+,index,B1,建议书 §四;与新房同源不同资产,-1,FALSE,0.70 obs,Q avg index,NBS 70城二手,2011 起
+housing_starts,P,core,住房新开工,MLIT Construction Stats(units),PRIMARY,NBS 房地产开发统计(新开工面积 m2),PRIMARY,monthly→quarterly,JP 1985Q1+; CN 2010Q1+,units;m2(统一前 YoY),B1,CONCEPT_PROXY(v1.1 冻结沿用):JP 户数 vs CN 面积→统一单位或转 YoY 后再定级,-1,TRUE,0.85 obs,Q flow,MLIT/ NBS 新开工,CONCEPT_PROXY 户数vs面积
+property_investment,P,core,房地产开发投资,ESRI/国土交通(建设投资),PENDING_CROSSWALK,NBS 房地产开发投资,PRIMARY,monthly→quarterly,JP/CN,local_currency,B1,PENDING_CROSSWALK(v1.1 沿用):source-definition audit 后再定 EXACT/PROXY,-1,TRUE,0.85 obs,Q flow,ESRI/MLIT/ NBS 开发投资,PENDING_CROSSWALK
+property_sales_area,P,aux,住房销售面积,,,NBS 商品房销售面积,PRIMARY,monthly→quarterly,CN,m2,B1,MVMD:sales/inventory 至少一项即可(CN 提供),-1,FALSE,0.70 obs,Q flow,NBS 销售面积,YTD→单季
+property_sales_value,P,aux,商品房销售额,,,NBS 商品房销售额,PRIMARY,monthly→quarterly,CN,local_currency,B1,v1.2 §四 建议书新增,-1,FALSE,0.70 obs,Q flow,NBS 销售额,YTD→单季
+property_inventory_area,P,aux,住房待售(库存)面积,,,NBS 商品房待售面积,PRIMARY,monthly→quarterly,CN,m2,B1,MVMD 同 sales 二选一,1,FALSE,0.70 obs,Q4 stock,NBS 待售面积,
+cn_developer_funding,P,aux,开发商资金来源(国内贷款/定金预收/按揭),,,NBS 房地产开发企业资金来源,PRIMARY,monthly→quarterly,CN,local_currency,B1,直接检验 地产销售→开发商现金流→投资(建议书 §四),-1,FALSE,0.70 obs,Q flow,NBS 资金来源,YTD→单季
+cn_construction_area,P,aux,施工面积/竣工面积,,,NBS 房地产 施工/竣工,PRIMARY,monthly→quarterly,CN,m2,B2,建议书 §四 activity 明细,-1,FALSE,0.70 obs,Q flow,NBS 施工/竣工,YTD→单季
+corporate_leverage,B,core,企业杠杆(负债/资产),MOF 法人統計 liabilities/assets,PRIMARY,NBS 规上工业(资产负债率),SECTOR_PROXY,quarterly→annual,JP 1954Q2+; CN,ratio,B1,MOF A22==L23+L29+N35 恒等式已验;CN 仅工业→趋势/方向比较,1,TRUE,0.85 obs,Q4 ratio,MOF assets/liabilities,全行业除金融保险
+corporate_bs_liquidity,B,aux,流动性(流动负债/流动负债+净资产 或 流动比率),MOF 法人統計(liquid liab/assets),PRIMARY,,,quarterly→annual,JP,ratio,B2,v1.2 §五 建议书新增;CN 若规上工业无可比则 JP-only,1,FALSE,0.70 obs,Q4 ratio,MOF liquid liab/assets,
+corporate_receivables,B,aux,应收账款/收入,MOF 法人統計,PRIMARY,NBS 规上工业 应收账款回收期,SECTOR_PROXY,quarterly→annual,JP/CN,ratio,B2,v1.2 §五 新增;周转类指标,1,FALSE,0.70 obs,Q4 ratio,MOF/ NBS 应收,NBS 规上工业 SECTOR_PROXY
+corporate_inventory,B,aux,库存/收入 或 周转天数,MOF 法人統計,PRIMARY,NBS 规上工业 产成品库存周转天数,SECTOR_PROXY,quarterly→annual,JP/CN,ratio,B2,v1.2 §五 新增,1,FALSE,0.70 obs,Q4 ratio,MOF/ NBS 库存,NBS 规上工业
+corporate_profitability,R,core,企业盈利(利润率),MOF 法人統計 ordinary profit/sales,PRIMARY,NBS 规上工业 营业收入利润率,SECTOR_PROXY,quarterly→annual,JP/CN,ratio,B1,v1.1 registry 行;JP income sheet45/53,1,TRUE,0.85 obs,Q ratio,MOF income,NBS 规上工业利润率
+corporate_roa,R,aux,ROA=利润/总资产,MOF 法人統計 profit/assets,PRIMARY,NBS 规上工业 每百元资产收入,SECTOR_PROXY,quarterly→annual,JP/CN,ratio,B2,v1.2 §六 新增,1,FALSE,0.70 obs,Q4 ratio,MOF,NBS 规上工业
+mof_interest_burden_proxy,B,aux,利息负担(利息费用/利润),MOF 法人統計,PRIMARY,,,annual→quarterly,JP,ratio,B1,JP 1985-1998 Credit 前段覆盖(修订项四);与 BIS DSR 分列禁拼,1,FALSE,0.70 obs,Q ratio,MOF income 51/53,禁与 BIS DSR 拼接
+corporate_operating_margin,R,aux,营业利润率,MOF 法人統計 operating profit/sales,PRIMARY,,,quarterly→annual,JP,ratio,B2,v1.2 §六 建议书,1,FALSE,0.70 obs,Q ratio,MOF income 48/45,
+d_cpi_headline,D,core,CPI headline,Statistics Bureau/e-Stat,PRIMARY,NBS CPI,PRIMARY,monthly→quarterly,JP 1970+; CN 1978+,YoY,B3,已有标准化资产可复用(cpi_yoy),-1,TRUE,0.85 obs,Q avg YoY,e-Stat/统计局,CN CPI 基期每5年
+d_cpi_core,D,core,核心 CPI(除生鲜食品/除食品能源),e-Stat 连接指数,PRIMARY,NBS core CPI,PRIMARY,monthly→quarterly,JP 1970+; CN 2013+,YoY,B3,CN core 2013+ 起点冻结(修订项五),-1,TRUE,0.85 obs,Q avg YoY,e-Stat,CN core 2013+ 结构性
+d_cpi_services,D,aux,服务 CPI,e-Stat,PRIMARY,NBS services CPI,PRIMARY,monthly→quarterly,CN 2016+,YoY,B3,CN services 官方 2016+;不足则 aux 标 INFEASIBLE_PREDICTED,-1,FALSE,0.70 obs,Q avg YoY,e-Stat,CN services 2016+
+d_cpi_goods,D,aux,商品 CPI,e-Stat,PRIMARY,NBS goods CPI,PRIMARY,monthly→quarterly,CN,YoY,B3,diffusion 用,-1,FALSE,0.70 obs,Q avg YoY,e-Stat,CN
+d_ppi,D,core,PPI/生产者价格,BOJ CGPI,PRIMARY,NBS PPI,PRIMARY,monthly→quarterly,JP 1960+; CN 1996+,YoY,B3,CN PPI 权重透明度 NOT_FULLY_PUBLIC 入 risk registry,-1,TRUE,0.85 obs,Q avg YoY,BOJ CGPI,CN PPI 1996+
+d_gdp_deflator,D,core,GDP deflator,ESRI,PRIMARY,NBS 官方或明确构造,PRIMARY,quarterly,JP/CN,index,B3,禁名义/实际 level 直接相除(修订项五 PIT 陷阱);确认 chained volume 可重建,-1,TRUE,0.85 obs,Q index,ESRI,CN 构造法冻结
+d_wage_income,D,core,工资/名义收入,官方劳动统计/compensation per employee,PRIMARY,城镇单位名义工资 YoY(年度),PRIMARY,annual,JP/CN,YoY,B3,CN 年度;nominal-real gap 标 DERIVED_INCOME_DEFLATOR_PROXY,-1,TRUE,0.85 obs,annual YoY,毎勤/compensation,CN 城镇单位名义 YoY
+d_price_diffusion_items,D,aux,分类价格扩散(负增长类别占比),e-Stat item-level,PRIMARY,NBS 分类 CPI,PROXY,monthly→quarterly,JP/CN,diffusion,B3,D3 检验;CN 分类权重透明度入册,-1,FALSE,0.70 obs,Q diffusion,e-Stat item,CN 分类权重不透明

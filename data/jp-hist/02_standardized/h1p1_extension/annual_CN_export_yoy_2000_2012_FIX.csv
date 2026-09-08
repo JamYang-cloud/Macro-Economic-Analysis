@@ -1,0 +1,13 @@
+year,value,variable,country,unit,source_note
+2001,6.781701444622801,export_yoy,cn,pct,FIXED: NBS 2013年鉴 6-3 USD export col (was total in H2 annual_CN_export_yoy.csv - H2 bug one-col shift); 2001-2012
+2002,22.360015031942872,export_yoy,cn,pct,FIXED: NBS 2013年鉴 6-3 USD export col (was total in H2 annual_CN_export_yoy.csv - H2 bug one-col shift); 2001-2012
+2003,34.59090909090907,export_yoy,cn,pct,FIXED: NBS 2013年鉴 6-3 USD export col (was total in H2 annual_CN_export_yoy.csv - H2 bug one-col shift); 2001-2012
+2004,35.39299177597051,export_yoy,cn,pct,FIXED: NBS 2013年鉴 6-3 USD export col (was total in H2 annual_CN_export_yoy.csv - H2 bug one-col shift); 2001-2012
+2005,28.419260782363942,export_yoy,cn,pct,FIXED: NBS 2013年鉴 6-3 USD export col (was total in H2 annual_CN_export_yoy.csv - H2 bug one-col shift); 2001-2012
+2006,27.171074217468338,export_yoy,cn,pct,FIXED: NBS 2013年鉴 6-3 USD export col (was total in H2 annual_CN_export_yoy.csv - H2 bug one-col shift); 2001-2012
+2007,25.95306404672957,export_yoy,cn,pct,FIXED: NBS 2013年鉴 6-3 USD export col (was total in H2 annual_CN_export_yoy.csv - H2 bug one-col shift); 2001-2012
+2008,17.225472362879568,export_yoy,cn,pct,FIXED: NBS 2013年鉴 6-3 USD export col (was total in H2 annual_CN_export_yoy.csv - H2 bug one-col shift); 2001-2012
+2009,-16.01185441989529,export_yoy,cn,pct,FIXED: NBS 2013年鉴 6-3 USD export col (was total in H2 annual_CN_export_yoy.csv - H2 bug one-col shift); 2001-2012
+2010,31.30336090744916,export_yoy,cn,pct,FIXED: NBS 2013年鉴 6-3 USD export col (was total in H2 annual_CN_export_yoy.csv - H2 bug one-col shift); 2001-2012
+2011,20.321741223822933,export_yoy,cn,pct,FIXED: NBS 2013年鉴 6-3 USD export col (was total in H2 annual_CN_export_yoy.csv - H2 bug one-col shift); 2001-2012
+2012,7.91898460902134,export_yoy,cn,pct,FIXED: NBS 2013年鉴 6-3 USD export col (was total in H2 annual_CN_export_yoy.csv - H2 bug one-col shift); 2001-2012

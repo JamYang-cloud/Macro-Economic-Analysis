@@ -1,0 +1,13 @@
+﻿flavor,channel,D_CN,n_J90_group,n_J00_group,n_J90_valid,n_J00_valid,feasible,status
+Baseline,cpi_yoy,0.0112,8,3,8,3,True,OK
+Baseline,m2_yoy,0.3685,7,3,7,3,True,OK
+Baseline,investment_gdp,0.7534,7,4,7,3,True,OK
+ResidA,cpi_yoy,,8,2,8,2,False,INFEASIBLE_GROUP_N<3
+ResidA,m2_yoy,,6,2,6,2,False,INFEASIBLE_GROUP_N<3
+ResidA,investment_gdp,,8,2,8,1,False,INFEASIBLE_GROUP_N<3
+BaselineB90_CS,cpi_yoy,-0.546,3,7,3,7,True,OK
+BaselineB90_CS,m2_yoy,0.4218,3,8,3,8,True,OK
+BaselineB90_CS,investment_gdp,0.2145,4,6,4,5,True,OK
+ResidB,cpi_yoy,-0.6913,5,6,5,6,True,OK
+ResidB,m2_yoy,,1,8,1,8,False,INFEASIBLE_GROUP_N<3
+ResidB,investment_gdp,,1,9,1,8,False,INFEASIBLE_GROUP_N<3

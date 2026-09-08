@@ -1,0 +1,61 @@
+JP-HIST GATE H4 — STRUCTURAL BASELINE SCOPED FREEZE
+签署日期：2026-09-06
+签署依据：外部审核报告 JP-HIST_H4v03e_外部审核及H5工作方向_20260906.md（§10/§11/§15 = PASS / SCOPED FREEZE，批准进入 H5 Mechanism Decomposition）
+审核判定节选："H4 v0.3e = PASS / SCOPED FREEZE。…… 下一阶段：H5 Mechanism Decomposition / Regime Attribution。H5 不预设 lag，聚焦：哪些模块和机制使 CN 落入 J90/J00 相似状态，以及这些相似是否具有真正的经济结构含义。"
+
+================================================================
+1. FREEZE 元数据
+================================================================
+package_id            : JP-HIST-H4-SIM-20260906-v03e
+freeze_version        : H4-STRUCTURAL-BASELINE-SCOPED-FREEZE-20260906
+component_version     : v03e report / SHA_manifest h4v03e / audit README / xlsx v03e / ZIP v03e / spec v03 / final report (auto-gen from CSV)
+freeze_timestamp      : 2026-09-06
+gate_result           : PASS WITH SCOPED FREEZE（P0-A/B/C/D 全 CLOSED；冻结 8 条见 §2；外审明确不冻结对象见 §3 W07）
+
+================================================================
+2. 冻结断言（8，外审 §15 原文定稿）
+================================================================
+F01  CN 与 JP 在长期宏观 structural-state 空间中存在 retrospective structural-state similarity（本层为 RETROSPECTIVE_HISTORICAL 比较，非 PIT；direct_model_use=false）
+F02  B 窗（CN 2013-2025 段）中心滞后 L=22 获 cross-metric 支持——四类 metric（MANHATTAN/EUCLID/RANKSTATE/SHAPECORR）全指向 L=22
+F03  D 窗（CN 2020-2025 段）MANHATTAN L=22 method-specific 显著：S=-0.701，10,000-rep max-stat block null p=0.0009（valid reps 10,000，fail=0）
+F04  不存在跨 metric / 跨 normalization 稳健的单一 fixed lag（D 窗 cross-metric 22/16/22/14 分歧；time-local norm 不支持固定 lag）——"CN 固定滞后 JP 22 年"不成立为一般命题
+F05  JP1991-98 单簇假说（CN 2013-2025 主体稳定对应 JP 1991-1998）正式 REJECTED
+F06  mixed-state pattern（7/13 落 JP 1991-1998 + 4/13 落 JP 2003-2011 + 2/13 其他）可作为 descriptive pattern 保留——cluster bootstrap 800/800 valid（k∈{4,5}，module-subset 概率），非单调时间推进
+F07  time-local normalization（rolling/expanding/早期标定窗）不支持固定 lag 表述；LOMO median 视角 Δ0-4 稳、mode 视角漂
+F08  H4 不再继续寻找"唯一 lag"；下一阶段 = H5 Mechanism Decomposition / Regime Attribution（不预设 lag）
+
+================================================================
+3. 冻结写入约束（7）
+================================================================
+W01  H4 冻结后 04_analysis 分析产物变更须显式 revision（v0.4+）并更新 analysis_lineage.md + 对应审核包；冻结资产（v03e 集）只读
+W02  报告数字 single source of truth = 产物 CSV（h4v03e_report_gen.py 自动渲染），禁手写数字；引擎任何修改须重跑全部主产物（grid/lomo/cluster/coverage/null）比对后再写报告
+W03  H2_ERRATA_20260906.csv 处置持续有效（CN export/trade 2000-2012 列错位 + JP investment 单位）——下游一律用 FIX 文件/panels（h1p1_extension/ 与 04_analysis/*panel*），禁读 H2 原 export/trade 2000-2012
+W04  外审 §11"不应做"入约束：H5 不得预设 lag=22；不得直接把 CN 年对齐 JP 年（如 CN 2015→JP 1993）；不得再找"哪个事件像哪个事件"；不得用视觉事件拼接证明日本化
+W05  外审 §10"不冻结"清单入约束：不得把 F01-F08 扩读为"CN 固定滞后 JP 22 年" / "CN 2013-2025 稳定对应 JP 1991-1998" / "CN 正以稳定速度沿 JP 历史轨迹推进"
+W06  H5 主分析 = mechanism decomposition / regime attribution（H5-1..H5-4）；event-time（H5-5）仅辅助，且须建立在机制识别之后、比较机制变量路径而非日历年份
+W07  H5 须预注册 spec 先行（假设/搜索空间/阈值冻结，防 post-hoc 漂移）；结论（Q1-Q3）过 research-quality-gates 五道门 + grill-me 拷问后定稿
+
+================================================================
+4. H4 后期待办（不阻止 FREEZE）
+================================================================
+B01  H5 Mechanism Decomposition 规划（spec DRAFT 见 00_registry/h5_mechanism_spec_20260906.md）
+B02  H4 遗留数据缺口（不影响已冻结结论）：JP 连续年度人口（H4 需补推計月报）、cgb10y 2002-2007、corp 系列 CN 侧——H5 如需按 H1-P1 补采须另行授权
+B03  JP 2001+ GDP 拼接段已入 04_analysis panel；H2 冻结文件未改（add-alongside）
+
+================================================================
+5. 冻结资产哈希（本 record 签署时点）
+================================================================
+SHA256_manifest_h4v03e.txt (audit pkg outer):    3270c9d385bec3dfc5235dea66f5a34cdfd3cad4
+H4_v03e_final_report.md (auto-gen):              998bad407ee0ddae5a7b186fcdcf9827915034dbc8
+h4_similarity_spec_20260906.md:                  07d59cf89a63898c2644dfcb90949ae3de2660ff1
+h4_v03_spec_20260906.md:                         77091839353aef9dad86868c9e9d52098b6065144f
+JP-HIST_H4v03e_外部审核及H5工作方向_20260906.md: 9ee06879420ca46273bc5cb3270b620813284cdf6
+JP-HIST_H4v03d_审核响应与修订_20260906.md:       ae22990b63c882b2d23d23ff0280aae7a33e65b84
+FREEZE_H3_20260906.txt (上游依赖):                43e3421c9a650e89f1fb42a3e3a8309ea3ff1054f
+
+================================================================
+6. H5 前置 gate
+================================================================
+G-H5-1  h5_mechanism_spec（H5-1..H5-5 设计 + Q1-Q3 假设 + 阈值/口径冻结）预注册 DRAFT → clarify 用户拍板 → 定稿
+G-H5-2  H5-1 Module Contribution Decomposition 为第一执行任务（逐 CN 年 × JP matched state 分解各模块对 S_total 贡献）
+G-H5-3  H5-2 J90(1991-98) vs J00(2003-11) regime 机制差异画像；H5-3 Counterfactual Module Removal（模块换长期均值）；H5-4 Transition Matrix（2023-25 是否 persistent J00）——次序执行，逐任务过质量门

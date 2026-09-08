@@ -1,0 +1,14 @@
+year,value,source_note,variable,country,unit
+2013,10.1,NBS 2013 wage release: 51474元 vs 2012 46769 (+4705); 新京报/NDRC citing official; 名义+10.1%,wage_yoy,cn,pct
+2014,9.5,NBS 2014 wage release: 56360元; 2015 release states 2014增速9.5% (2015 +10.1 加快0.6pp),wage_yoy,cn,pct
+2015,10.1,NBS 2015 wage release (2016-05-13): 62029元 名义+10.1%,wage_yoy,cn,pct
+2016,8.9,NBS 2016 wage page (sj/zxfb/202302/t20230203_1899525): 67569元 +8.9%,wage_yoy,cn,pct
+2017,10.0,NBS 2017 wage page (sj/zxfb/202302/t20230203_1899943): 74318元 +10.0%,wage_yoy,cn,pct
+2018,11.0,NBS 2018 wage page (sj/zxfb/202302/t20230203_1900311): 82461元 +11.0%,wage_yoy,cn,pct
+2019,9.8,NBS 2019 wage page (xxgk/sjfb/zxfb2020/202005/t20200515_1767714): 90501元 +9.8%,wage_yoy,cn,pct
+2020,7.6,NBS 2021 wage page (sj/zxfb/202302/t20230203_1901472): 97379元; 2021 +9.7 提高2.1pp -> 2020 +7.6,wage_yoy,cn,pct
+2021,9.7,NBS 2021 wage page (sj/zxfb/202302/t20230203_1901472): 106837元 +9.7%,wage_yoy,cn,pct
+2022,6.7,NBS 2022 wage page (sj/zxfb/202305/t20230509_1939290): 114029元 +6.7%,wage_yoy,cn,pct
+2023,5.8,NBS 2023 wage page (xxgk/sjfb/zxfb2020/202405/t20240520_1950434): 120698元 +5.8%,wage_yoy,cn,pct
+2024,2.8,NBS 2024 wage page (sj/zxfb/202505/t20250516_1959826): 124110元 名义+2.8% (可比+2.6%; 五经普覆盖调整),wage_yoy,cn,pct
+2025,4.3,NBS 2025 wage page (sj/zxfb/202605/t20260515_1963707): 129441元 +4.3%,wage_yoy,cn,pct

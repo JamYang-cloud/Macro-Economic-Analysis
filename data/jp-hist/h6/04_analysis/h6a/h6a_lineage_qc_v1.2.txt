@@ -1,0 +1,17 @@
+n_lineage_rows=27
+sha_missing=0
+status_missing=0
+path_missing=0
+parent_missing=0 (syntax-level: every row non-empty or ROOT)
+parent_ref_total=52
+parent_ref_internal=43
+parent_ref_external=9
+parent_ref_unresolved=0
+parent_package_verified=27
+parent_package_failed=0
+artifact_sha_verified=27
+artifact_sha_failed=0
+VERIFIED_IN_A5_V1_PARENT_PACKAGE=10
+VERIFIED_IN_PARENT_PACKAGE=17
+A0_parent_in_closed_set=True (JP-HIST_H6A0_v1.1_FROZEN_定档包_20260907.zip carried in A5.2 pkg)
+A0_mechanism_registry_version_transition=ffbc8f...(外审包,P2修正前) -> 93d9...(FROZEN定档包,P2修正后 PENDING_CROSSWALK 统一; repo=93d9==lineage)

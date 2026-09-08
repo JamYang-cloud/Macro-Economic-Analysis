@@ -1,0 +1,53 @@
+country,registry_variable,semantic_status,h3_action,evidence_file,consumed
+jp,jp.hist.real_gdp_yoy,EXACT,ROBUSTZ+PCTRANK,state/jp_real_gdp_yoy_robustz.csv;state/jp_real_gdp_yoy_pctrank.csv,YES
+jp,jp.hist.nominal_gdp_yoy,EXACT,ROBUSTZ+PCTRANK,state/jp_nominal_gdp_yoy_robustz.csv;state/jp_nominal_gdp_yoy_pctrank.csv,YES
+jp,jp.hist.investment_gdp,EXACT,ROBUSTZ+PCTRANK,state/jp_investment_gdp_robustz.csv;state/jp_investment_gdp_pctrank.csv,YES
+jp,jp.hist.iip_yoy,EXACT,ROBUSTZ+PCTRANK,state/jp_iip_yoy_robustz.csv;state/jp_iip_yoy_pctrank.csv,YES
+jp,jp.hist.corp_profit_yoy,NOT_MAPPED,SKIP_GAP,(NA: NOT_MAPPED gap preserved),YES
+jp,jp.hist.cpi_yoy,EXACT,ROBUSTZ+PCTRANK,state/jp_cpi_yoy_robustz.csv;state/jp_cpi_yoy_pctrank.csv,YES
+jp,jp.hist.gdp_deflator_yoy,PRE_TRANSFORM,PRE_TRANSFORM+STATE,state/jp_gdp_deflator_yoy_robustz.csv;state/jp_gdp_deflator_yoy_pctrank.csv,YES
+jp,jp.hist.m2_yoy,EXACT,ROBUSTZ+PCTRANK,state/jp_m2_yoy_robustz.csv;state/jp_m2_yoy_pctrank.csv,YES
+jp,jp.hist.policy_rate,EXACT,ROBUSTZ+PCTRANK,state/jp_policy_rate_robustz.csv;state/jp_policy_rate_pctrank.csv,YES
+jp,jp.hist.jgb10y,EXACT,ROBUSTZ+PCTRANK,state/jp_jgb10y_robustz.csv;state/jp_jgb10y_pctrank.csv,YES
+jp,jp.hist.corp_leverage,NOT_MAPPED,SKIP_GAP,(NA: NOT_MAPPED gap preserved),YES
+jp,jp.hist.credit_gdp,PROXY_STOCK,PROXY_TRACK_STATE,state_proxy/jp_credit_gdp_robustz.csv,YES
+jp,jp.hist.export_yoy,EXACT,ROBUSTZ+PCTRANK,state/jp_export_yoy_robustz.csv;state/jp_export_yoy_pctrank.csv,YES
+jp,jp.hist.trade_balance_gdp,PRE_TRANSFORM,PRE_TRANSFORM+STATE,state/jp_trade_balance_gdp_robustz.csv;state/jp_trade_balance_gdp_pctrank.csv,YES
+jp,jp.hist.fx_usdjpy,EXACT,ROBUSTZ+PCTRANK,state/jp_fx_usdjpy_robustz.csv;state/jp_fx_usdjpy_pctrank.csv,YES
+jp,jp.hist.reer,EXACT,ROBUSTZ+PCTRANK,state/jp_reer_robustz.csv;state/jp_reer_pctrank.csv,YES
+jp,jp.hist.land_price_yoy,EXACT,ROBUSTZ+PCTRANK,state/jp_land_price_yoy_robustz.csv;state/jp_land_price_yoy_pctrank.csv,YES
+jp,jp.hist.nikkei_return,EXACT,ROBUSTZ+PCTRANK,state/jp_nikkei_return_robustz.csv;state/jp_nikkei_return_pctrank.csv,YES
+jp,jp.hist.working_age_growth,ANCHOR,ANCHOR_POINTS,state_anchor/jp_working_age_growth_robustz.csv,YES
+jp,jp.hist.unemployment,EXACT,ROBUSTZ+PCTRANK,state/jp_unemployment_robustz.csv;state/jp_unemployment_pctrank.csv,YES
+jp,jp.hist.wage_yoy,EXACT,ROBUSTZ+PCTRANK,state/jp_wage_yoy_robustz.csv;state/jp_wage_yoy_pctrank.csv,YES
+jp,jp.hist.dependency_ratio,ANCHOR,ANCHOR_POINTS,state_anchor/jp_dependency_ratio_robustz.csv,YES
+jp,jp.hist.corp_land_share,NOT_MAPPED,SKIP_GAP,(NA: NOT_MAPPED gap preserved),YES
+jp,jp.hist.tfr,EXACT,ROBUSTZ+PCTRANK,state/jp_tfr_robustz.csv;state/jp_tfr_pctrank.csv,YES
+jp,jp.hist.birth_rate,EXACT,ROBUSTZ+PCTRANK,state/jp_birth_rate_robustz.csv;state/jp_birth_rate_pctrank.csv,YES
+jp,jp.hist.youth_dependency,ANCHOR,ANCHOR_POINTS,state_anchor/jp_youth_dependency_robustz.csv,YES
+cn,cn.hist.real_gdp_yoy,EXACT,ROBUSTZ+PCTRANK,state/cn_real_gdp_yoy_robustz.csv;state/cn_real_gdp_yoy_pctrank.csv,YES
+cn,cn.hist.nominal_gdp_yoy,EXACT,ROBUSTZ+PCTRANK,state/cn_nominal_gdp_yoy_robustz.csv;state/cn_nominal_gdp_yoy_pctrank.csv,YES
+cn,cn.hist.investment_gdp,EXACT,ROBUSTZ+PCTRANK,state/cn_investment_gdp_robustz.csv;state/cn_investment_gdp_pctrank.csv,YES
+cn,cn.hist.iip_yoy,EXACT,ROBUSTZ+PCTRANK,state/cn_iip_yoy_robustz.csv;state/cn_iip_yoy_pctrank.csv,YES
+cn,cn.hist.corp_profit_yoy,NOT_MAPPED,SKIP_GAP,(NA: NOT_MAPPED gap preserved),YES
+cn,cn.hist.cpi_yoy,EXACT,ROBUSTZ+PCTRANK,state/cn_cpi_yoy_robustz.csv;state/cn_cpi_yoy_pctrank.csv,YES
+cn,cn.hist.gdp_deflator_yoy,NOT_MAPPED,SKIP_GAP,(NA: NOT_MAPPED gap preserved),YES
+cn,cn.hist.m2_yoy,EXACT,ROBUSTZ+PCTRANK,state/cn_m2_yoy_robustz.csv;state/cn_m2_yoy_pctrank.csv,YES
+cn,cn.hist.policy_rate,NOT_MAPPED,SKIP_GAP,(NA: NOT_MAPPED gap preserved),YES
+cn,cn.hist.cgb10y,NOT_MAPPED,SKIP_GAP,(NA: NOT_MAPPED gap preserved),YES
+cn,cn.hist.corp_leverage,NOT_MAPPED,SKIP_GAP,(NA: NOT_MAPPED gap preserved),YES
+cn,cn.hist.credit_gdp,PROXY_FLOW,PROXY_TRACK_STATE,state_proxy/cn_credit_gdp_robustz.csv,YES
+cn,cn.hist.export_yoy,EXACT,ROBUSTZ+PCTRANK,state/cn_export_yoy_robustz.csv;state/cn_export_yoy_pctrank.csv,YES
+cn,cn.hist.trade_balance_gdp,PRE_TRANSFORM,DEFERRED_FX,h3_deferred.csv,YES
+cn,cn.hist.fx_usdcny,NOT_MAPPED,SKIP_GAP,(NA: NOT_MAPPED gap preserved),YES
+cn,cn.hist.reer,EXACT,ROBUSTZ+PCTRANK,state/cn_reer_robustz.csv;state/cn_reer_pctrank.csv,YES
+cn,cn.hist.property_price_yoy,PRE_TRANSFORM,PRE_TRANSFORM+STATE,state/cn_property_price_yoy_robustz.csv;state/cn_property_price_yoy_pctrank.csv,YES
+cn,cn.hist.equity_return,EXACT,ROBUSTZ+PCTRANK,state/cn_equity_return_robustz.csv;state/cn_equity_return_pctrank.csv,YES
+cn,cn.hist.working_age_growth,EXACT,ROBUSTZ+PCTRANK,state/cn_working_age_growth_robustz.csv;state/cn_working_age_growth_pctrank.csv,YES
+cn,cn.hist.unemployment,NOT_MAPPED,SKIP_GAP,(NA: NOT_MAPPED gap preserved),YES
+cn,cn.hist.wage_yoy,EXACT,ROBUSTZ+PCTRANK,state/cn_wage_yoy_robustz.csv;state/cn_wage_yoy_pctrank.csv,YES
+cn,cn.hist.dependency_ratio,EXACT,ROBUSTZ+PCTRANK,state/cn_dependency_ratio_robustz.csv;state/cn_dependency_ratio_pctrank.csv,YES
+cn,cn.hist.corp_land_share,NOT_MAPPED,SKIP_GAP,(NA: NOT_MAPPED gap preserved),YES
+cn,cn.hist.tfr,NOT_MAPPED,SKIP_GAP,(NA: NOT_MAPPED gap preserved),YES
+cn,cn.hist.birth_rate,EXACT,ROBUSTZ+PCTRANK,state/cn_birth_rate_robustz.csv;state/cn_birth_rate_pctrank.csv,YES
+cn,cn.hist.youth_dependency,EXACT,ROBUSTZ+PCTRANK,state/cn_youth_dependency_robustz.csv;state/cn_youth_dependency_pctrank.csv,YES

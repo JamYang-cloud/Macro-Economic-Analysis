@@ -1,0 +1,57 @@
+﻿source_file,source_role,source_owner,frequency,status,sha256,rows,notes
+central_bank_balance.csv,DATA_SOURCE,中国人民银行(经akshare),,replaced+merged,7ae631fa71f4dbf4b2086b08d1ff845bf2e4e9deb087a8e5b71b9e5bf7e820eb,355,v2核心主序列并入v3(2026-08-26)
+china_bond_yield.csv,DATA_SOURCE,中债/英为财情,,unchanged+merged,fa2ae66fa65a36387d98e1a4f3977f96fd45443219de956f1b8a94e07ffcc34a,4969,v2核心主序列并入v3(2026-08-26)
+cpi_index.csv,DATA_SOURCE,国家统计局,,unchanged+merged,ab6c63d8667f7e9ff239a28851ca2e72614c5dd30f1d6996fff765643c5e0ee4,223,v2核心主序列并入v3(2026-08-26)
+fr_fixing_rates.csv,DATA_SOURCE,官方网页补采,,v3,bbba3ddaffdfa20dc08954a52c17566e90e5ffd4c88ca1c39945cd04543405f2,5154,"FR/FDR回购定盘利率日度(5154天, 2006-01-04起, 手工2006-2025+既有2026段拼接)"
+gold_au9999_sge.csv,DATA_SOURCE,上海黄金交易所(经akshare),,replaced+merged,6116e547edcf0c1626e2fb8449ee3dd83fde062cb6b610d310cc38f9d0c3e0ab,2515,v2核心主序列并入v3(2026-08-26)
+hs300_pb_lg.csv,DATA_SOURCE,乐咕乐股,,unchanged+merged,d947b5554bdeabc0909fc5174f56e5b7d352bcae009ed58422c8edb3c280a5f4,4531,v2核心主序列并入v3(2026-08-26)
+hs300_pe_lg.csv,DATA_SOURCE,乐咕乐股,,unchanged+merged,5fc067bb847da19ba05271307514685488167126a69c17ab2ec556a41f5b01f1,4531,v2核心主序列并入v3(2026-08-26)
+hs300_total_return_510300.csv,DATA_SOURCE,华泰柏瑞/东方财富,,unchanged+merged,ef6f60bf2f2cbef8e8b84f2e7127916d47fd0e7868b18c48fe799eb51ce148c5,3477,v2核心主序列并入v3(2026-08-26)
+hs300_total_return_H00300.csv,DATA_SOURCE,中证指数官方,,replaced+merged,b9b9b2828965c8cccd3748e17377eaaabadcb5867d78121aa5aa04162d1683fc,4533,v2核心主序列并入v3(2026-08-26)
+income_annual_2013_2020.csv,DATA_SOURCE,手工补充数据(第四轮核查),,v4.1,42d86cd3258944c92faefa972aa5f80fc06036b0ace02a8a48552ad370e30284,8,"居民收入年度表(8年, '?'→NA, 2013缺中位数/消费/农村)"
+index_000001_sina.csv,DATA_SOURCE,新浪财经/上交所,,unchanged+merged,122a74a270cb08f7e2b76591757ef293f466e22b5155bf06c0bece36e8c24670,4531,v2核心主序列并入v3(2026-08-26)
+index_000300_sina.csv,DATA_SOURCE,新浪财经/中证,,unchanged+merged,94e5f73ffec4de6c683c8df20f143c146c6c0a78252f481358c0456b70c1b06b,4531,v2核心主序列并入v3(2026-08-26)
+index_000985_combined.csv,DATA_SOURCE,中证/新浪+腾讯,,unchanged+merged,f077f1372003769bbaa8998b405f25c9d1c70d9b8e9ae71ff36c702020deb950,3468,v2核心主序列并入v3(2026-08-26)
+index_000985_csindex.csv,DATA_SOURCE,中证指数官方,,new+merged,25e6588218aef0c6d9a980050393f5d5eaf0fa05939fc8b50ebf01899d16c180,4533,v2核心主序列并入v3(2026-08-26)
+index_000985_sina.csv,DATA_SOURCE,新浪财经,,unchanged+merged,a0c00d4066310162ab525bb5d5712f23869da0a6c6f3fca24bf61bd3d1ad6144,1180,v2核心主序列并入v3(2026-08-26)
+index_399001_sina.csv,DATA_SOURCE,新浪财经/深交所,,unchanged+merged,5e19590c6a755ee62172661b90dd9aa6eb9040b893493e0be00524562863e170,4531,v2核心主序列并入v3(2026-08-26)
+lpr_rate.csv,DATA_SOURCE,全国银行间同业拆借中心,,unchanged+merged,2d0279d63c4e6b5ca928cc4487cb1a9b7a36cf6f2185272103073c6dd1f4c2b8,1575,v2核心主序列并入v3(2026-08-26)
+lpr_rate_regime_events.csv,DATA_SOURCE,全国银行间同业拆借中心(派生),,new+merged,2faa698821564eac982150fa6ea4c10bc296b91a98d3fbb11c44e37e4131e8da,119,v2核心主序列并入v3(2026-08-26)
+m1_new_caliber_2024.csv,DATA_SOURCE,官方网页补采,,v3,11f84eb0daec150cb166d755f0cd661d93767450a61921a54efea9226c53b30a,12,
+macro_exports_yoy.csv,DATA_SOURCE,海关总署(经济日历转引),,new+merged,0a10d671a1cd033838b9587fadb1e83e0aa2746373b211000b65f2eddd16397b,512,v2核心主序列并入v3(2026-08-26)
+macro_fixed_investment.csv,DATA_SOURCE,国家统计局,,replaced+merged,d7b7c0683c9348f8b1b4531c027950b0c51fc1e19f60c8487cab75fd8c4da190,160,v2核心主序列并入v3(2026-08-26)
+macro_gdp_quarterly.csv,DATA_SOURCE,国家统计局,,unchanged+merged,034d0dbe44fbecce82b8ed15c2fb66e9725e27c44ae2ecd8b92967f3ea51216f,82,v2核心主序列并入v3(2026-08-26)
+macro_imports_yoy.csv,DATA_SOURCE,海关总署(经济日历转引),,new+merged,65290787d39606da88be1f1ae8790b17971c3492dc9461cc9dd9bac8da0add55,351,v2核心主序列并入v3(2026-08-26)
+macro_industrial_production.csv,DATA_SOURCE,官方网页补采,,v3,59ceb602f26aadd70c1d6e560f8d36a30d9970806cb61c22cde4aa18c7a01f70,204,
+macro_pmi.csv,DATA_SOURCE,国家统计局,,unchanged+merged,5a0b730ea29dbd362e26d3787af9a7ed0790adb20143e611e0d166997ded4814,223,v2核心主序列并入v3(2026-08-26)
+macro_retail_sales.csv,DATA_SOURCE,国家统计局,,unchanged+merged,2a0622afc59c022a5074736d00172121b5e02fc23c4a969304dd39457663f1fe,208,v2核心主序列并入v3(2026-08-26)
+margin_financing_market_monthly.csv,DATA_SOURCE,手工补充数据(第四轮核查),,v4.1,31b13b8375a3f459d55e614c8c37c4497306b8e9ef642e91c670013025ae2801,159,"全市场融资融券月度(159条: 2010/2011年度+2012.1~2025.1, 交易所申报汇总)"
+margin_financing_sh.csv,DATA_SOURCE,上交所,,new+merged,d4dba0d354336b50eb4f5bfbf3f20c15820621a0ec49efe050b53570a0e13e79,3980,v2核心主序列并入v3(2026-08-26)
+margin_financing_sz.csv,DATA_SOURCE,深交所,,new+merged,2c4047a66bcbaca02969e2c1a2ddf11bf38e9be94af4b84fad8980596456a3b5,3782,v2核心主序列并入v3(2026-08-26)
+margin_financing_sz_monthly.csv,DATA_SOURCE,官方网页补采,,v3,9fed12ef9ac16c625f0ce389c7084814a695a6189741cb14e35c7308523229b8,198,"深市融资融券月度(198行, +period_end自然月末/date_type列, 非法日期2025-02-30修正)"
+money_supply_m0m1m2.csv,DATA_SOURCE,中国人民银行,,unchanged+merged,8b70551d23dc3592e8111483a50504debdc3e6da3f028da9d7234c02e0ce9d4e,223,v2核心主序列并入v3(2026-08-26)
+money_supply_pboc_detail.csv,DATA_SOURCE,中国人民银行(转引),,new+merged,88f2fbc8ea4665e4765e835f5ae8d8b7a9abadf92d10656f3eeae7967b7b229e,583,v2核心主序列并入v3(2026-08-26)
+nbs_income_quarterly.csv,DATA_SOURCE,官方网页补采,,v3,f281e5744cf23bd79e8b9036e1797a80635bdcac4d923cf6b3351bbfaa1804d1,177,"居民收入消费季度(16期x9指标), 恢复自Excel v3(空文件事故)"
+nbs_monthly_archive.csv,DATA_SOURCE,官方网页补采,,v3,f3eba2c4a4c66176c5d35371a4aa8902f1d2c415116726c389a8e1f02f9e8303,516,
+nbs_pmi_archive.csv,DATA_SOURCE,官方网页补采,,v3,ea6971efaa89b76a7a764fab9b5a0f29c836582af7a9269db109ac40e033a326,742,"PMI月度分项(742行/104月, 2017-12起, PDF表1扩展45月)"
+nbs_release_20260817.csv,AUDIT_SNAPSHOT,官方网页补采,,v3,da447e0e50d4c52de0c243d68018325b05c07bad3f909306a9439d3748e57e2b,30,
+new_financial_credit.csv,DATA_SOURCE,中国人民银行,,unchanged+merged,04a10ae30b7a8c0d0c7beab036465281b423b8aae74033a3c28c00cf8a497819,223,v2核心主序列并入v3(2026-08-26)
+ppi_index.csv,DATA_SOURCE,国家统计局,,unchanged+merged,5903bfa91abdb6f5febe364eea1ce8cdb4920202c50ab0a0b5c3642ceb7da4d1,247,v2核心主序列并入v3(2026-08-26)
+reserve_requirement_ratio.csv,DATA_SOURCE,中国人民银行,,unchanged+merged,ac9589f77eca8686d1a2f4aec06300eef92ecf50b05ec8b1a6f658ff19afb568,58,v2核心主序列并入v3(2026-08-26)
+reverse_repo_7d_events.csv,DATA_SOURCE,官方网页补采,,v3,5d9a6f16f539809d88fc2c9cf508910413f41118225a7dded07f162136bb6a3e,26,"7天逆回购事件表(26行, 2015段B+并入, 第四轮)"
+rmb_deposit_household.csv,DATA_SOURCE,中国人民银行,,unchanged+merged,442e8daa7c7709619c5b047792046374d95dddf530356a9fa7bff97148da6e45,30,v2核心主序列并入v3(2026-08-26)
+sge_gold_benchmark_daily.csv,DATA_SOURCE,官方网页补采,,v3,e64a328dabca16070783bea9907cf9b4e4ec8500843de4a3e002444c62d80cfd,642,
+sge_gold_benchmark_history_2016_2023.csv,DATA_SOURCE,官方网页补采,,v3,5ac56e240aaf34d51cb96ce7791db1ab24c917d2410ead47058684e48575c817,1864,
+sge_gold_benchmark_raw.csv,DATA_SOURCE,官方网页补采,,v3,df13d0e20874447eb501bec992be9afdd98bf3289a966e77b9f6c7e53fec9d37,3919,
+sge_gold_quarterly_au9999.csv,DATA_SOURCE,官方网页补采,,v3,e6029edc7dad30f2f83555d4f19b9c52400e956e44919e781467217d7fbe5ebb,32,
+shibor_daily_canonical.csv,DATA_SOURCE,手工补充数据(第四轮核查),,v4.1,ef45b38b147c21c805ca3591dd78548b5854a5fe3f3f63387d5617abe35b574b,4555,"SHIBOR官方日度canonical(4555天, 2006-10-08~2026-08-25, 纯官方API, 合并shibor_official_daily+2016-2026补拉)"
+shibor_official_daily_2006_2015.csv,DATA_SOURCE,手工补充数据(第四轮核查),,v4.1,1d3a6c726364a6b50dd46d9aad9d638aad206d4a0607a1a199a518d7a6db7c11,2311,"SHIBOR官方日度(2311天, 2006-10-08~2015-12-31, chinamoney API, 含调休交易日)"
+shibor_quarterly.csv,DATA_SOURCE,官方网页补采,,v3,a50b8a05f1d0da4626f48c4384a5910a25594cc1f6c90a753df8b103f9425971,80,"SHIBOR季度末(80行, 2006-Q4~2015-Q2段35季度改用chinamoney官方值修正, 2026-08-26)"
+shibor_rates.csv,DATA_SOURCE,全国银行间同业拆借中心,,unchanged+merged,c04f00130edf9bbc6522fe121c659141bf6af7df93ac28709aa3ccb1ff3ca9b9,2352,v2核心主序列并入v3(2026-08-26)
+social_financing_flow.csv,DATA_SOURCE,央行/统计局,,unchanged+merged,37837a82428bef3bfb15b72fad0e5553c98a368d73b8c1a0d0ae9123d0b724e0,136,v2核心主序列并入v3(2026-08-26)
+social_financing_stock_full.csv,DATA_SOURCE,官方网页补采,,v3,043d9a9205b0effc749b5be401a3cd02e15079790a7751614716e3a5aa77967b,132,
+social_financing_stock_history.csv,DATA_SOURCE,官方网页补采,,v3,60bc913f7cfac7790a50dabe2ad402361ba949c239c12dd858e23ce1266bf9ba,17,
+social_financing_stock_monthly_reports.csv,DATA_SOURCE,官方网页补采,,v3,7c7486651fe9f0472bf68fe32b6ee7e5a86bccecf59cc797a69b11e9cf5d4fce,115,
+social_financing_stock_starter.csv,DATA_SOURCE,官方网页补采,,v3,c56d5c2b1929dbd79a2aa208ef966b36f13a9313d236563bd214b5178010fa45,3,
+szse_margin_monthly_official.csv,DATA_SOURCE,官方网页补采,,v3.1,5d195e3924ee55e1f8b0785b5890eb4eec81c54417f9a693fa3b79d684b947c2,9,"深交所统计月报官方月末余额(9个月, 缺口期修复源, step6_4/6_5)"
+tsf_stock_comparable_2017_2019.csv,DATA_SOURCE,官方网页补采,,v3,98f5d13ac3c7a402ba5c3e3fadd8f6609ffdf98dde2238bc8aae4f864edbd8f6,36,

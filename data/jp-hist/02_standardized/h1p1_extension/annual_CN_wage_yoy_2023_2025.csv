@@ -1,0 +1,4 @@
+year,value,source_note,variable,country,unit
+2023,5.8,NBS 2023城镇单位工资发布 (xxgk/sjfb/zxfb2020/202405/t20240520_1950434.html): 非私营 120698元 名义+5.8%,wage_yoy,cn,pct
+2024,2.8,NBS 2024城镇单位工资发布 (sj/zxfb/202505/t20250516_1959826.html): 非私营 124110元 名义+2.8% (可比+2.6%; 五经普覆盖调整),wage_yoy,cn,pct
+2025,4.3,NBS 2025城镇单位工资发布 (sj/zxfb/202605/t20260515_1963707.html): 非私营 129441元 名义+4.3%,wage_yoy,cn,pct

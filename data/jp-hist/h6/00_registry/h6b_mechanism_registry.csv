@@ -1,0 +1,17 @@
+variable_id,chain,concept_cn,semantic_plan,jp_source,jp_semantic,cn_source,cn_semantic,frequency,unit,phase,difficulty,notes
+investment_gdp,outcome,投资率(固定资本形成/GDP),EXACT,ESRI/已有,PRIMARY,NBS-WB/已有,PRIMARY,annual,pct,B1a,low,已有(P0)
+nfc_credit_gdp,credit,非金融企业信贷/GDP,EXACT,BIS Total Credit,PRIMARY,BIS Total Credit,PRIMARY,quarterly→annual,pct,B1a,low,BIS 跨国可比主干
+hh_credit_gdp,credit,居民信贷/GDP,EXACT,BIS Total Credit,PRIMARY,BIS Total Credit,PRIMARY,quarterly→annual,pct,B1a,low,同上
+property_price,property,房地产/土地价格,PROXY,MLIT 公示地价(衔接 land_price_yoy),PRIMARY,NBS 70城新宅指数+BIS 辅助,PROXY(起点2011缺峰值前段),annual,pct,B1a,medium,房价与房地产投资必须拆开建变量
+housing_starts,property,新开工住房,EXACT,MLIT Construction Stats,PRIMARY,NBS 房地产开发统计(新开工面积),PRIMARY,annual,千套/万m2,B1a,medium,StartsPer1000 人口标准化可选
+property_investment,property,房地产开发投资,EXACT,ESRI/MLIT,PRIMARY,NBS 房地产开发投资,PRIMARY,annual,亿元,pct_gdp,B1b,medium,机制链中区别于价格
+property_sales_inventory,property,销售/库存至少一项,EXACT,NBS 销售面积+待售面积,PRIMARY,annual,B1b,medium,建议书 P1；至少一项即满足 MVMD
+corporate_leverage,corporate,企业杠杆(负债/资产),PROXY,MOF 法人企业统计(全行业除金融),PRIMARY,NBS 规模以上工业(资产负债率),SECTOR_PROXY,annual,ratio,B1a/b,medium,CN 侧仅工业→趋势与方向比较
+corporate_profitability,corporate,企业盈利(利润率),PROXY,MOF(营业利润率/经常利润率),PRIMARY,NBS 规模以上工业(利润率),SECTOR_PROXY,annual,ratio,B1a/b,medium,同上
+mof_interest_burden_proxy,corporate,利息负担(利息费用/利润或销售),SECONDARY,MOF,PRIMARY,不适用(用信用侧代理),PROXY,annual,ratio,B1b,medium,与 BIS DSR 不同概念禁拼接
+bis_dsr,credit,偿债率DSR,EXACT,BIS DSR,PRIMARY,不适用,annual,pct,B2,low_medium,起点约1999→不覆盖 JP J90；J90 用 MOF proxy
+credit_impulse_jp,credit,信用脉冲,FLOW_PROXY,BOJ FFA(NFC 借贷流量),SECONDARY,不适用,annual,pct,B2,medium,CI=Δ(Flow/GDP)
+credit_impulse_cn,credit,信用脉冲,FLOW_PROXY,不适用,PBOC 社融(2002-2012 复用 annual_CN_credit_flow_level),SECONDARY,annual,pct,B2,medium,TSF^flow≠CreditStock
+boj_ffa,credit,资金循环(交叉核验),SECONDARY,BOJ FFA,PRIMARY,不适用,annual,B2,medium,与 MOF 互为 cross-check 不强制拼接
+npl,credit,NPL,PROXY,BOJ/FSA,PROXY,NFRA/PBOC,PROXY,annual,pct,P3(高难度),high,定义断点多→后置
+property_q_etc,property,企业q/空置率/开发商杠杆/土地交易,PROXY,多源,PROXY,多源,PROXY,annual,P3,high,建议书 §40 暂缓清单

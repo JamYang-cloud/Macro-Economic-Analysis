@@ -1,0 +1,19 @@
+variable_id,chain,concept_cn,semantic_plan,jp_source,jp_semantic,cn_source,cn_semantic,frequency,unit,phase,difficulty,notes
+investment_gdp,outcome,投资率(固定资本形成/GDP),EXACT,ESRI(已有标准化),PRIMARY,NBS-WB(已有标准化),PRIMARY,annual,pct,B1a,low,已冻结基线变量(P0 outcome)
+nfc_credit_gdp,credit,非金融企业信贷/GDP,EXACT,BIS Total Credit,PRIMARY,BIS Total Credit,PRIMARY,quarterly→annual,pct,B1a,low,BIS 跨国可比主干
+hh_credit_gdp,credit,居民信贷/GDP,EXACT,BIS Total Credit,PRIMARY,BIS Total Credit,PRIMARY,quarterly→annual,pct,B1a,low,BIS 主干
+land_price,property,土地价格(JP),PROXY,MLIT 公示地价(衔接 land_price_yoy),PRIMARY,,,annual,pct,B1a,medium,JP 资产概念=土地；CN 无同概念官方长史→仅 JP 侧机制路径；原 property_price 拆分
+residential_property_price,property,住宅价格(两国),PROXY,BIS Residential Property Price(JP 1970+)/国土交通,SECONDARY,"NBS 70城新宅指数(2011+) + BIS CN(2005+)",PROXY,quarterly→annual,index,B1a,medium,两国不同资产概念→非 EXACT；CN 70城起点 2011 缺投资峰前段→BIS 辅助并显式标注
+housing_starts,property,住房新开工,CONCEPT_PROXY,MLIT Construction Stats(units),PRIMARY,NBS 房地产开发统计(新开工面积m2),PRIMARY,annual,"units;m2(统一前)",B1a,medium,JP 户数 vs CN 面积→初始 CONCEPT_PROXY；统一单位或转 YoY 后再定级，不自动 EXACT
+property_investment,property,房地产开发投资,PENDING_CROSSWALK,ESRI/国土交通(建设投资),PENDING_CROSSWALK,NBS 房地产开发投资,PRIMARY,annual,local_currency,B1b,medium,PENDING_CROSSWALK：source-definition audit 后再定 EXACT/PROXY
+property_sales_area,property,住房销售面积,PROXY,,,NBS 商品房销售面积,PRIMARY,annual,m2,B1b,medium,MVMD：sales/inventory 至少一项即可(CN 提供)
+property_inventory_area,property,住房待售(库存)面积,PROXY,,,NBS 商品房待售面积,PRIMARY,annual,m2,B1b,medium,同上二选一即可
+corporate_leverage,corporate,企业杠杆(负债/资产),PROXY,"MOF 法人企业统计(全行业除金融保险)",PRIMARY,NBS 规模以上工业(资产负债率),SECTOR_PROXY,quarterly→annual,ratio,B1a,medium,CN 仅工业→只做趋势/方向比较
+corporate_profitability,corporate,企业盈利(利润率),PROXY,"MOF 法人企业统计(营业/经常利润率)",PRIMARY,NBS 规模以上工业(利润率),SECTOR_PROXY,quarterly→annual,ratio,B1a,medium,同上
+mof_interest_burden_proxy,corporate,利息负担(利息费用/利润或销售),SECONDARY,MOF 法人企业统计,PRIMARY,,,annual,ratio,B1b,medium,与 BIS DSR 不同概念→禁拼接(两列分列)
+bis_dsr,credit,偿债率 DSR,EXACT,BIS DSR,PRIMARY,,,annual,pct,B2,low_medium,起点约1999→不覆盖 JP J90；J90 用 MOF proxy
+credit_impulse_jp,credit,信用脉冲(JP),FLOW_PROXY,BOJ FFA(NFC 借贷流量),SECONDARY,,,annual,pct,B2,medium,CI=Δ(Flow/GDP)
+credit_impulse_cn,credit,信用脉冲(CN),FLOW_PROXY,,,"PBOC 社融(2002-2012 复用 annual_CN_credit_flow_level；2013+ 补齐)",SECONDARY,annual,pct,B2,medium,TSF flow≠CreditStock
+boj_ffa,credit,资金循环(交叉核验),SECONDARY,BOJ FFA,PRIMARY,,,annual,JPY,B2,medium,与 MOF 互为 cross-check 不强制拼接
+npl,credit,NPL,PROXY,BOJ/FSA,PROXY,NFRA/PBOC,PROXY,annual,pct,P3,high,定义断点多→后置
+property_q_etc,property,企业q/空置率/开发商杠杆/土地交易,PROXY,多源(暂缓),PROXY,多源(暂缓),PROXY,annual,na,P3,high,建议书§40 暂缓清单

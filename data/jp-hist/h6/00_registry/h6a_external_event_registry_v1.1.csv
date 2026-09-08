@@ -1,0 +1,7 @@
+event_id,event_name,scope,country,start_year,end_year,event_type,affected_modules_expected,confirmatory_or_diagnostic,source,notes
+E01,亚洲金融危机及日本金融压力,Asia/JP-heavy,JP,1997,1998,financial_crisis,ALL_ALLOWED,confirmatory,"governance/h6_event_definition_memo_v1.0.md；IMF WEO crisis dating + 日本国内金融压力(山一/长期信用银行 1997-98)",CN 侧 1997-98 亦受波及但以 JP 侧重
+E02,Dot-com / 全球科技泡沫破裂,global/US-led,JP+CN,2000,2002,asset_bubble_burst,ALL_ALLOWED,confirmatory,"memo；NBER 2001 recession / BIS asset price 文献",JP 候选掩码主对象（LEO-2）
+E03,全球金融危机,global,JP+CN,2008,2009,financial_crisis,ALL_ALLOWED,confirmatory,"memo；IMF WEO 2009；Lehman 2008-09",global
+E04,欧债/全球二次金融压力,global/Europe-led,JP+CN,2011,2012,financial_crisis,ALL_ALLOWED,auxiliary,"memo",v1 不跑 -E04 LEO
+E05,COVID-19,global + country-specific,JP+CN,2020,2022,pandemic,ALL_ALLOWED,confirmatory,"memo；WHO PHEIC 2020-01-30；WHO 2023-05-05 解除",主检验用年度 dummy 2020-2022
+E06,中国2022特殊防疫/活动冲击,CN-specific,CN,2022,2022,policy_shock,ALL_ALLOWED,diagnostic,"memo；CN 2022 封控(上海等) 事件记录",与 E05 不等同；只作 diagnostic

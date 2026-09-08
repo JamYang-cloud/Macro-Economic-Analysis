@@ -1,0 +1,14 @@
+year,value,variable,country,unit,source_note
+2013,2.825374223206673,trade_balance_gdp,cn,pct_of_gdp,NBS gongbao trade balance RMB / nominal GDP 2013-2025; parent gongbao_{y}.html; ties to H2 trade_balance_level (USD) via RMB conversion — see usdcny factor
+2014,3.6905523180451967,trade_balance_gdp,cn,pct_of_gdp,NBS gongbao trade balance RMB / nominal GDP 2013-2025; parent gongbao_{y}.html; ties to H2 trade_balance_level (USD) via RMB conversion — see usdcny factor
+2015,5.433658239595217,trade_balance_gdp,cn,pct_of_gdp,NBS gongbao trade balance RMB / nominal GDP 2013-2025; parent gongbao_{y}.html; ties to H2 trade_balance_level (USD) via RMB conversion — see usdcny factor
+2016,4.505010569432368,trade_balance_gdp,cn,pct_of_gdp,NBS gongbao trade balance RMB / nominal GDP 2013-2025; parent gongbao_{y}.html; ties to H2 trade_balance_level (USD) via RMB conversion — see usdcny factor
+2017,3.4720391913163957,trade_balance_gdp,cn,pct_of_gdp,NBS gongbao trade balance RMB / nominal GDP 2013-2025; parent gongbao_{y}.html; ties to H2 trade_balance_level (USD) via RMB conversion — see usdcny factor
+2018,2.5883335610329343,trade_balance_gdp,cn,pct_of_gdp,NBS gongbao trade balance RMB / nominal GDP 2013-2025; parent gongbao_{y}.html; ties to H2 trade_balance_level (USD) via RMB conversion — see usdcny factor
+2019,2.94490167681773,trade_balance_gdp,cn,pct_of_gdp,NBS gongbao trade balance RMB / nominal GDP 2013-2025; parent gongbao_{y}.html; ties to H2 trade_balance_level (USD) via RMB conversion — see usdcny factor
+2020,3.651231414606107,trade_balance_gdp,cn,pct_of_gdp,NBS gongbao trade balance RMB / nominal GDP 2013-2025; parent gongbao_{y}.html; ties to H2 trade_balance_level (USD) via RMB conversion — see usdcny factor
+2021,3.81989559925503,trade_balance_gdp,cn,pct_of_gdp,NBS gongbao trade balance RMB / nominal GDP 2013-2025; parent gongbao_{y}.html; ties to H2 trade_balance_level (USD) via RMB conversion — see usdcny factor
+2022,4.844625754106529,trade_balance_gdp,cn,pct_of_gdp,NBS gongbao trade balance RMB / nominal GDP 2013-2025; parent gongbao_{y}.html; ties to H2 trade_balance_level (USD) via RMB conversion — see usdcny factor
+2023,4.59176792941673,trade_balance_gdp,cn,pct_of_gdp,NBS gongbao trade balance RMB / nominal GDP 2013-2025; parent gongbao_{y}.html; ties to H2 trade_balance_level (USD) via RMB conversion — see usdcny factor
+2024,5.234885299951671,trade_balance_gdp,cn,pct_of_gdp,NBS gongbao trade balance RMB / nominal GDP 2013-2025; parent gongbao_{y}.html; ties to H2 trade_balance_level (USD) via RMB conversion — see usdcny factor
+2025,6.069996055294358,trade_balance_gdp,cn,pct_of_gdp,NBS gongbao trade balance RMB / nominal GDP 2013-2025; parent gongbao_{y}.html; ties to H2 trade_balance_level (USD) via RMB conversion — see usdcny factor

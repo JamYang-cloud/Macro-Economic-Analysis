@@ -1,0 +1,38 @@
+﻿variable_id,tier,primary_source_jp,primary_source_cn,bridge_validation,source_cutoff_note
+investment_gdp,A,ESRI(已有标准化),NBS-WB(已有标准化),,analysis_cutoff 2026-08-31
+i_q_gfcf,A,ESRI 季度 GFCF(68SNA+93SNA bridge),NBS 固定资产投资/地产开发投资(月度→季度),FRED 作 ESRI bridge(JPNGFCF 2001+),analysis_cutoff 2026-08-31
+i_mof_capex,A,MOF 法人統計 capex sheet,,,analysis_cutoff 2026-08-31
+nfc_credit_gdp,A,BIS Total Credit,BIS Total Credit,BIS bulk 已下载(pre-B0 probe);FRED 镜像零差异可作缓存,analysis_cutoff 2026-08-31
+hh_credit_gdp,A,BIS Total Credit,BIS Total Credit,BIS bulk 已下载(pre-B0 probe);FRED 镜像零差异可作缓存,analysis_cutoff 2026-08-31
+bis_dsr,A,BIS DSR,BIS DSR 或无→INFEASIBLE_PREDICTED,BIS bulk 已下载(pre-B0 probe);FRED 镜像零差异可作缓存,analysis_cutoff 2026-08-31
+credit_impulse_jp,A,BOJ FFA(NFC 借贷流量),,,analysis_cutoff 2026-08-31
+credit_impulse_cn,A,,PBOC 社融(2002-2012 复用 annual_CN_credit_flow_level;2013+ 补齐),,analysis_cutoff 2026-08-31
+boj_ffa,A,BOJ FFA,,,analysis_cutoff 2026-08-31
+cn_pboc_sector_credit,A,,PBOC 信贷收支表(住户短/中长;企业短/中长;票据),,analysis_cutoff 2026-08-31
+cn_tsf_structure,A,,PBOC 社融(flow+stock),,analysis_cutoff 2026-08-31
+land_price,A,MLIT 公示地价(衔接 land_price_yoy),,,analysis_cutoff 2026-08-31
+residential_property_price,A,BIS Residential Property Price(JP 1955Q1+),NBS 70城新宅(2011+)+BIS CN(2005Q2+),,analysis_cutoff 2026-08-31
+cn_property_price_70_2nd,A,,NBS 70城二手,,analysis_cutoff 2026-08-31
+housing_starts,A,MLIT Construction Stats(units),NBS 房地产开发统计(新开工面积 m2),,analysis_cutoff 2026-08-31
+property_investment,A,ESRI/国土交通(建设投资),NBS 房地产开发投资,,analysis_cutoff 2026-08-31
+property_sales_area,A,,NBS 商品房销售面积,,analysis_cutoff 2026-08-31
+property_sales_value,A,,NBS 商品房销售额,,analysis_cutoff 2026-08-31
+property_inventory_area,A,,NBS 商品房待售面积,,analysis_cutoff 2026-08-31
+cn_developer_funding,A,,NBS 房地产开发企业资金来源,,analysis_cutoff 2026-08-31
+cn_construction_area,A,,NBS 房地产 施工/竣工,,analysis_cutoff 2026-08-31
+corporate_leverage,A,MOF 法人統計 liabilities/assets,NBS 规上工业(资产负债率),,analysis_cutoff 2026-08-31
+corporate_bs_liquidity,A,MOF 法人統計(liquid liab/assets),,,analysis_cutoff 2026-08-31
+corporate_receivables,A,MOF 法人統計,NBS 规上工业 应收账款回收期,,analysis_cutoff 2026-08-31
+corporate_inventory,A,MOF 法人統計,NBS 规上工业 产成品库存周转天数,,analysis_cutoff 2026-08-31
+corporate_profitability,A,MOF 法人統計 ordinary profit/sales,NBS 规上工业 营业收入利润率,,analysis_cutoff 2026-08-31
+corporate_roa,A,MOF 法人統計 profit/assets,NBS 规上工业 每百元资产收入,,analysis_cutoff 2026-08-31
+mof_interest_burden_proxy,A,MOF 法人統計,,,analysis_cutoff 2026-08-31
+corporate_operating_margin,A,MOF 法人統計 operating profit/sales,,,analysis_cutoff 2026-08-31
+d_cpi_headline,A,Statistics Bureau/e-Stat,NBS CPI,CN 权重透明度入 price_measurement_risk_registry,analysis_cutoff 2026-08-31
+d_cpi_core,A,e-Stat 连接指数,NBS core CPI,CN 权重透明度入 price_measurement_risk_registry,analysis_cutoff 2026-08-31
+d_cpi_services,A,e-Stat,NBS services CPI,CN 权重透明度入 price_measurement_risk_registry,analysis_cutoff 2026-08-31
+d_cpi_goods,A,e-Stat,NBS goods CPI,CN 权重透明度入 price_measurement_risk_registry,analysis_cutoff 2026-08-31
+d_ppi,A,BOJ CGPI,NBS PPI,CN 权重透明度入 price_measurement_risk_registry,analysis_cutoff 2026-08-31
+d_gdp_deflator,A,ESRI,NBS 官方或明确构造,CN 权重透明度入 price_measurement_risk_registry,analysis_cutoff 2026-08-31
+d_wage_income,A,官方劳动统计/compensation per employee,城镇单位名义工资 YoY(年度),CN 权重透明度入 price_measurement_risk_registry,analysis_cutoff 2026-08-31
+d_price_diffusion_items,A,e-Stat item-level,NBS 分类 CPI,CN 权重透明度入 price_measurement_risk_registry,analysis_cutoff 2026-08-31

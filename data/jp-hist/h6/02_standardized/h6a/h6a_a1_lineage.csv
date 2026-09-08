@@ -1,0 +1,5 @@
+derived_file,parent_artifact,parent_sha256,vintage_type,note
+h6a_global_factors.csv,wb_ny_gdp_mktp_kd_zg_world_api.json,67a8e3937833f92edcfd3f37c444ff5dfb76ce0ad794b054da0ea898af6e2536,retrieval_snapshot,WB/World Bank: treat as retrieval snapshot (2026-09-07); do not overwrite frozen raw after API revisions
+h6a_global_factors.csv,cboe_vix_history_daily.csv,9258a25814fb936e7df32a96bcf3914fdbf342afb33cdf8759cdfbc8064ddb72,retrieval_snapshot,WB/World Bank: treat as retrieval snapshot (2026-09-07); do not overwrite frozen raw after API revisions
+h6a_global_factors.csv,oxcgrt_compact_national_v1.csv,fa5c95fa8f5e386517698cdc17581f7e3333348907c57ad8459c877580d0fe79,retrieval_snapshot,WB/World Bank: treat as retrieval snapshot (2026-09-07); do not overwrite frozen raw after API revisions
+h6a_event_mask.csv,h6a_event_operation_matrix_v1.1.csv,416d236da371f96f246ff98358020d6fe67946ce2adc9277c49e15b86370bb78,derived_from_frozen,EventMask ← FrozenA0OperationMatrix (A0 v1.1)

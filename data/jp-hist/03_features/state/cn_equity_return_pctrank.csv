@@ -1,0 +1,9 @@
+year,value,variable,country,unit,transform_id
+2000,,equity_return_pctrank,cn,pct_rank,H3-PCTRANK-cn-equity_return
+2001,0.14285714285714285,equity_return_pctrank,cn,pct_rank,H3-PCTRANK-cn-equity_return
+2002,0.2857142857142857,equity_return_pctrank,cn,pct_rank,H3-PCTRANK-cn-equity_return
+2003,0.7142857142857143,equity_return_pctrank,cn,pct_rank,H3-PCTRANK-cn-equity_return
+2004,0.42857142857142855,equity_return_pctrank,cn,pct_rank,H3-PCTRANK-cn-equity_return
+2005,0.5714285714285714,equity_return_pctrank,cn,pct_rank,H3-PCTRANK-cn-equity_return
+2006,1.0,equity_return_pctrank,cn,pct_rank,H3-PCTRANK-cn-equity_return
+2007,0.8571428571428571,equity_return_pctrank,cn,pct_rank,H3-PCTRANK-cn-equity_return

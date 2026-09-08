@@ -1,0 +1,81 @@
+JP-HIST H0 FEASIBILITY FREEZE
+================================
+日期：2026-09-06
+状态：PASS / GATE H0 FEASIBILITY FROZEN + H0.8 DEMOGRAPHY EXTENSION FROZEN（外部审核：JP-HIST_H0_v2_最终冻结审核报告_20260906.md → JP-HIST_H0_v3_人口扩展审核报告_20260906.md）
+链路：v1 CONDITIONAL PASS/1 P0 → 响应修复 → v2 PASS FROZEN → H0.8 demography 扩展（用户指示：人口维度，视野扩展至中国经济整体发展）→ v3 人口扩展审核 PASS / DEMOGRAPHY EXTENSION FROZEN（无需回退 v2，向前兼容扩展）→ v3.1 文档修订（P1/P2 响应，report/manifest 更新）
+H0.8 审核边界声明：本冻结覆盖人口变量进入 feasibility/crosswalk/coverage 的合理性；人口 raw series 逐年数值 NOT YET AUDITED（H1 Raw Collection 独立审核）；不得把「人口模块已加入」理解为「人口相似性已验证」。
+
+H3/H4 前必冻结 decision points（外部审核 v3 登记，不得静默默认）
+--------------------------------------------------------------
+1. CBR 最终数学变换（审核 §9-10）：冻结为 ΔCBR_t=CBR_t−CBR_{t−1}（per-mille points）或 3-5y slope 后再 within-country robust z/percentile；禁止直接 CBR YoY%（低基数放大 + CBR 本身是 rate + 受育龄年龄结构影响）
+2. demography 内部权重（审核 §14-16）：6 eligible 变量共享年龄结构/cohort dynamics 不可直接等权；冻结三分结构 S_DEMOG=(S_AGE+S_FERTILITY+S_LABOR)/3（AGE=working_age_growth/youth_dependency/old_age_dependency；FERTILITY=ΔCBR，TFR 仅 anchor validation 不插值年度；LABOR=unemployment/wage_yoy）
+3. coverage 双轨报告（审核 §19-20）：同时输出 coverage_core（v2 registry 口径）与 coverage_current（当前口径）或标注 registry_version，区分 identifiability 变化来自补数据还是扩变量；WA/35y=OK/BORDERLINE（core 69.2% 仍 LOW，扩变量越过 70% 阈值），H4 primary 只用 GOOD 格
+4. CN working-age canonical 统一 15-64（审核 §13）：H1/H2 直接构造 CN WorkingAge_{15-64}，使 working_age_growth/youth_dependency/old_age_dependency 共享同一年龄边界，不优先 15-59 再解释
+5. 人口模块额外 shape test（审核 §35）：trajectory slope / turning point / time-to-half-decline / cumulative change（如 Slope_{10y}(CBR)、ΔWorkingAge_{10y}），区分渐进式 vs 快速人口转型
+6. H1 人口 raw 治理字段（审核 §32）：age_definition/population_denominator/census_or_sample/revision_status/census_benchmark/quality_grade/source_role 必须 machine-readable（CN 15-59/16-59/15-64 不能只写 note）；三种 source role（annual official/census anchor/revised historical）显式区分
+
+H0.8 扩展（2026-09-06，用户指示追加）
+--------------------------------------
+- JP registry +3（tfr/birth_rate/youth_dependency，均 GREEN，e-Stat/IPSS 1947+ 实证）；CN registry +3（tfr=普查锚点 CN_GAP_COMPARABILITY/AMBER；birth_rate=官方年度 1949+ GREEN；youth_dependency=GREEN）——计数：JP 26 行（G23/A3/R0）、CN 26 行（G15/A9/R2）
+- crosswalk 22→25 概念（新增 tfr/birth_rate/youth_dependency；eligible 23/25；tfr=EVENT_ONLY eligible=FALSE 因 CN 无官方年度 TFR——同 FX 规则）
+- coverage/lag 重算：demography 模块 eligible 4→6（+birth_rate/youth_dependency）；整体 65.0%-97.2%；lag matrix 甜区不变（CN WD 全 GOOD）；CN WA L35 因人口变量起点早自 LOW 升 OK
+- 关键结构事实：CN 官方无年度 TFR（仅普查年锚点，2010 普查 1.18 后被上修的 vintage 风险）；CN 出生率 2020 普查后修订 2011-2019 出生数；CN 劳动年龄口径 15-59/16-59/15-64 三次变化——均须 standardized 层断点/vintage 处理
+- 方法学判定（分析层）：JP 渐进型生育率下降（2.13→1.26 约 35 年）vs CN 断崖型（2016-2025 十年 -56%）——fixed-lag 可能得出低相似，本身是发现；demography 模块 L* 无共同区间则触发 v1.1 §47 module-specific 撤回条件。人口维度分析判定留待 H4，H0.8 只完成变量级可行性
+
+冻结断言（v2 审核报告 §17，H0.8 后更新计数）
+------------------------------------------
+jp_registry_rows = 26
+cn_registry_rows = 26
+crosswalk_rows = 25
+jp_status_GREEN = 23
+jp_status_AMBER = 3
+jp_status_RED = 0
+cn_status_GREEN = 15
+cn_status_AMBER = 9
+cn_status_RED = 2
+crosswalk_missing_jp_id = 0
+crosswalk_missing_cn_id = 0
+coverage_rows = 24
+coverage_formula_mismatch = 0
+identifiable_lag_rows = 24
+identifiability_grade_mismatch = 0
+policy_jp_rows = 12
+policy_cn_rows = 10
+policy_jp_grade_A = 4
+policy_jp_grade_B = 8
+policy_cn_grade_A = 2
+policy_cn_grade_B = 2
+policy_cn_grade_C = 6
+availability_rule = FULL_WINDOW_COVERAGE
+manifest_artifacts = 9
+manifest_hash_mismatch = 0
+vintage_type = RETROSPECTIVE_HISTORICAL
+direct_model_use = false
+
+冻结的核心可行性结论（data identifiability，非结构相似性结论）
+----------------------------------------------------------------
+- CN 2010-2020 ↔ JP 1970-1990 (L30-40) = GOOD
+- CN 2015-2025 ↔ JP 1970-1995 (L30-45) = GOOD
+- 即：CN 2010+ 与 JP 1970-1995 的 30-40 年结构比较具有足够数据基础
+
+写入约束（不得静默变更）
+------------------------
+1. availability_rule = FULL_WINDOW_COVERAGE 冻结；若改 T-ratio partial weighting 须新开方法 patch 并重算 coverage
+2. MLIT 公示地価 = canonical / JREI = cross-check 冻结；若 H1 发现授权或质量与 H0 判断不符，须显式 revision 而非直接替换
+3. comparability_mode 枚举机器化（ABSOLUTE/GROWTH/PERCENTILE_ONLY/EVENT_ONLY/NOT_COMPARABLE）；institutional=LOW → PERCENTILE_ONLY 强制
+4. FX = EVENT_ONLY 不进 distance；corp_land_share = JP_EXPLANATORY 不进 crosswalk/coverage 分母
+5. 全部产物 SHA256 见 SHA256_manifest_h0_v2.txt（9 artifacts，mismatch=0）
+6. CN 政策事件 C 级来源（6 项）须在 H5 event-time 前升级 A/B
+7. 本 freeze 为 H0 feasibility 层；H1 P0 raw collection 需用户另行授权后启动
+
+产物清单（08_jp_hist/00_registry/）
+----------------------------------
+jp_hist_variable_registry_v1.csv
+cn_hist_variable_registry_v1.csv
+cn_jp_concept_crosswalk_v1.csv
+jp_policy_institution_events_v1.csv
+cn_policy_institution_events_v1.csv
+coverage_matrix_v1.csv
+identifiable_lag_matrix_v1.csv
+jp_hist_feasibility_report_v1.md
+JP-HIST_H0_审核包_20260906_v2.xlsx

@@ -1,0 +1,25 @@
+﻿country,variable,flavor,criterion_id,penalty_formula,m_max,m_selected,selected_at_boundary,break_years,delta_BIC_to_second_best
+jp,investment_gdp,raw,BIC2,(2m+1)ln n,6,6,True,1974|1981|1987|1992|1997|2007,6.372
+jp,investment_gdp,raw,BIC1,(m+1)ln n,6,6,True,1974|1981|1987|1992|1997|2007,10.361
+jp,investment_gdp,ResidA,BIC2,(2m+1)ln n,6,2,False,1975|1997,0.184
+jp,investment_gdp,ResidA,BIC1,(m+1)ln n,6,6,True,1975|1982|1987|1997|2006|2018,0.355
+jp,cpi_yoy,raw,BIC2,(2m+1)ln n,6,2,False,1976|1981,3.414
+jp,cpi_yoy,raw,BIC1,(m+1)ln n,6,2,False,1976|1981,1.134
+jp,cpi_yoy,ResidA,BIC2,(2m+1)ln n,6,2,False,1976|1981,2.513
+jp,cpi_yoy,ResidA,BIC1,(m+1)ln n,6,4,False,1976|1981|1993|2019,0.475
+jp,m2_yoy,raw,BIC2,(2m+1)ln n,6,3,False,1974|1979|1990,1.928
+jp,m2_yoy,raw,BIC1,(m+1)ln n,6,3,False,1974|1979|1990,1.14
+jp,m2_yoy,ResidA,BIC2,(2m+1)ln n,6,2,False,1975|1990,4.503
+jp,m2_yoy,ResidA,BIC1,(m+1)ln n,6,5,False,1975|1982|1990|2002|2007,0.061
+cn,investment_gdp,raw,BIC2,(2m+1)ln n,4,2,False,2007|2014,5.781
+cn,investment_gdp,raw,BIC1,(m+1)ln n,4,2,False,2007|2014,2.562
+cn,investment_gdp,ResidA,BIC2,(2m+1)ln n,4,2,False,2007|2014,1.427
+cn,investment_gdp,ResidA,BIC1,(m+1)ln n,4,3,False,2007|2014|2019,1.792
+cn,cpi_yoy,raw,BIC2,(2m+1)ln n,4,0,False,-,2.7
+cn,cpi_yoy,raw,BIC1,(m+1)ln n,4,3,False,2006|2011|2020,0.556
+cn,cpi_yoy,ResidA,BIC2,(2m+1)ln n,4,0,False,-,3.866
+cn,cpi_yoy,ResidA,BIC1,(m+1)ln n,4,2,False,2006|2011,0.083
+cn,m2_yoy,raw,BIC2,(2m+1)ln n,4,3,False,2005|2010|2016,0.381
+cn,m2_yoy,raw,BIC1,(m+1)ln n,4,3,False,2005|2010|2016,3.487
+cn,m2_yoy,ResidA,BIC2,(2m+1)ln n,4,1,False,2010,2.923
+cn,m2_yoy,ResidA,BIC1,(m+1)ln n,4,2,False,2004|2010,0.336

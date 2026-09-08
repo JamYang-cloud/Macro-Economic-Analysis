@@ -1,0 +1,25 @@
+# A3.1 -> A3.2 diff (external REWORK closure)
+date: 2026-09-07
+basis: JP-HIST_H6A3.1_PATCH_外部审核报告_20260907.md
+
+## Code changes (a3_resid_v1.1.py -> a3_resid_v1.2.py)
+- residualize(RESIDB): fit window lower bound per country domain (jp>=1990, cn>=2000), was unconditional >=1990
+  -> CN Model-B regression no longer fit on 1990-1999 years
+- perm_p_j90j00: observed statistic now |mean(z90_actual) - mean(z00_actual)| built from label-filtered groups
+  (was: chronological first-nJ90 slice of time-ordered pool); pooled = concat(z90,z00), fixed nJ90/nJ00 split
+  -> observed stat == |D_CN| (engine assert abs_D_match < 1e-3, PASS)
+- noncirc_mbb_ci: added valid_share = n_valid_boot/n_boot (P2-1)
+- Model-B common support check: same_year_set now computed from actual robust-z year keys of
+  states_cache[BaselineB90_CS] vs states_cache[ResidB] per (country, variable); envelope + n + sha256 recorded;
+  engine assert all same_year_set True (was hardcoded same=True) (P1)
+- outputs versioned to *_v1.2 (regime/lag/mechanism/gateA3/bootstrap/permutation/report/QC)
+
+## Result changes (machine)
+- Baseline effect rule: PASS -> FAIL (perm 0.1384 -> 0.1584 >= 0.15; CI90 LB still < 0)
+- BaselineB90_CS effect rule: FAIL (unchanged) but perm 0.0355 -> 0.7416 (previous significance artifact of wrong stat)
+- ResidB investment: -0.9824 (v1.1) -> INFEASIBLE_GROUP_N<3 after CN fit-window fix; cpi -0.6926 -> -0.6913
+- ResidA / regime geometry / fixed-lag / Model T: unchanged (not affected by inference/common-support fixes)
+
+## Frozen-design compliance
+- no spec change, no re-collection, no re-run of A1/A2, no rescuing of ResidA (INFEASIBLE_GROUP_N<3 kept),
+  no threshold/window/regime-definition adjustment.

@@ -1,0 +1,17 @@
+﻿feature_id,source_file,derive,branch,window,direct_model_use,note
+call_unc_boj_m,CALL_UNC_BOJ_DAILY,raw,PRIMARY,ACTIVE,true,BOJ日度as-of月末(1998+); 月内最后可知日值
+usdjpy_m,USDJPY_DAILY,raw,PRIMARY,ACTIVE,true,FRED日度as-of月末(1971+); 月内最后可知日值
+m2_yoy,M2_CURRENT_AVG,yoy12m,SENSITIVITY,ACTIVE,false,BOJ现行M2 regime内12m差(2004+); AUDIT_ONLY(复核P0-1)
+m2_ref_avg_yoy,M2_REF_AVG,yoy12m,SENSITIVITY,TERMINATED,false,"BOJ参考M2 regime内12m差(1999-2008,填2004前空窗); AUDIT_ONLY(复核P0-1)"
+m2_old_avg_yoy,M2_OLD_AVG,yoy12m,SENSITIVITY,TERMINATED,false,"BOJ旧M2平均 regime内12m差(1968-1999, 停更后仅发布月可用); AUDIT_ONLY(复核P0-1)"
+mb_yoy,MONETARY_BASE_YOY,raw,SENSITIVITY,ACTIVE,true,基础货币官方YoY(1971+)
+boj_assets,BOJ_TOTAL_ASSETS,raw,SENSITIVITY,ACTIVE,true,BOJ总资产亿日元(1998+)
+tankan_mfg_di,TANKAN_MFG_DI,raw,SENSITIVITY,ACTIVE,true,短观制造DI季频stale-carry(1974+)
+tankan_nonmfg_di,TANKAN_NONMFG_DI,raw,SENSITIVITY,ACTIVE,true,短观非制造DI季频stale-carry(1983+)
+topix_m_proxy,SPASTT01_FRED_MONTHLY,raw,DESCRIPTIVE,ACTIVE,false,TOPIX月均镜像(1959+) 2015=100重标
+cpi_all_mom_fred,CPIALL_FRED,raw,DESCRIPTIVE,TERMINATED,false,CPI镜像**MoM%**(CPALTT01JPM657N=Growth rate prev period;停2021-06)—std unit列误标指数已勘误
+cpi_core_yoy_fred,CPICORE_FRED_2015B,yoy12m,DESCRIPTIVE,TERMINATED,false,核心CPI镜像2015=100 level自算YoY(停2021-06)
+cpi_core_level_2025,CPI2025_CORE,raw,DESCRIPTIVE,ACTIVE,false,2025基核心level(1970+) RETRO—仅D≥2026-08-21
+call_unc_m_fred_proxy,CALL_UNC_MONTHLY_1985,raw,DESCRIPTIVE,ACTIVE,false,FRED/OECD月度Call proxy 1985+（BOJ日度为准canonical）
+usdjpy_m_1957,USDJPY_MONTHLY_1957,raw,DESCRIPTIVE,ACTIVE,false,汇率月均1957+(OECD镜像)
+m2_yoy_canonical,M2_OLD_AVG/REF_AVG/CURRENT_AVG(分段),yoy12m(regime段),SENSITIVITY,ACTIVE,true,M2 regime-aware canonical bridge: OLD(≤1999-04)→REF(1999-05~2004-04)→CUR(2004-05+)；MODEL_X 唯一 M2 特征；三 audit 列 direct_model_use=false

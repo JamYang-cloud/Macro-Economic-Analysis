@@ -1,0 +1,65 @@
+JP-HIST GATE H3 — FEATURE ENGINEERING FREEZE
+签署日期：2026-09-06
+签署依据：外部审核报告 JP-HIST_H3_v0.1_外部审核报告_20260906.md（PASS — 建议签署 H3 FEATURE ENGINEERING FREEZE）
+审核判定节选："semantic consumption……共52行，全部consumed=YES……未发现H2 semantic约束被绕过。建议进入H4 Similarity/Event-time。"
+
+================================================================
+1. FREEZE 元数据
+================================================================
+package_id            : JP-HIST-H3-FEAT-20260906-v01
+freeze_version        : H3-FEATURE-FREEZE-20260906
+component_version     : xlsx v0.1 / ZIP v0.1 / README v0.1 / features v0.1 / SHA v0.1
+freeze_timestamp      : 2026-09-06
+gate_result           : PASS（semantic consumption 52/52 consumed=YES；未发现 H2 semantic 约束被绕过）
+
+================================================================
+2. 冻结断言（12）
+================================================================
+F01  03_features 全量 90 数据文件（inputs 1 + state 68 + state_proxy 2 + state_anchor 3 + module 12 + check/manifest 4）
+F02  h3_transform_manifest 52 行 = coverage_map 52 行（40 mapped + 12 NOT_MAPPED 全消费）
+F03  semantic consumption check 52/52 consumed=YES、0 missing（evidence_file 存在性核验）
+F04  EXACT 31 → state/robustz + pctrank（62 文件）
+F05  PRE_TRANSFORM 3（JP deflator level→YoY / JP trade_balance /GDE / CN property level→YoY）先变换再 state
+F06  PROXY_STOCK 1 + PROXY_FLOW 1 → state_proxy/ 独立 track（不混 exact-comparison）
+F07  ANCHOR 3（JP working_age/dependency/youth）→ state_anchor/ 锚点 only，无插值
+F08  CN trade_balance_gdp DEFERRED（USD/CNY 币种不匹配，缺 USDCNY 年均汇率 = H1-P1 项；h3_deferred.csv 显式记录，非静默绕过）
+F09  NOT_MAPPED 12 行保持 GAP（SKIP_GAP，无自动填充）
+F10  六模块 wide 表 12 个（6 模块 × JP/CN robustz）；缺失年如实 NaN
+F11  状态锚点抽查符合经济史（JP 1974 z=-1.37 / CN 2007 z=+3.88 / JP trade surplus 1985-87 z=+1.17~1.49 / CN property 2009 z=+3.18）
+F12  JP nominal GDE CY 因子（ESRI 68SNA 派生，1990=430,040 十亿日元）作 /GDP 归一，lineage 记 raw esri_gdp_68sna/gaku_mg01168_1.csv
+
+================================================================
+3. 冻结写入约束（6）
+================================================================
+W01  H3 冻结后 features 变更须显式 revision（v0.2+）并更新 manifest/consumption/quality 三件套
+W02  H3 状态文件一律由 transform 脚本从 H2 standardized 重建（可复现），禁止手工改值
+W03  full-sample robust z/pctrank（RETROSPECTIVE_HISTORICAL 定位）——lookahead 敏感性检验属 H4 rolling 验证
+W04  JP 利率 raw z 未做 regime 切分（D-H3-4）；零利率 regime dummy 属 H4 输入，H3 不得预判剔除
+W05  PRE_TRANSFORM 的 transformed 中间值可经 manifest transform_id 重建；H3 不另存 level/ratio 中间文件
+W06  H4 不得绕过 H2 semantic_status / H3 feature 分层直接回读 standardized 原始序列做跨国 exact 比较
+
+================================================================
+4. H3 后期待办（不阻止 FREEZE）
+================================================================
+B01  CN trade_balance_gdp /GDP 归一——待 USDCNY 年均汇率（H1-P1 采集项）
+B02  CN equity_return 止 2007（H2 已知 PARTIAL；模块表如实 NaN，无填充）
+B03  pctrank 现为辅助诊断；H4 若选其作主比较量需显式决策
+
+================================================================
+5. 冻结资产哈希（本 record 签署时点）
+================================================================
+SHA256_manifest_h3_v0.1.txt:                9ad7fad2b6af6fd0b4b1
+h3_transform_manifest.csv:                  dfddac576b433137ef8c
+h3_semantic_consumption_check.csv:          bce0cc0a3c904044cf4d
+h3_quality_summary_v0.1.md:                 7802f15f86099488c781
+h3_semantic_transform_spec_20260906.md:     3c1cfda36ab175186126
+FREEZE_H2_20260906.txt:                      d63da470247ba3a19c4d
+外部审核报告 H3 v0.1 (PASS):                 6ab75767c8cbfc841cb7
+
+================================================================
+6. H4 前置 gate
+================================================================
+G-H4-1  cn_jp_concept_crosswalk 建立（方法论 §27：concept/jp_variable/cn_variable/unit_match/frequency_match/institutional_comparability/comparison_grade/note）——H4 一切跨比较的变量配对依据
+G-H4-2  H4 方法选择冻结：Fixed-Lag Scan / Rolling Similarity / Event-Time 主从关系 + similarity metric 组合（§33-41）——先行规划文档 + 用户拍板
+G-H4-3  H4 分析层与 Return 层分离（§42-43）；Null Benchmark（§40）作为显著性基线
+G-H4-4  H4 不得在未定义 lookahead 声明下把 full-sample z 当 PIT 使用

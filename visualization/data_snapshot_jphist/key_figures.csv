@@ -1,0 +1,42 @@
+﻿category,figure,value,source
+classification,CN2013_assigned_regime,"J90(rep JP 1991, S=-0.433)",h5_state_sequence.csv
+classification,CN2014_assigned_regime,"J90(rep JP 1992, S=-0.510)",h5_state_sequence.csv
+classification,CN2015_assigned_regime,"OTHER(rep JP 1999, S=-0.274)",h5_state_sequence.csv
+classification,CN2016_assigned_regime,"J90(rep JP 1994, S=-0.482)",h5_state_sequence.csv
+classification,CN2017_assigned_regime,"J00(rep JP 2003, S=-0.352)",h5_state_sequence.csv
+classification,CN2018_assigned_regime,"J90(rep JP 1993, S=-0.553)",h5_state_sequence.csv
+classification,CN2019_assigned_regime,"J90(rep JP 1993, S=-0.374)",h5_state_sequence.csv
+classification,CN2020_assigned_regime,"J90(rep JP 1993, S=-0.754)",h5_state_sequence.csv
+classification,CN2021_assigned_regime,"J00(rep JP 2005, S=-0.352)",h5_state_sequence.csv
+classification,CN2022_assigned_regime,"J90(rep JP 1995, S=-0.591)",h5_state_sequence.csv
+classification,CN2023_assigned_regime,"J00(rep JP 2011, S=-0.447)",h5_state_sequence.csv
+classification,CN2024_assigned_regime,"OTHER(rep JP 2002, S=-0.742)",h5_state_sequence.csv
+classification,CN2025_assigned_regime,"J00(rep JP 2003, S=-0.730)",h5_state_sequence.csv
+transition,P(J90|J90),0.429 (3 obs),h5_transition_matrix_probs.csv
+transition,P(J00|J90),0.429 (3 obs),h5_transition_matrix_probs.csv
+transition,P(OTHER|J90),0.143 (1 obs),h5_transition_matrix_probs.csv
+transition,P(J90|J00),0.667 (2 obs),h5_transition_matrix_probs.csv
+transition,P(J00|J00),0.000 (0 obs),h5_transition_matrix_probs.csv
+transition,P(OTHER|J00),0.333 (1 obs),h5_transition_matrix_probs.csv
+transition,P(J90|OTHER),0.500 (1 obs),h5_transition_matrix_probs.csv
+transition,P(J00|OTHER),0.500 (1 obs),h5_transition_matrix_probs.csv
+transition,P(OTHER|OTHER),0.000 (0 obs),h5_transition_matrix_probs.csv
+held_out,CH-CPI_YOY__cpi_yoy,D_JP=0.704 D_CN_negv=0.011 sign=Y p=1.0 feasible=True,h5final_direction_scores.csv
+held_out,CH-M2_YOY__m2_yoy,D_JP=0.234 D_CN_negv=0.368 sign=Y p=0.1984 feasible=True,h5final_direction_scores.csv
+held_out,CH-INVESTMENT_GDP__investment_gdp,D_JP=0.989 D_CN_negv=0.753 sign=Y p=0.1589 feasible=True,h5final_direction_scores.csv
+held_out,CH-REER__reer,D_JP=0.860 D_CN_negv=-0.071 sign=N p=0.7281 feasible=True,h5final_direction_scores.csv
+held_out,CH-WAGE_BIRTH__wage_yoy,D_JP=-0.667 D_CN_negv=0.642 sign=N p=0.064 feasible=True,h5final_direction_scores.csv
+held_out,CH-WAGE_BIRTH__birth_rate,D_JP=0.337 D_CN_negv=0.114 sign=Y p=0.91 feasible=True,h5final_direction_scores.csv
+held_out,LOVO-real_gdp_yoy__real_gdp_yoy,D_JP=0.356 D_CN_negv=-0.154 sign=N p=0.7406 feasible=True,h5final_direction_scores.csv
+held_out,LOVO-iip_yoy__iip_yoy,D_JP=-0.377 D_CN_negv=-0.114 sign=Y p=0.6632 feasible=True,h5final_direction_scores.csv
+held_out,LOVO-investment_gdp__investment_gdp,D_JP=0.989 D_CN_negv=0.753 sign=Y p=0.1629 feasible=True,h5final_direction_scores.csv
+held_out,LOVO-cpi_yoy__cpi_yoy,D_JP=0.704 D_CN_negv=0.011 sign=Y p=1.0 feasible=True,h5final_direction_scores.csv
+held_out,LOVO-m2_yoy__m2_yoy,D_JP=0.234 D_CN_negv=0.368 sign=Y p=0.1974 feasible=True,h5final_direction_scores.csv
+held_out,LOVO-export_yoy__export_yoy,D_JP=-0.119 D_CN_negv=0.419 sign=N p=nan feasible=False,h5final_direction_scores.csv
+held_out,LOVO-reer__reer,D_JP=0.860 D_CN_negv=-0.071 sign=N p=0.7211 feasible=True,h5final_direction_scores.csv
+held_out,LOVO-wage_yoy__wage_yoy,D_JP=-0.667 D_CN_negv=0.449 sign=N p=0.2259 feasible=True,h5final_direction_scores.csv
+held_out,LOVO-birth_rate__birth_rate,D_JP=0.337 D_CN_negv=-0.347 sign=N p=0.7286 feasible=True,h5final_direction_scores.csv
+eventtime,JP CPI 2002 min,-0.91%,h5final_eventtime_paths.csv
+eventtime,CN CPI 2023/2024/2025,0.2/0.2/0.0%,h5final_eventtime_paths.csv
+eventtime,JP investment 1990/2000,31.73/25.61 (% of GDP),h5final_eventtime_paths.csv
+eventtime,CN investment 2011/2024,48.31/40.48 (% of GDP),h5final_eventtime_paths.csv

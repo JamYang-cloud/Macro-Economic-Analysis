@@ -1,0 +1,14 @@
+year,value,variable,country,unit,source_note
+2000,241.1,trade_balance_level,cn,usd_100m,FIXED: NBS 6-3 USD balance col (was import in H2 annual_CN_trade_balance_level.csv - H2 bug); 2000-2012
+2001,225.5,trade_balance_level,cn,usd_100m,FIXED: NBS 6-3 USD balance col (was import in H2 annual_CN_trade_balance_level.csv - H2 bug); 2000-2012
+2002,304.3,trade_balance_level,cn,usd_100m,FIXED: NBS 6-3 USD balance col (was import in H2 annual_CN_trade_balance_level.csv - H2 bug); 2000-2012
+2003,254.68,trade_balance_level,cn,usd_100m,FIXED: NBS 6-3 USD balance col (was import in H2 annual_CN_trade_balance_level.csv - H2 bug); 2000-2012
+2004,320.9,trade_balance_level,cn,usd_100m,FIXED: NBS 6-3 USD balance col (was import in H2 annual_CN_trade_balance_level.csv - H2 bug); 2000-2012
+2005,1020.0,trade_balance_level,cn,usd_100m,FIXED: NBS 6-3 USD balance col (was import in H2 annual_CN_trade_balance_level.csv - H2 bug); 2000-2012
+2006,1775.2,trade_balance_level,cn,usd_100m,FIXED: NBS 6-3 USD balance col (was import in H2 annual_CN_trade_balance_level.csv - H2 bug); 2000-2012
+2007,2643.44,trade_balance_level,cn,usd_100m,FIXED: NBS 6-3 USD balance col (was import in H2 annual_CN_trade_balance_level.csv - H2 bug); 2000-2012
+2008,2981.23,trade_balance_level,cn,usd_100m,FIXED: NBS 6-3 USD balance col (was import in H2 annual_CN_trade_balance_level.csv - H2 bug); 2000-2012
+2009,1956.87,trade_balance_level,cn,usd_100m,FIXED: NBS 6-3 USD balance col (was import in H2 annual_CN_trade_balance_level.csv - H2 bug); 2000-2012
+2010,1815.1030899999987,trade_balance_level,cn,usd_100m,FIXED: NBS 6-3 USD balance col (was import in H2 annual_CN_trade_balance_level.csv - H2 bug); 2000-2012
+2011,1548.9787153899997,trade_balance_level,cn,usd_100m,FIXED: NBS 6-3 USD balance col (was import in H2 annual_CN_trade_balance_level.csv - H2 bug); 2000-2012
+2012,2303.09,trade_balance_level,cn,usd_100m,FIXED: NBS 6-3 USD balance col (was import in H2 annual_CN_trade_balance_level.csv - H2 bug); 2000-2012

@@ -1,0 +1,16 @@
+﻿concept_id,concept_name,cn_primary,freq_jp,canonical_plan,unit_norm,def_regime,value_vintage_preset,upstream_authoritative,upstream_inferred,notes,valid_from,valid_to,direct_model_use,backtest_eligible,canonical_priority
+C01_EQUITY_PRICE,TOPIX价格,沪深300价格,月度(源:日度/年度),JPX官方年度锚+FRED SPASTT01月均镜像(官方价格镜像待JPX免费源),指数点,东证市场再编2022,REALTIME(价),JPX/东证,FRED(OECD转载JPX),SPASTT01=TOPIX月均2015=100重标(比值1/15.6实证);日度镜像受阻记录在案,,,true,true,1_official_anchor+mirror
+C02_EQUITY_TRI,TOPIX全收益,沪深300全收益,月度,GATE_C挂起(官方1989起付费),指数点,-,RETROSPECTIVE(官方TRI仅1989回溯),JPX(付费),-,TRI无免费源;MSCI GR 1969仅PROXY不入正式target;Layer B 禁 price 伪装 TRI,,,false,false,0_gate_c
+C03_EQUITY_VALUATION,TOPIX估值,沪深300PE/PB,月度,挂起(JPX免费仅当前快照),倍/%,-,RETROSPECTIVE,JPX,日经,估值历史源待决策,,,false,false,0_hold
+C04_CPI,通胀核心,CPI核心,月度,总务省2025基linked level(zmi)+zmy官方YoY canonical,2025=100指数/%,2025基准(2026-08-21),RETROSPECTIVE_REBASE(2025基对2025-01前),总务省,FRED(OECD),zmi=level/zmm=MoM/zmy=YoY三分canonical;勿从1位level重算变动率;FRED JPNCPICORMINMEI对照2015基,,,true,false_hist_true_2025plus,1_official
+C05_IP,工业生产,工业增加值,月度,METI官方2020基SA(excel接続1978+现行2018+),2020=100SA指数,2020基准(2024-02),LATEST_LINKED(接続换算),经济产业省,FRED(OECD环比镜像),FRED镜像实为环比%版(JPNPRINTO01GPSAM)非level;基准改定重算致2018-22与OECD差,,,true,true,2_mirror_mom
+C06_TANKAN,短观DI,PMI,季度,BOJ API(大型制造1974Q2起/非制造1983Q2起——API首行197402=1974Q2；官方1974Q1調査不在API),DI百分点,-,REALTIME,BOJ,FRED(无),qcode YYYY01-04=Q1-Q4(2009Q1=-58雷曼谷底锚验证);非制造起点1983Q2为API现实;含预期capex信息,1974-06-30,,true,true,1_official
+C07_M2,货币M2,社融/M2,月度,BOJ API三代(旧1955/参考/现行2003),亿日元,口径三代(M2_OLD/REF/CURRENT),LATEST_LINKED(参考版定义),BOJ,FRED(停2017),禁跨regime level拼接;m2_avg regime内同比;m2_eop_hist COMPARATIVE_ONLY,,,true,true,1_official_regime
+C08_CB_BALANCE,央行资产负债,央行资产/准备金,月度,BOJ API(基础货币1970+/总资产1998+),亿日元,-,REALTIME,BOJ,FRED(JPNASSETS 1998+同源),基础货币YoY官方版另有;FRED/BOJ总资产重叠零差异已验证,,,true,true,1_official
+C09_CALL_RATE,隔夜拆借利率,FR007,月度(源日度),BOJ API(1998+日度)FRED补1985-97,%,1999ZIRP起regime,REALTIME,BOJ,FRED(OECD),STRDCLUCON None=非交易日3441;BOJ日度1998前FRED IRSTCI01,,,true,true,1_official+mirror
+C10_JGB10Y,长期利率,中国10Y,月度(源日/月),FRED IRLTLT01镜像(官方10Y1989前待补),%,-,REALTIME,财务省/日银,FRED(OECD),10Y起点1989为官方现实;政策regime(YCC等)在JP1.7 event layer join非标准化层;standardized definition_regime=空(口径无断点),,,true,true,2_mirror
+C11_USDJPY,汇率,人民币(无同构),月度(源日度),FRED DEXJPUS(1971)+CCUSMA02(1957月均),日元/美元,-,REALTIME,财务省/日银,FRED,OECD月均1957+日度1971+;央行干预事件另表,,,true,true,2_mirror
+C12_BIS_CREDIT,信贷总量,社融,季度,FRED CRDQ镜像=BIS官方同值(官方zip留档),亿日元,信贷占GDPtrend候选,REALTIME,BIS,FRED(授权转载),4序列245/245期零差异实证;HH/NFC/PNFS分列;credit trend方法未冻结前FEATURE_CANDIDATE_ONLY,,,true,true,1_mirror_identical
+C13_LABOR_WAGE,工资失业,收入(缺),月度,FRED LCEAMN01制造时薪指数+LRUN失业率；毎勤確報2025已入库,指数2015=100/%,2020每勤基准+2026样本入替,REALTIME(带断点),厚劳省/总务省,FRED(OECD),LCEAMN01 direct_model_use=false after 2026-02(valid_to=2026-02；2026-03水平断点);毎勤指数2020基勿与OECD2015基水平直比,1955-01-31,2026-02-28,true_pre_break_false_after,true_pre_break_false_after,2_mirror_break
+C14_PROPERTY,房价,70城房价,季度,BIS住宅价名义/实际(QJPN/QJPR628BIS),2010=100指数,-,RETROSPECTIVE_REBASE(各期重基),BIS(各央行汇编),FRED(授权转载),284/284零差异实证;只比P/peak与房价收入比不比level,,,true,true,1_mirror_identical
+C15_TRADE,贸易/经常收支,贸易差额,月度,MOF customs csv(1988+)+FRED XTEXVA/XTNTVA长史,日元/千日元,贸易统计按年確报口径,REALTIME(官方)/LATEST(FRED修订滞后),财务省,FRED(OECD),官方1988+每年確定值修订;OECD镜像YoY差1-3pp=修订滞后+SA;经常收支月度官方源另行(BOJ/财务省),,,true,true,2_mirror_official_1988plus

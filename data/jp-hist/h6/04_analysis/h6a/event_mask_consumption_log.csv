@@ -1,0 +1,11 @@
+﻿event_id,country,year,ops,consumed
+E01,JP,1997,jp_candidate,1
+E01,JP,1998,jp_candidate,1
+E02,JP,2000,jp_candidate,1
+E02,JP,2001,jp_candidate,1
+E02,JP,2002,jp_candidate,1
+E03,JP,2008,jp_candidate,1
+E03,JP,2009,jp_candidate,1
+E05,CN,2020,"window_aggregation,cn_summary",1
+E05,CN,2021,"window_aggregation,cn_summary",1
+E05,CN,2022,"window_aggregation,cn_summary",1

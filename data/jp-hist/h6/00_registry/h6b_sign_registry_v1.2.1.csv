@@ -1,0 +1,38 @@
+﻿variable_id,raw_series_definition,deterioration_direction,sign_multiplier,expected_chain_sign,notes
+investment_gdp,投资率%GDP,↓,1,+1,outcome 恶化=下降
+i_q_gfcf,季度 GFCF/GDP,↓,1,+1,outcome
+i_mof_capex,MOF 设备投资,↓,1,+1,aux outcome
+nfc_credit_gdp,NFC 信贷/GDP 存量,↓,1,+1,quantity 恶化=收缩(注:机制解读分 supply/demand)
+hh_credit_gdp,HH 信贷/GDP 存量,↓,1,+1,同上
+bis_dsr,偿债率,↑,1,+1,负担恶化=升
+credit_impulse_jp,JP 信用脉冲 Δ(Flow/GDP),↓,1,+1,demand 恶化=脉冲下降
+credit_impulse_cn,CN 信用脉冲,↓,1,+1,同上
+boj_ffa,FFA NFC 金融负债,↓,1,+1,quantity aux
+cn_pboc_sector_credit,PBOC 企业部门贷款存量,↓,1,+1,quantity;demand 分解在 Gate B3
+cn_tsf_structure,社融结构份额,↓,1,+1,aux
+land_price,MLIT 地价 YoY,↓,-1,+1,price 恶化=下跌
+residential_property_price,BIS 房价指数,↓,-1,+1,price 恶化=下跌
+cn_property_price_70_2nd,70城二手 YoY,↓,-1,+1,PRICE family
+housing_starts,新开工,↓,-1,+1,ACTIVITY 恶化=下降
+property_investment,房地产开发投资,↓,-1,+1,ACTIVITY
+property_sales_area,销售面积,↓,-1,+1,INVENTORY-SALES 恶化=销售降
+property_sales_value,销售额,↓,-1,+1,同上
+property_inventory_area,待售面积,↑,1,+1,INVENTORY-SALES 恶化=库存升
+cn_developer_funding,开发商资金来源,↓,-1,+1,aux
+cn_construction_area,施工/竣工面积,↓,-1,+1,aux
+corporate_leverage,负债/资产,↑,1,+1,BS 恶化=杠杆升
+corporate_bs_liquidity,流动比率代理,↓,-1,+1,BS 恶化=流动性降
+corporate_receivables,应收/收入,↑,1,+1,BS 恶化=应收升
+corporate_inventory,库存/收入,↑,1,+1,BS 恶化=库存升
+corporate_profitability,利润率,↓,-1,+1,R 恶化=利润率降
+corporate_roa,ROA,↓,-1,+1,R
+mof_interest_burden_proxy,利息/利润,↑,1,+1,BS 恶化=负担升
+corporate_operating_margin,营业利润率,↓,-1,+1,R
+d_cpi_headline,CPI YoY,↓,-1,-1,deflation 恶化=通胀降;D 模块符号独立
+d_cpi_core,核心 CPI YoY,↓,-1,-1,同上
+d_cpi_services,服务 CPI YoY,↓,-1,-1,同上
+d_cpi_goods,商品 CPI YoY,↓,-1,-1,同上
+d_ppi,PPI YoY,↓,-1,-1,同上
+d_gdp_deflator,GDP deflator,↓,-1,-1,同上
+d_wage_income,名义工资 YoY,↓,-1,-1,同上
+d_price_diffusion_items,负增长类别占比,↑,1,-1,diffusion 恶化=扩散升

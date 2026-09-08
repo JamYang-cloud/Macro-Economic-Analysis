@@ -1,0 +1,9 @@
+year,value,variable,country,unit,transform_id
+2000,,equity_return_robustz,cn,robust_z,H3-ROBUSTZ-cn-equity_return
+2001,-0.6744907594765953,equity_return_robustz,cn,robust_z,H3-ROBUSTZ-cn-equity_return
+2002,-0.5043262444788804,equity_return_robustz,cn,robust_z,H3-ROBUSTZ-cn-equity_return
+2003,1.0201463946685358,equity_return_robustz,cn,robust_z,H3-ROBUSTZ-cn-equity_return
+2004,-0.3881679885177863,equity_return_robustz,cn,robust_z,H3-ROBUSTZ-cn-equity_return
+2005,0.0,equity_return_robustz,cn,robust_z,H3-ROBUSTZ-cn-equity_return
+2006,7.613587531316542,equity_return_robustz,cn,robust_z,H3-ROBUSTZ-cn-equity_return
+2007,5.760426598225938,equity_return_robustz,cn,robust_z,H3-ROBUSTZ-cn-equity_return

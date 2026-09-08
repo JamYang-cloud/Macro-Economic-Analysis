@@ -1,0 +1,3 @@
+H6-A A2 QC
+classify 3-state vs frozen: 0 mismatch (asserted)
+4-state vs frozen jgap seq: 13/13 (asserted)

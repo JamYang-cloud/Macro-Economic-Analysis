@@ -1,0 +1,3 @@
+﻿country,b3b_verdict,b3b_evidence
+JP,SUPPORT_THIN,stance_by_level=NOT_SUPPORT(MASKED_OK); stance_by_change=SUPPORT(THIN_SUBSAMPLE(7))
+CN,SUPPORT,stance_by_level=SUPPORT(MASKED_OK); stance_by_change=SUPPORT(MASKED_OK)

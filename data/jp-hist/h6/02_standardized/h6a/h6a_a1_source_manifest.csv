@@ -1,0 +1,4 @@
+file,url,retrieved_at,size_bytes,sha256,note
+wb_ny_gdp_mktp_kd_zg_world_api.json,https://api.worldbank.org/v2/country/WLD/indicator/NY.GDP.MKTP.KD.ZG?format=json&per_page=200,2026-09-07T04:32:52Z,14070,67a8e3937833f92edcfd3f37c444ff5dfb76ce0ad794b054da0ea898af6e2536,"raw as retrieved (World aggregate, GDP growth annual %)"
+cboe_vix_history_daily.csv,https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv,2026-09-07T04:40:50Z,472309,9258a25814fb936e7df32a96bcf3914fdbf342afb33cdf8759cdfbc8064ddb72,FRED VIXCLS host timeout → CBOE official (same VIX series); errata logged
+oxcgrt_compact_national_v1.csv,https://raw.githubusercontent.com/OxCGRT/covid-policy-dataset/main/data/OxCGRT_compact_national_v1.csv,2026-09-07T04:40:50Z,43837034,fa5c95fa8f5e386517698cdc17581f7e3333348907c57ad8459c877580d0fe79,raw full national compact v1

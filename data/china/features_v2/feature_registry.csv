@@ -1,0 +1,12 @@
+﻿feature,economic_block,unit,formula,dependencies,feature_role,model_tier,definition_regime,normalization_regime,notes
+ey,VALUATION,PCT,100/PE_ttm,val.pe_ttm,FEATURE,BASELINE,,EXPANDING_PERCENTILE,盈利收益率
+eyg,VALUATION,PP,100/PE_ttm - cn10y,val.pe_ttm;rate.cn10y,FEATURE,BASELINE,,EXPANDING_PERCENTILE,股债估值差(不称ERP)
+term_spread,RATES,PP,cn10y - cn2y,rate.cn10y;rate.cn2y,FEATURE,BASELINE,,EXPANDING_PERCENTILE,期限利差
+pmi_gap,GROWTH,POINT,gro.pmi - 50,gro.pmi,FEATURE,BASELINE,,EXPANDING_PERCENTILE,PMI荣枯线余量
+delta_pmi,GROWTH,POINT,PMI_t - PMI_t-1 (ref连续),gro.pmi,FEATURE,BASELINE,,EXPANDING_PERCENTILE,PMI环比
+m1_m2_gap,LIQUIDITY,PP,m1_yoy - m2_yoy,liq.m1_yoy;liq.m2_yoy,FEATURE,EXTENDED,M1_PRE_2025/M1_2025_NEW,BY_FEATURE_REGIME,流动性先行(待实证)
+afre_yoy,CREDIT,PCT,官方直接同比(as-of),liq.afre_stock_yoy_official,FEATURE,EXTENDED,AFRE_OFFICIAL_SERIES,BY_FEATURE_REGIME,官方直接同比 2015-02 起(年末/季度低频hold); 2017-19追溯段2020-01-31后进入
+afre_yoy_derived,CREDIT,PCT,100*(AFRE_t/AFRE_t-12 - 1),cre.tsf_stock,VALIDATION_LINEAGE,SUPPLEMENTAL,AFRE_DERIVED,BY_FEATURE_REGIME,"原派生序列保留为 validation lineage, 不进 feature_panel"
+loans_12m,CREDIT,CNY_100M,Σ12连续参考月 new_loan,cre.new_loan,FEATURE,BASELINE,,EXPANDING_PERCENTILE,12M贷款滚动和
+fr007_p90,RATES,PCT,月内P90,rate.fr007,LIQUIDITY_AUXILIARY,SUPPLEMENTAL,,EXPANDING_PERCENTILE,资金面压力(辅助)
+fr007_vol,RATES,PCT,月内样本std,rate.fr007,LIQUIDITY_AUXILIARY,SUPPLEMENTAL,,EXPANDING_PERCENTILE,资金面波动(辅助)

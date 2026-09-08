@@ -1,0 +1,40 @@
+H6-A A3.1 Residualization report (non-circular MBB, J90-J00 perm, CS Model B) — 2026-09-07T13:43:48Z
+flavors: Baseline(jp1970) / ResidA / BaselineB90_CS / ResidB(1990+ CS) / ResidT_diag
+  Baseline: J90 7 / JGAP 2 / J00 4 / OTHER 0
+  ResidA: J90 7 / JGAP 1 / J00 2 / OTHER 3
+  ResidB: J90 2 / JGAP 4 / J00 7 / OTHER 0
+  BaselineB90_CS: J90 1 / JGAP 3 / J00 9 / OTHER 0
+  ResidT_diag: J90 0 / JGAP 0 / J00 4 / OTHER 9
+  lag[Baseline,MANHATTAN] mode=22
+  lag[Baseline,EUCLID] mode=16
+  lag[Baseline,RANKSTATE] mode=22
+  lag[Baseline,SHAPECORR] mode=14
+  lag[ResidA,MANHATTAN] mode=22
+  lag[ResidA,EUCLID] mode=22
+  lag[ResidA,RANKSTATE] mode=20
+  lag[ResidA,SHAPECORR] mode=14
+  lag[ResidB,MANHATTAN] mode=13
+  lag[ResidB,EUCLID] mode=13
+  lag[ResidB,RANKSTATE] mode=13
+  lag[ResidB,SHAPECORR] mode=14
+  lag[BaselineB90_CS,MANHATTAN] mode=16
+  lag[BaselineB90_CS,EUCLID] mode=16
+  lag[BaselineB90_CS,RANKSTATE] mode=22
+  lag[BaselineB90_CS,SHAPECORR] mode=14
+  mech[Baseline,cpi_yoy] D=0.0112 OK
+  mech[Baseline,m2_yoy] D=0.3685 OK
+  mech[Baseline,investment_gdp] D=0.7534 OK
+  mech[ResidA,cpi_yoy] D= INFEASIBLE_GROUP_N<3
+  mech[ResidA,m2_yoy] D= INFEASIBLE_GROUP_N<3
+  mech[ResidA,investment_gdp] D= INFEASIBLE_GROUP_N<3
+  mech[BaselineB90_CS,cpi_yoy] D=-0.546 OK
+  mech[BaselineB90_CS,m2_yoy] D=0.4218 OK
+  mech[BaselineB90_CS,investment_gdp] D=0.2145 OK
+  mech[ResidB,cpi_yoy] D=-0.6926 OK
+  mech[ResidB,m2_yoy] D= INFEASIBLE_GROUP_N<3
+  mech[ResidB,investment_gdp] D=-0.9824 OK
+  rule[Baseline] D=0.7534 CI=(-0.0067,0.9464) perm=0.1384 pass=True
+  rule[ResidA] D= CI=(,) perm= pass=None
+  rule[BaselineB90_CS] D=0.2145 CI=(-0.4536,0.3642) perm=0.0355 pass=False
+  rule[ResidB] D=-0.9824 CI=(-1.1996,-0.5233) perm=0.1204 pass=False
+Gate A3 overall: PASS=False (ResidA=False, Baseline=True, -COVID=INFEASIBLE_AFTER_PRESPECIFIED_MASK)

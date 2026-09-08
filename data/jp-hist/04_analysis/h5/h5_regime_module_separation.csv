@@ -1,0 +1,6 @@
+﻿module,mean_abs_JP_sep,n_vars,direction_agree_n,direction_agree_total,sep_ge_0p5
+DEMOGRAPHY_LABOR,0.502,2,1,2,True
+EXTERNAL,0.49,2,2,2,False
+GROWTH,0.574,3,2,3,True
+INFLATION,0.704,1,1,1,True
+MONEY_CREDIT,0.234,1,1,1,False

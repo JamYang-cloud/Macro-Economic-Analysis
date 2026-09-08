@@ -1,0 +1,9 @@
+event_id,country,years,mask_single_year_classification,mask_window_aggregation,mask_jp_candidate,mask_cn_summary,confirmatory_use,rationale
+E01,JP,1997-1998,NO,NA,YES,NA,YES,"亚洲金融危机+日本金融压力期：禁用 JP 1997-98 成为 CN 候选（LEO-2）；CN 侧主窗无该年"
+E02,JP,2000-2002,NO,NA,YES,NA,YES,"dot-com 期：禁用 JP 2000-02 候选（LEO-2）；回答 CN 落 JGAP/J00 是否因 JP 该段异常"
+E03,JP,2008-2009,NO,NA,YES,NA,YES,"GFC 期：禁用 JP 2008-09 候选（LEO-2）"
+E03,CN,2008-2009,NO,NA,NA,NA,YES,"CN 2008-09 不在 D 窗(2015-2025)/2013-2025 总结样本内→无掩码作用（显式记录，非遗漏）；CN 早期窗不进入本 reconciliation 范围"
+E04,JP,2011-2012,NO,NO,NO,NO,NO,"auxiliary：v1 不跑 -E04 LEO（如需敏感性另行预注册）"
+E05,JP,2020-2022,NO,NA,NO,NA,YES,"JP 2020-22 与 CN2013-25 最短 lag 3-5 年 < 最小 lag 10→天然非候选；JP 侧冲击由残差化 COVID dummy 覆盖"
+E05,CN,2020-2022,NO,YES,NA,YES,YES,"COVID：保留单年分类（诊断用）；D 窗聚合（LEO-1）与 2013-25 总结（LEO-3）剔除"
+E06,CN,2022,NO,NO,NA,NO,NO,"CN 特异性诊断注（与 E05 不等同）：不加额外掩码，仅用于解读（如 2024→JGAP 绕行是否含 2022 防疫因素）"

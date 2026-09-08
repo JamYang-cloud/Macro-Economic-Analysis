@@ -1,0 +1,10 @@
+H6-A A3 QC
+Baseline flavor == frozen (assert: 13/13 4-state, D modes 22/16/22/14, CH D 0.0112/0.3685/0.7534)
+input = standardized_pre_normalization_value (raw annual value; birth dcbr pre-value)
+residual order: x -> shock reg -> u_hat -> RobustZ(u_hat) -> similarity
+Model A/B confirmatory; Model T diagnostic only (not in Gate)
+Model B common support: jp>=1990 (BaselineB90 <-> ResidB)
+OLS main (Huber aux note: if divergence large -> downgrade)
+no post-hoc control expansion; COVID dummy fixed 2020-22
+Gate A3 effect rule: sgn & |D|>=0.25 & (MBB90 LB>0 or perm p<0.15); ResidA + {Baseline,-COVID}>=1
+moving block: L=3, n_boot=2000, seed 20260907; perm n=2000

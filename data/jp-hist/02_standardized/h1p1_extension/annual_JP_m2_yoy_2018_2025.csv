@@ -1,0 +1,9 @@
+year,value,source_note,variable,country,unit
+2018,2.531,MABMM301 (OECD broad money) annual avg YoY,m2_yoy,jp,pct
+2019,2.024,MABMM301 (OECD broad money) annual avg YoY,m2_yoy,jp,pct
+2020,5.367,MABMM301 (OECD broad money) annual avg YoY,m2_yoy,jp,pct
+2021,5.533,MABMM301 (OECD broad money) annual avg YoY,m2_yoy,jp,pct
+2022,2.92,MABMM301 (OECD broad money) annual avg YoY,m2_yoy,jp,pct
+2023,1.894,MABMM301 Jan-Nov 2023 avg YoY vs 2022 (OECD series ends 2023-11),m2_yoy,jp,pct
+2024,1.7,BOJ Money Stock ms2512 annual avg M2 YoY (2024=1.7%),m2_yoy,jp,pct
+2025,1.2,BOJ Money Stock ms2512 annual avg M2 YoY (2025=1.2%),m2_yoy,jp,pct

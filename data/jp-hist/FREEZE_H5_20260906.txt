@@ -1,0 +1,61 @@
+JP-HIST GATE H5 — MECHANISM VALIDATION GEOMETRY-LEVEL FREEZE
+签署日期：2026-09-06
+签署依据：外部审核报告 JP-HIST_H5FINAL_外部审核及下一步方向_20260906.md（§一 = H5-FINAL PASS / GEOMETRY-LEVEL FREEZE；§14 冻结项 H5-F1..F6；§15 不冻结清单）+ 响应文档 JP-HIST_H5FINAL_审核响应与修订_20260906.md
+审核判定节选："H5-FINAL = PASS / GEOMETRY-LEVEL FREEZE。…… 建议正式冻结 H5，但冻结结论必须严格限定为：CN–JP regime 分类表现为稳定、可解释、可重复识别的 structural-state geometry；但尚未得到'共同经济机制'层面的总体独立验证。"
+
+================================================================
+1. FREEZE 元数据
+================================================================
+package_id            : JP-HIST-H5-GEOM-20260906-v01
+freeze_version        : H5-MECHANISM-GEOMETRY-LEVEL-FREEZE-20260906
+component_version     : H5-FINAL report v03.1 / h5_final_spec FROZEN / v03 audit pkg / response doc v1
+freeze_timestamp      : 2026-09-06
+gate_result           : PASS / GEOMETRY-LEVEL FREEZE（Q1 hinge SUPPORTED；Q2 broad mechanism correspondence NOT SUPPORTED；Q3 persistent J00 NOT SUPPORTED）
+层级定位               ：分析链 H0-H5 终结门；下一主目标 = Final Evidence Synthesis（09_中日比较/）；H6 仅条件性后续
+
+================================================================
+2. 冻结断言（6，外审 §14 定稿）
+================================================================
+F01  CN-JP J90/J00 regime classification 是稳定、可解释、可重复识别的 structural-state geometry（13/13 跨方法复现：H4 module-subset bootstrap vs H5 regime-level argmax，代表 JP 年亦同）
+F02  CPI/INFLATION 是 classification hinge——held-out 后不独立复现 JP J90-J00 机制差异（D_CN,−CPI=+0.011 ≈ 0 vs D_JP=+0.704；bootstrap CI 跨 0；perm p=1.0；percentile aux 不支持）
+F03  Investment 是核心 gate（CPI/INVESTMENT/REER）中唯一 held-out 方向性复现的通道（D_CN,−INV=+0.753 与 D_JP=+0.989 同号；boot90 CI [0.151,1.433] 不含 0；perm p≈0.16——描述性、bootstrap-supported，非统计显著机制）；M2 为 secondary non-gate 复现证据（D_CN=+0.369，CI [0.096,0.636] 不含 0）——两通道列为最值得进一步研究的机制候选（H6 动机）
+F04  跨 CN-JP regime 的 broad common mechanism correspondence 未获支持（NOT SUPPORTED——主结论非局限）：REER 反向（−0.071 vs +0.860）、wage 反向、real_gdp 反向、birth/iip 无独立证据
+F05  至 2025 无 persistent J00 transition；近年 CN 状态围绕 J90/JGAP/J00 摆动（JGAP=JP 1999-2002 过渡带；2024 rep=2002 属 JGAP——非宽泛 OTHER）
+F06  低通胀/近零 CPI 本身不足以证明日本化（本研究否定的是「单凭近零 CPI 判 CN 进入 JP 式 J00 regime」强命题；CN 2023-25 CPI 0.2/0.2/0.0 未进入负区间，未达 JP 2000s 通缩带）
+
+================================================================
+3. 冻结写入约束（外审 §13/§15 采纳）
+================================================================
+W01  禁冻结/禁表述为：「中国正在复制日本 2000s 机制」「中国已进入通缩型日本化」「投资率路径相似→中国正经历日本式资产负债表衰退」「M2+investment 已证明共同经济机制」——均超出证据
+W02  分类空间分离轴 ≠ held-out mechanism（CPI/REER 为此区别的实证）；凡称「复现」必须限定 descriptively / under held-out classification
+W03  「共同经济机制未验证」是主结论，不得降格为限制项；一切相似性表述须标注 module/channel-specific 边界
+W04  76% 类比值只作 standardized separation magnitude ratio（两国各自 full-sample 标定），不作经济强度/因果效应比
+W05  investment/M2 不称「statistically significant mechanism」——称 bootstrap-supported held-out directional replication（perm p 未达 10%、n 极小）
+W06  Q2-Final gate 通道清单（CPI/INVESTMENT/REER）冻结，不因 M2 正结果扩列（外审 §7 明示 post-hoc expansion 禁止）
+W07  JGAP 只改解释、不改 Q3 判定；regime 边界（J90=[1991,1998]/J00=[2003,2011]）与 lag=10-45、CR-2026-09 等冻结参数禁动
+W08  H5 内不再加检验（新 metric/cluster/threshold/normalization 变体属 researcher degrees of freedom）；结束 H5
+W09  H6 External Mechanism Validation（若启动）必须使用未进入 H4/H5 分类器的**新**机制变量（企业杠杆/利润率/非金融企业债务/地产库存·新开工·房价/银行不良率/信贷投向/household·corporate saving/fiscal impulse/real interest rate/debt-service burden），且只能验证机制、不得重参与 J90/J00 分类——否则重制造循环
+
+================================================================
+4. H5-FINAL 三问终态（外审 §22，随本冻结签署）
+================================================================
+Q1-Final  : classification hinge = CPI/INFLATION —— SUPPORTED
+Q2-Final  : broad mechanism correspondence —— NOT SUPPORTED（INTERPRETABLE FEATURE GEOMETRY ONLY）
+Q3-Final  : persistent J00 transition —— NOT SUPPORTED（摆动非迁移）
+总体结论  : CN 与 JP 存在可重复识别的部分宏观状态历史结构相似性，但不是稳定固定时间滞后，亦无证据表明 CN 正整体复制 JP 经济机制；投资率长期下行与货币增速状态存在一定跨国同向复现（描述性）；近零 CPI 是分类铰链而非独立机制证据；「低通胀=日本化」「CN=滞后 N 年的日本」均被本项目自身稳健性检验否定
+
+================================================================
+5. 冻结资产哈希（本 record 签署时点）
+================================================================
+H5_FINAL_validation_report.md (v03.1):           2d1819974e27dea3b6ab27c0248cc9fb62403632
+h5_final_spec_20260906.md (FROZEN):              9495500a272b5aa3e05f109588de61c63d15a895
+SHA256_manifest_h5final_v03.txt (v03 audit):     c990d12df27cc12447c23ea685f833797e0ccc2ba
+JP-HIST_H5FINAL_外部审核及下一步方向_20260906.md: 8dffa73eee40c6a317134cee64c8c92da6e3fffdf
+JP-HIST_H5FINAL_审核响应与修订_20260906.md:       a26aeef7c5547b96a27b4fd727baf2396727dac5f
+FREEZE_H4_20260906.txt (上游依赖):                4a31e1bee240e9a23ec7319435e8d765515ee416
+
+================================================================
+6. 下一阶段 gate
+================================================================
+G-SYN-1  Final Evidence Synthesis（Evidence Matrix：claim/status/evidence 分层）——09_中日比较/JP-HIST_Final_Evidence_Synthesis_20260906.md
+G-H6-1   仅当 Synthesis 判定 investment/M2 值得深挖才启动 H6；须新变量 + 用户另行授权 + 预注册 spec

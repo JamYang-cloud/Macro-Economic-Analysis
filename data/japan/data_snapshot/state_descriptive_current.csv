@@ -1,0 +1,7 @@
+﻿feature_id,value_date,value,vintage_note,series_status,stale_age_months,is_stale,note,snapshot_asof
+topix_m_proxy,2026-06-30,255.4852,vad=2026-09-05 LATEST_HISTORY_PROXY,ACTIVE,3,false,TOPIX月均镜像(1959+) 2015=100重标,2026-09-05
+cpi_all_mom_fred,2021-06-30,0.1,vad=2026-09-05 LATEST_HISTORY_PROXY,TERMINATED,63,true,CPI镜像**MoM%**(CPALTT01JPM657N=Growth rate prev period;停2021-06)—std unit列误标指数已勘误,2026-09-05
+cpi_core_yoy_fred,2021-06-30,-0.999,vad=2026-09-05 LATEST_HISTORY_PROXY,TERMINATED,63,true,核心CPI镜像2015=100 level自算YoY(停2021-06),2026-09-05
+cpi_core_level_2025,2026-07-31,102.100,vad=2026-08-21 RETROSPECTIVE_REBASE,ACTIVE,2,false,2025基核心level(1970+) RETRO—仅D≥2026-08-21,2026-09-05
+call_unc_m_fred_proxy,2026-06-30,0.841,vad=2026-09-05 LATEST_HISTORY_PROXY,ACTIVE,3,false,FRED/OECD月度Call proxy 1985+（BOJ日度为准canonical）,2026-09-05
+usdjpy_m_1957,2026-07-31,162.437391304348,vad=2026-09-05 LATEST_HISTORY_PROXY,ACTIVE,2,false,汇率月均1957+(OECD镜像),2026-09-05

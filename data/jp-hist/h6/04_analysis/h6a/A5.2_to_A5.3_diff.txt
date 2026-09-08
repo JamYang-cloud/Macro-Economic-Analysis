@@ -1,0 +1,21 @@
+# A5.2 -> A5.3 diff (exact-path closure; metadata-only)
+date: 2026-09-07
+basis: JP-HIST_H6A_A5.2_PATCH_外部审核报告_20260907.md (P1x1 / P2x1)
+
+## P1 fix - exact artifact_internal_path
+- lineage v1.3: all 27 rows artifact_internal_path = exact entry name inside parent zip
+  (located by content-SHA scan of zip namelist; no fuzzy/renaming mapping)
+- 10 A5-parent rows corrected, e.g. h6a_spec_FROZEN_v1.1.md -> 06_h6a_spec_FROZEN_v1.1.md,
+  a2_leo_v1.2.py -> 10_engine_a2_leo_v1.2.py, FREEZE_H6A2_20260907.txt -> 02_FREEZE_H6A2_20260907.txt (full table in response doc)
+- strict machine QC v1.3 (not self-reported): for each row zipfile.read(artifact_internal_path) from
+  parent_package -> sha256 -> compare artifact_sha256
+  => artifact_path_resolved=27, artifact_path_unresolved=0, artifact_sha_verified=27, artifact_sha_failed=0
+  (parent_ref_unresolved=0 / parent_package_failed=0 unchanged)
+
+## P2 fix - response inventory correction
+- A5.2 response doc claimed a carried "06_manifest_a5_v1.1 复载(备查)" file that was not in the zip;
+  actual A5.2 pkg = 6 content files + manifest_a5_v1.2.txt. A5.3 response corrects this inventory.
+
+## Unchanged
+- no SHA/parent-graph/gate/breakpoint/bootstrap/claims/substantive change; A0-A4 freeze intact;
+  H6-B scope semantics intact

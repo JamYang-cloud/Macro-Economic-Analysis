@@ -1,0 +1,12 @@
+﻿check,file,country,quarter,expected,tolerance,actual,pass
+JP leverage 1990Q4 (泡沫峰),h6b_q_corporate_leverage.csv,JP,1990-Q4,0.803,0.01,0.802925,PASS
+JP leverage 2005Q4 (去杠杆后),h6b_q_corporate_leverage.csv,JP,2005-Q4,0.678,0.01,0.677522,PASS
+JP interest burden 1990Q4,h6b_q_mof_interest_burden.csv,JP,1990-Q4,0.957,0.01,0.956708,PASS
+JP interest burden 2005Q4 (零利率),h6b_q_mof_interest_burden.csv,JP,2005-Q4,0.131,0.01,0.130821,PASS
+JP GFCF 1990Q1 (投资峰),h6b_q_i_q_gfcf_jp.csv,JP,1990-Q1,0.37,0.02,0.370447,PASS
+JP GFCF 2026Q2 (QE),h6b_q_i_q_gfcf_jp.csv,JP,2026-Q2,0.28,0.02,0.280119,PASS
+JP housing starts 2026Q2 (MLIT月报锚),h6b_q_housing_starts_jp.csv,JP,2026-Q2,186790,5,186790.0,PASS
+CN leverage 2021Q4,h6b_q_corporate_leverage_cn.csv,CN,2021-Q4,0.5608,0.005,0.560762,PASS
+CN pboc credit 2020Q4 (疫情后激增),h6b_q_cn_pboc_sector_credit.csv,CN,2020-Q4,653350.17,500,653350.17,PASS
+JP property price 1990Q4 (峰值),h6b_q_residential_property_price.csv,JP,1990-Q4,180.6,1.0,180.577,PASS
+JP property price 2012Q4,h6b_q_residential_property_price.csv,JP,2012-Q4,98.8,1.0,98.8082,PASS

@@ -1,0 +1,5 @@
+﻿category,block_length,circular,valid_block_start_min,valid_block_start_max,n_boot,seed,n_valid_boot,wrap_blocks,n_years
+Baseline,3,False,0.0,9.0,2000,20260907,1463,0,12.0
+ResidA,3,False,,,2000,20260907,0,0,
+BaselineB90_CS,3,False,0.0,9.0,2000,20260907,1649,0,12.0
+ResidB,3,False,0.0,9.0,2000,20260907,1238,0,12.0
